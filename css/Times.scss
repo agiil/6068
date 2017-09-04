@@ -5,11 +5,14 @@ $mutedblue: #607D8B;
 $grey800: #424242;
 $grey700: #616161; /* Ikoonides */
 $erepunane: #FF5252; /* Material design A200 */
+.erepunane { color: $erepunane !important; }
 $pruun700: #5D4037;
 $brown400: #8D6E63;
+.brown400 { color: $brown400 !important; }
 $sinine700: #1976D2; 
 $bluegrey100: #CFD8DC;
 $yellow100: #FFF9C4;
+.yellow100 { color: $yellow100 !important; }
 $teal400: #26A69A;
 .teal { color: $teal400 !important; }
 $pink400: #EC407A;
