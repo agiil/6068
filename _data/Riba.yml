@@ -1,123 +1,136 @@
-- title: "0 Sissejuhatus"
+- title: "Korraldus"
   categories:
-    - title: "0.1 Ettevõtte kasv ja IT"
-      url: "/Kasv"
-      pub: true   
-    - title: "0.2 Kliendiküsitluse IT"
-      url: "/Klient"
-      pub: true
-- title: "1 Informatsioon ja tehnoloogia"
+    - title: "Kursuseprogramm"
+      url: "/Programm"
+      pub: false   
+    - title: "Lahenduste vormistamise juhend"
+      url: "/Juhend"
+      pub: false
+- title: "Loengud"
   categories:
-    - title: "1.1 Informatsiooni väärtus ja kvaliteet"
-      url: "/Informatsioon"
+    - title: "1 Infokäitluse eesmärgid"
+      url: "/L1"
       pub: true
-    - title: "1.2 IT maagia"
-      url: "/Maagia"
-      pub: true  
-    - title: "1.3 Ettevõtte IT-portfell"
-      url: "/Profiil"
-      pub: true
-    - title: "1.4 Tehnoloogiatrendide jälgimine"
-      url: "/Trendid"
-      pub: true  
-    - title: "1.5 Tehnoloogiate (tarkvarade) hindamine ja valik"
-      url: "/Tehno"
-      pub: true
-    - title: "1.6 IT arhitektuur"
-      url: "/Arhi"
-      pub: true
-    - title: "1.7 IT valitsemine, juhtimine, korraldamine"
-      url: "/Korraldamine"
-      pub: true
-    - title: "1.8 Lihtne ja keeruline IT"
-      url: "/Lihtne"
-      pub: true  
+    - title: "2 "
+      url: "/L2"
+      pub: false
+    - title: "3 "
+      url: "/L3"
+      pub: false
+    - title: "4 "
+      url: "/L4"
+      pub: false
+    - title: "5 "
+      url: "/L5"
+      pub: false
+    - title: "6 "
+      url: "/L6"
+      pub: false
+    - title: "7 "
+      url: "/L7"
+      pub: false
+    - title: "8 "
+      url: "/L8"
+      pub: false
+    - title: "9 "
+      url: "/L9"
+      pub: false
+    - title: "10 "
+      url: "/L10"
+      pub: false
+    - title: "11 "
+      url: "/L11"
+      pub: false
+    - title: "12 "
+      url: "/L12"
+      pub: false
+    - title: "13 "
+      url: "/L13"
+      pub: false
+    - title: "14 "
+      url: "/L14"
+      pub: false
 
-- title: "2 Infohaldus"
+- title: "Praktikumid"
   categories:
-    - title: "2.1 Infohaldus (Information Management)"
-      url: "/Infohaldus"
+    - title: ""
+      url: "/P1"
       pub: true
-    - title: "2.2 Sujuv töövoog (Streamlined Workflow)"
-      url: "/Workflow"
-      pub: true
-    - title: "2.3 Äritaksonoomia (Corporate Taxonomy)"
-      url: "/Takson"
-      pub: true
+    - title: ""
+      url: "/P2"
+      pub: false
+    - title: ""
+      url: "/P3"
+      pub: false
+    - title: ""
+      url: "/P4"
+      pub: false
+    - title: ""
+      url: "/P5"
+      pub: false
+    - title: ""
+      url: "/P6"
+      pub: false
+    - title: ""
+      url: "/P7"
+      pub: false
+    - title: ""
+      url: "/P8"
+      pub: false
+    - title: ""
+      url: "/P9"
+      pub: false
+    - title: ""
+      url: "/P10"
+      pub: false
+    - title: ""
+      url: "/P11"
+      pub: false
+    - title: ""
+      url: "/P12"
+      pub: false
+    - title: ""
+      url: "/P13"
+      pub: false
+    - title: ""
+      url: "/P14"
+      pub: false
 
-- title: "3 Äri- ja tööprotsessi disain"
+- title: "Ülesanded"
   categories:
-    - title: "3.1 IT-põhine äriprotsessi (-teenuse) disain"
-      url: "/Protsess"
+    - title: ""
+      url: "/Y1"
       pub: true
-    - title: "3.2 Protsessiuuendus"
-      url: "/Protsessiuuendus"
-      pub: true
-    - title: "3.3 Ärialgoritm"
-      url: "/Automatiseerimine"
-      pub: true
-    - title: "3.4 Äri, IT ja kunst"  
-      url: "/Kunst"
-      pub: true
-- title: "4 IT-teenuste sisseostmine"
-  categories:
-    - title: "4.1 IT-arenduse õppetunde"
-      url: "/Oppetunde"
-      pub: true
-    - title: "4.2 IT-teenuste, sh arendustööde sisseostmine"
-      url: "/Sisseostmine"
-      pub: true
-    - title: "4.3 IT protsessid ja teenused"
-      url: "/IT-teenused"
-      pub: true
-    - title: "4.4 IT-kompetentsid"
-      url: "/Inimesed"
-      pub: true  
-    - title: "4.5 Ärinõuded ja infovajadused"
-      url: "/Nouded"
-      pub: true
-    - title: "4.6 IT-investeeringute portfell"
-      url: "/Invest"
-      pub: true
-    - title: "4.7 Arendustöö korraldamine. Agiilne arendus"
-      url: "/Agiil"
-      pub: true
-    - title: "4.8 IT töökindlus ja turve"
-      url: "/Tookindlus"
-      pub: true
-- title: "5 IT, innovatsioon ja strateegia"
-  categories:
-    - title: "5.1 IT ja strateegia"
-      url: "/Strateeg"
-      pub: true
-    - title: "5.2 Innovatsioon"
-      url: "/Innovatsioon"
-    - title: "5.3 IT valitsemine"  
-      url: "/ITvalitsemine"
-      pub: true
-    - title: "5.4 Mis on strateegia?"
-      url: "/MisOnStrateegia"
-      pub: true  
-- title: "Kirjandus"
-  url: "/Kirjandus"
-
-- title: "Kuvad"
-  url: "/Kuvad"
-
-- title: "Sõnastikud"
-  url: "/Sonastikud"
-
-- title: "Harjutused"
-  url: "/Harjutused"
-
-- title: "Tööriistad"
-  url: "/Tools"
-
-- title: "Õppejõud"
-  url: "/PP"
-
-- title: "Special projects"
-  url: "/Special"
-
-- title: "Dangerous stuff"
-  url: "/Dangerous"  
+    - title: ""
+      url: "/Y2"
+      pub: false
+    - title: ""
+      url: "/Y3"
+      pub: false
+    - title: ""
+      url: "/Y4"
+      pub: false
+    - title: ""
+      url: "/Y5"
+      pub: false
+    - title: ""
+      url: "/Y6"
+      pub: false
+    - title: ""
+      url: "/Y7"
+      pub: false
+    - title: ""
+      url: "/Y8"
+      pub: false
+    - title: ""
+      url: "/Y9"
+      pub: false
+    - title: ""
+      url: "/Y10"
+      pub: false
+    - title: ""
+      url: "/Y11"
+      pub: false
+    - title: ""
+      url: "/Y12"
+      pub: false
