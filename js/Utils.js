@@ -1,7 +1,7 @@
 function init() {
   
     // Hide all submenus
-    // $('.alammenyy').hide();
+    $('.alammenyy').hide();
   
     // Bind toggling handler to submenu switches
     $('.lyliti').click(function() {
