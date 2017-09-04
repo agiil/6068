@@ -1,0 +1,143 @@
+---
+---
+
+$mutedblue: #607D8B;
+$bluegrey100: #CFD8DC;
+
+/* ---- Keha -------- */
+body {
+  max-width: 50em; margin: 0 0; 
+  padding: 0.6em 1.5em 2em 2em; 
+  line-height: 1.2;
+  font-family: 'Times New Roman', serif; 
+  color: #333;
+  font-size: 12pt; 
+  }
+
+/* ---- Paigutus ---- */
+#Container { display: flex; max-width: 40em; }
+
+#Avatekst {
+  flex-grow: 1; margin-left: 2rem;
+  max-width: 53rem; /* Teksti loetavuse huvides */
+}
+
+#Tekst { max-width: 35rem; 
+}
+
+/* Kursuse päis */
+.kursusePais { font-family: 'Roboto', sans-serif;
+  font-size: 13pt; margin-bottom: 8px; }
+
+/* Jaotisepealkiri */
+h1 { font-size: 130%;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif; 
+  margin-top: 1em;
+  margin-bottom: 1rem;  
+}
+
+h2 { font-weight: bold; font-size: 100%; 
+  margin: 1em 0 0 0; }    
+
+h3 { font-size: 12pt; font-style: italic; font-weight: normal;
+  line-height: 1.2; text-decoration: underline;
+  margin: 0.2em 0 0.2em 0; }   
+
+/* Tekstiparagrahv */
+p { margin: 0; text-indent: 3rem; }
+.taandeta { text-indent: none; }
+
+/* Loetelud */
+#Tekst ul { list-style: none; margin: 0 0 1em 0;
+    padding-left: 1em; }
+/* #Tekst ul > li:before {
+  display: inline-block;
+  content: "-"; width: 1em; margin-left: -1em;
+} */
+#markdown-toc { padding-left: 0 !important; }
+#markdown-toc li:before {
+    content: none !important;
+    margin-left: 0 !important;
+}
+
+/* Tabelid */
+table { table-layout: fixed;
+    width: 100%; margin: 0 4em 2em 0; }
+table { border-collapse: collapse; }
+table, th, td { border: 1px solid black; }
+
+.ei, .jah { text-align: center; }
+.ei { color: White; background-color: #D1F3D1; } /* Doodle */
+.jah { background-color: #FFCCCA; } /* Doodle */
+
+/* Tekst */
+.disabled { color:#000000; opacity:0.38; }
+.s { font-size: 10pt; }
+
+/* TOC genereeritud */
+#markdown-toc > li {
+  list-style: none;
+}
+
+/* Allkriipsutus */
+.u { text-decoration: underline; }
+
+/* Plokktsitaat */
+blockquote { 
+  font-style: italic; 
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+/* Kood; asciiflow joonised */
+pre, code, samp {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 16px; color: blue;
+  overflow-y: hidden; overflow-x: hidden;
+  page-break-inside: avoid; hyphens: none;
+  text-transform: none;
+}
+pre code,
+code code {
+  font-size: 100%;
+}
+pre { margin-top: 1em; margin-bottom: 1em; }
+
+/* Lingid */
+a, a:hover, a:active, a:visited {
+  color: darkblue !important;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: DarkBlue;
+}
+
+/* ======== Paneelid ======== */
+.action, .note, .teade, .noue { border-radius: 8px; padding: 1rem; }
+
+/* Tegevus */
+.action {
+  border: 1px solid $bluegrey100; 
+  background-color: $bluegrey100; 
+}
+/* Märkus */
+.note { 
+  border: 1px solid coral;
+  background-color: lavenderblush;
+  color: coral;
+}
+/* TL;DR */
+.tldr {
+  margin: 2rem 0;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid coral;
+  background-color: lavenderblush;
+  color: Gray;
+}
+
+.noue {
+  border: 1px solid darkcyan;
+}

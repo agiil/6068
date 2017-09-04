@@ -1,0 +1,15 @@
+title: 6068 Sissejuhatus infosüsteemidesse
+baseurl: "https://agiil.github.io/6068"
+
+defaults:
+  -
+    scope:
+      path: "" # Kõik failid
+    values:
+      layout: "Times"
+      draft: "false"
+      sidebar: "false"
+
+exclude:
+  - Ettevalmistus
+  

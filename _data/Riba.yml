@@ -1,0 +1,123 @@
+- title: "0 Sissejuhatus"
+  categories:
+    - title: "0.1 Ettevõtte kasv ja IT"
+      url: "/Kasv"
+      pub: true   
+    - title: "0.2 Kliendiküsitluse IT"
+      url: "/Klient"
+      pub: true
+- title: "1 Informatsioon ja tehnoloogia"
+  categories:
+    - title: "1.1 Informatsiooni väärtus ja kvaliteet"
+      url: "/Informatsioon"
+      pub: true
+    - title: "1.2 IT maagia"
+      url: "/Maagia"
+      pub: true  
+    - title: "1.3 Ettevõtte IT-portfell"
+      url: "/Profiil"
+      pub: true
+    - title: "1.4 Tehnoloogiatrendide jälgimine"
+      url: "/Trendid"
+      pub: true  
+    - title: "1.5 Tehnoloogiate (tarkvarade) hindamine ja valik"
+      url: "/Tehno"
+      pub: true
+    - title: "1.6 IT arhitektuur"
+      url: "/Arhi"
+      pub: true
+    - title: "1.7 IT valitsemine, juhtimine, korraldamine"
+      url: "/Korraldamine"
+      pub: true
+    - title: "1.8 Lihtne ja keeruline IT"
+      url: "/Lihtne"
+      pub: true  
+
+- title: "2 Infohaldus"
+  categories:
+    - title: "2.1 Infohaldus (Information Management)"
+      url: "/Infohaldus"
+      pub: true
+    - title: "2.2 Sujuv töövoog (Streamlined Workflow)"
+      url: "/Workflow"
+      pub: true
+    - title: "2.3 Äritaksonoomia (Corporate Taxonomy)"
+      url: "/Takson"
+      pub: true
+
+- title: "3 Äri- ja tööprotsessi disain"
+  categories:
+    - title: "3.1 IT-põhine äriprotsessi (-teenuse) disain"
+      url: "/Protsess"
+      pub: true
+    - title: "3.2 Protsessiuuendus"
+      url: "/Protsessiuuendus"
+      pub: true
+    - title: "3.3 Ärialgoritm"
+      url: "/Automatiseerimine"
+      pub: true
+    - title: "3.4 Äri, IT ja kunst"  
+      url: "/Kunst"
+      pub: true
+- title: "4 IT-teenuste sisseostmine"
+  categories:
+    - title: "4.1 IT-arenduse õppetunde"
+      url: "/Oppetunde"
+      pub: true
+    - title: "4.2 IT-teenuste, sh arendustööde sisseostmine"
+      url: "/Sisseostmine"
+      pub: true
+    - title: "4.3 IT protsessid ja teenused"
+      url: "/IT-teenused"
+      pub: true
+    - title: "4.4 IT-kompetentsid"
+      url: "/Inimesed"
+      pub: true  
+    - title: "4.5 Ärinõuded ja infovajadused"
+      url: "/Nouded"
+      pub: true
+    - title: "4.6 IT-investeeringute portfell"
+      url: "/Invest"
+      pub: true
+    - title: "4.7 Arendustöö korraldamine. Agiilne arendus"
+      url: "/Agiil"
+      pub: true
+    - title: "4.8 IT töökindlus ja turve"
+      url: "/Tookindlus"
+      pub: true
+- title: "5 IT, innovatsioon ja strateegia"
+  categories:
+    - title: "5.1 IT ja strateegia"
+      url: "/Strateeg"
+      pub: true
+    - title: "5.2 Innovatsioon"
+      url: "/Innovatsioon"
+    - title: "5.3 IT valitsemine"  
+      url: "/ITvalitsemine"
+      pub: true
+    - title: "5.4 Mis on strateegia?"
+      url: "/MisOnStrateegia"
+      pub: true  
+- title: "Kirjandus"
+  url: "/Kirjandus"
+
+- title: "Kuvad"
+  url: "/Kuvad"
+
+- title: "Sõnastikud"
+  url: "/Sonastikud"
+
+- title: "Harjutused"
+  url: "/Harjutused"
+
+- title: "Tööriistad"
+  url: "/Tools"
+
+- title: "Õppejõud"
+  url: "/PP"
+
+- title: "Special projects"
+  url: "/Special"
+
+- title: "Dangerous stuff"
+  url: "/Dangerous"  

@@ -1,0 +1,46 @@
+<div id="Riba">
+  
+    <!-- p>
+      <i class="material-icons ikoon" style='color: #9C27B0; font-size: 48px;'>cloud_circle</i>
+    </p -->
+  
+    <h1><a href='{{ site.baseurl }}'>{{ site.title }}</a></h1>
+    
+    <nav>
+      <ul>
+        {% assign id_count = '' %}
+        {% for nav in site.data.Riba %}
+          {% if nav.categories != null %}
+            <!-- Alammenüüga üksus -->
+            {% assign id_count = id_count | append: 'x' %}
+            <li>
+                <!-- Alammenüü lüliti --> 
+                <span id="{{ id_count.size }}">
+                  {{ nav.title }}
+                </span>
+                <!-- Alammenüü -->
+                <ul id="lylitatav{{ id_count.size }}" class='alammenyy'>
+                {% for category in nav.categories %}
+                  {% if category.pub %}
+                    <li><a href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a></li>
+                  {% else %}
+                    <li class='disabled'>{{ category.title }}</li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+            </li>
+          {% elsif nav.title == page.title %}
+             <li class="active">
+               <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+             </li>
+          {% else %} 
+            <li>
+              <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  
+  </div>
+  

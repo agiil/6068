@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Material Design icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+    <!-- Fonts -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/IT.css">
+    <script src='{{ site.baseurl }}/js/Utils.js'></script>
+
+  </head>
+  <body onload='init()'>
+    {% include Statistika.html %}
+    <!-- Flexbox -->
+    <div id='Container'>
+      {% include Riba.html %}
+
+      <div id='Avatekst'>
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style='margin-top: 4rem;'>
+     &nbsp;
+    </div>
+  </body>
+</html>
