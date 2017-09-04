@@ -134,3 +134,9 @@
     - title: ""
       url: "/Y12"
       pub: false
+
+- title: "Näited"
+  categories:
+    - title: "Kursuse minisait"
+      url: "/Minisait"
+      pub: true
