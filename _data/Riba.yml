@@ -2,10 +2,10 @@
   categories:
     - title: "Kursuseprogramm"
       url: "/Programm"
-      pub: false   
+      pub: true   
     - title: "Lahenduste vormistamise juhend"
       url: "/Juhend"
-      pub: false
+      pub: true
 - title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
