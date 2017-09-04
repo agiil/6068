@@ -5,7 +5,7 @@
     {% endcomment %} 
   
     <nav>
-      <ol>
+      <ul>
         {% assign id_count = '' %}
         {% for nav in site.data.Riba %}
           {% if nav.categories != null %}
@@ -13,7 +13,7 @@
             <li{% if nav.title == page.title %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
               <!-- Alammenüü lüliti --> 
               <span id="{{ id_count.size }}" class="lyliti"> ▼ </span>
-              <ol id="alammenyy{{ id_count.size }}" class='alammenyy'>
+              <ul id="alammenyy{{ id_count.size }}" class='alammenyy'>
               {% for subcategory in nav.categories %}
                 <li{% if subcategory.title == page.title %} class="active"{% endif %}>
                   <a href="{{ site.baseurl }}{{ subcategory.url }}">{{ subcategory.title }}
@@ -23,7 +23,7 @@
                   {% endif %}
                 </li>
                 {% if subcategory.categories != null %}
-                  <ol class='alammenyy2'>
+                  <ul class='alammenyy2'>
                   {% for subitem in subcategory.categories %}
                     <li{% if subitem.title == page.title %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
                     {% if subitem.type == "Oluline" %}
@@ -31,10 +31,10 @@
                     {% endif %}
                     </li>
                   {% endfor %}
-                  </ol>
+                  </ul>
                 {% endif %}
               {% endfor %}
-              </ol>
+              </ul>
             </li>
           {% else %}
              <li{% if subitem.title == page.title %} class="active"{% endif %}>
@@ -42,7 +42,7 @@
              </li>
           {% endif %}
         {% endfor %}
-      </ol>
+      </ul>
     </nav>
   
   </div>
