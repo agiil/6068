@@ -2,7 +2,20 @@
 ---
 
 $mutedblue: #607D8B;
+$grey800: #424242;
+$grey700: #616161; /* Ikoonides */
+$erepunane: #FF5252; /* Material design A200 */
+$pruun700: #5D4037;
+$brown400: #8D6E63;
+$sinine700: #1976D2; 
 $bluegrey100: #CFD8DC;
+$yellow100: #FFF9C4;
+$teal400: #26A69A;
+.teal { color: $teal400; }
+$pink400: #EC407A;
+$purple500: #9C27B0;
+.purple { color: $purple500; }
+/*  https://material.io/guidelines/style/color.html#color-color-palette */
 
 /* ---- Keha -------- */
 body {
