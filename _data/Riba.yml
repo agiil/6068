@@ -6,9 +6,6 @@
     - title: "Lahenduste vormistamise juhend"
       url: "/Korraldus/Juhend"
       pub: true
-    - title: "Tseremooniad"
-      url: "/Soovituslik/Tseremooniad"
-      pub: true
       
 - title: "Loengud"
   categories:
@@ -142,10 +139,10 @@
 - title: "Juhtumid"
   categories:
     - title: "Kursuse minisait"
-      url: "/Juhtumid/Minisait"
+      url: "/Minisait"
       pub: true
 - title: "Soovituslik"
   categories:
     - title: "Tseremooniad"
-      url: "/Soovituslik/Tseremooniad"
+      url: "/Tseremooniad"
       pub: true
