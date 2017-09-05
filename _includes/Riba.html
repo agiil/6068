@@ -5,32 +5,38 @@
       {% assign id_count = '' %}
       {% for nav in site.data.Riba %}
         {% if nav.categories != null %}
-          <!-- Alammenüüga üksus -->
           {% assign id_count = id_count | append: 'x' %}
-          <li>
-          <!-- Alammenüü lüliti -->
-            <span id="{{ id_count.size }}">
-              {{ nav.title }}
-            </span>
-          <!-- Alammenüü -->
-          <ul id="lylitatav{{ id_count.size }}" class='alammenyy'>
-          {% for category in nav.categories %}
-            {% if category.pub %}
-              <li><a href="{{ site.baseurl }}{{ category.url }}">{{ category.title }}</a></li>
-            {% else %}
-              <li class='disabled'>{{ category.title }}</li>
-            {% endif %}
-          {% endfor %}
-          </ul>
-         </li>
-        {% elsif nav.title == page.title %}
-          <li class="active">
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+          <li>{{ nav.title }}
+            <!-- Alammenüü lüliti --> 
+            <span id="{{ id_count.size }}" class="lyliti"> ▼ </span>
+            <ul id="alammenyy{{ id_count.size }}" class='alammenyy'>
+            {% for category in nav.categories %}
+              <li{% if category.title == page.title %} class="active"{% endif %}>
+                {% if category.pub %}
+                  <a href="{{ site.baseurl }}{{ category.url }}">
+                    {{ category.title }}
+                  </a>
+                {% else %}
+                  <span class="disabled">
+                    {{ category.title }}
+                  </span>
+                {% endif %}  
+              </li>
+            {% endfor %}
+            </ul>
           </li>
         {% else %}
-          <li>
-          <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
-          </li>
+          <li{% if nav.title == page.title %} class="active"{% endif %}>
+            {% if category.pub %}
+              <a href="{{ site.baseurl }}{{ nav.url }}">
+                {{ nav.title }}
+              </a>
+            {% else %}
+              <span class="disabled">
+                {{ nav.title }}
+              </span>
+            {% endif %}    
+           </li>
         {% endif %}
       {% endfor %}
     </ul>
