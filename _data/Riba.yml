@@ -3,7 +3,7 @@
     - title: "Kursuseprogramm"
       url: "/Korraldus/Programm"
       pub: true   
-    - title: "Lahenduste vormistamise juhend"
+    - title: "Lahendusaruande vormistamise juhend"
       url: "/Korraldus/Juhend"
       pub: true
       
