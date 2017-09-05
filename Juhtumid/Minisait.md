@@ -1,5 +1,4 @@
 ---
-layout: Times
 title: Kursuse minisait
 permalink: Minisait
 ---

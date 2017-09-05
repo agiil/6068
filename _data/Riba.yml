@@ -6,6 +6,10 @@
     - title: "Lahenduste vormistamise juhend"
       url: "/Korraldus/Juhend"
       pub: true
+    - title: "Tseremooniad"
+      url: "/Soovituslik/Tseremooniad"
+      pub: true
+      
 - title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
