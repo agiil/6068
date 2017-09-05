@@ -30,9 +30,11 @@ body {
   line-height: 1.25 !important;
   }
 
-  /* Kursuse päis */
-  .kursusePais { font-family: 'Roboto', sans-serif;
-    font-size: 13pt; margin-bottom: 8px; }
+/* Kursuse päis */
+.kursusePais { font-family: 'Roboto', sans-serif;
+  font-size: 13pt; margin-bottom: 8px; }
+
+#Tekst { width: 50rem; }
 
 /* ---- Avalehe paigutus ---- */  
 #Container { display: flex; max-width: 60em; }
