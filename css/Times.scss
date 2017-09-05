@@ -84,9 +84,9 @@ p { margin: 0 0 1em 0; }
 nav > ul {
   font-family: 'Anonymous Pro', sans-serif;
   margin-bottom: 0;
+  list-style: none;
 }
 nav ul { padding-left: 0; }
-nav > li { list-style: none; }
 
 /* ==== TOC genereeritud === */
 #markdown-toc { padding-left: 0 !important; }
