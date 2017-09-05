@@ -74,9 +74,9 @@ h2 {
 p { margin: 0 0 1em 0; }
 
 /* ==== Loetelud ==== */
-ul { list-style: none; margin: 0 0 1em 0;
+#Tekst > ul { list-style: none; margin: 0 0 1em 0;
   padding-left: 1em; }
-ul > li:before { display: inline-block;
+#Tekst > ul > li:before { display: inline-block;
   content: "-"; width: 1em; margin-left: -1em; }
 
 /* Külgriba loetelud */
