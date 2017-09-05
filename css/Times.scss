@@ -74,14 +74,17 @@ h2 {
 p { margin: 0 0 1em 0; }
 
 /* ==== Loetelud ==== */
-#Tekst ul { list-style: none; margin: 0 0 1em 0;
+ul { list-style: none; margin: 0 0 1em 0;
   padding-left: 1em; }
-#Tekst ul > li:before { display: inline-block;
+ul > li:before { display: inline-block;
   content: "-"; width: 1em; margin-left: -1em; }
+
 /* Külgriba loetelud */
-nav > ul { font-family: 'Anonymous Pro', sans-serif;
-padding-left: 1em; }
-nav ul { list-style-type: none; }
+nav > ul {
+  font-family: 'Anonymous Pro', sans-serif;
+  margin-bottom: 0;
+}
+nav ul { padding-left: 0; }
 
 /* ==== TOC genereeritud === */
 #markdown-toc { padding-left: 0 !important; }
@@ -138,7 +141,6 @@ a, a:hover, a:active, a:visited {
   color: darkblue !important;
   text-decoration: underline;
   text-decoration-style: dashed;
-  text-decoration-color: DarkBlue;
 }
 
 /* Material design ikoonid */

@@ -1,142 +1,142 @@
 - title: "Korraldus"
   categories:
     - title: "Kursuseprogramm"
-      url: "KorraldusPraktikumid/Programm"
+      url: "/Korraldus/Programm"
       pub: true   
     - title: "Lahenduste vormistamise juhend"
-      url: "Korraldus/Juhend"
+      url: "/Korraldus/Juhend"
       pub: true
 - title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
-      url: "Loengud/L1"
+      url: "/Loengud/L1"
       pub: true
-    - title: "2 "
-      url: "Loengud/L2"
+    - title: "2 Infosüsteemide üldised omadused ja tüpoloogia"
+      url: "/Loengud/L2"
       pub: false
-    - title: "3 "
-      url: "Loengud/L3"
+    - title: "3 Protsessid ja nende uurimine"
+      url: "/Loengud/L3"
       pub: false
-    - title: "4 "
-      url: "Loengud/L4"
+    - title: "4 Protsesside IT toetus; protsesside parendamine"
+      url: "/Loengud/L4"
       pub: false
-    - title: "5 "
-      url: "Loengud/L5"
+    - title: "5 Süsteemiarendus ja arendusmeetod"
+      url: "/Loengud/L5"
       pub: false
-    - title: "6 "
-      url: "Loengud/L6"
+    - title: "6 Infoökonoomika"
+      url: "/Loengud/L6"
       pub: false
-    - title: "7 "
-      url: "Loengud/L7"
+    - title: "7 Infosüsteemide kaasusi"
+      url: "/Loengud/L7"
       pub: false
-    - title: "8 "
-      url: "Loengud/L8"
+    - title: "8 Eriteema ja/või vahekontrolltöö"
+      url: "/Loengud/L8"
       pub: false
-    - title: "9 "
-      url: "Loengud/L9"
+    - title: "9 Süsteemi arhitektuur"
+      url: "/Loengud/L9"
       pub: false
-    - title: "10 "
-      url: "Loengud/L10"
+    - title: "10 Infosüsteemi füüsiline dimensioon"
+      url: "/Loengud/L10"
       pub: false
-    - title: "11 "
-      url: "Loengud/L11"
+    - title: "11 Andmete (info) roll infosüsteemis"
+      url: "/Loengud/L11"
       pub: false
-    - title: "12 "
-      url: "Loengud/L12"
+    - title: "12 Inimene ja infosüsteem"
+      url: "/Loengud/L12"
       pub: false
-    - title: "13 "
-      url: "Loengud/L13"
+    - title: "13 Arendus- ja muutusprotsessid infosüsteemides"
+      url: "/Loengud/L13"
       pub: false
-    - title: "14 "
-      url: "Loengud/L14"
+    - title: "14 Infosüsteemide arengutendentsidest"
+      url: "/Loengud/L14"
       pub: false
 
 - title: "Praktikumid"
   categories:
-    - title: ""
-      url: "Praktikumid/P1"
+    - title: "Info kvaliteet"
+      url: "/Praktikumid/P1"
       pub: true
-    - title: ""
-      url: "Praktikumid/P2"
+    - title: "Infovajadused"
+      url: "/Praktikumid/P2"
       pub: false
-    - title: ""
-      url: "Praktikumid/P3"
+    - title: "Protsesside modelleerimine (IDEF0)"
+      url: "/Praktikumid/P3"
       pub: false
-    - title: ""
-      url: "Praktikumid/P4"
+    - title: "Protsesside modelleerimine (Swimlanes)"
+      url: "/Praktikumid/P4"
       pub: false
-    - title: ""
-      url: "Praktikumid/P5"
+    - title: "Protsesside modelleerimine (versioon 2)"
+      url: "/Praktikumid/P5"
       pub: false
-    - title: ""
-      url: "Praktikumid/P6"
+    - title: "Maatriks- modelleerimine"
+      url: "/Praktikumid/P6"
       pub: false
-    - title: ""
-      url: "Praktikumid/P7"
+    - title: "Maatriksmodelleerimine (tööde läbivaatus)"
+      url: "/Praktikumid/P7"
       pub: false
-    - title: ""
-      url: "Praktikumid/P8"
+    - title: "Veel modelleerimismeetoditest"
+      url: "/Praktikumid/P8"
       pub: false
-    - title: ""
-      url: "Praktikumid/P9"
+    - title: "Süsteemi arhitektuuri kavandamine"
+      url: "/Praktikumid/P9"
       pub: false
-    - title: ""
-      url: "Praktikumid/P10"
+    - title: "Infosüsteemi prototüüpimine"
+      url: "/Praktikumid/P10"
       pub: false
-    - title: ""
-      url: "Praktikumid/P11"
+    - title: "Kontseptuaalne modelleerimine"
+      url: "/Praktikumid/P11"
       pub: false
-    - title: ""
-      url: "Praktikumid/P12"
+    - title: "Nõuete dokumendi koostamine"
+      url: "/Praktikumid/P12"
       pub: false
-    - title: ""
-      url: "Praktikumid/P13"
+    - title: "Infosüsteemi arendusplaani koostamine"
+      url: "/Praktikumid/P13"
       pub: false
-    - title: ""
-      url: "Praktikumid/P14"
+    - title: "Infosüsteemi arendusplaani läbivaatus"
+      url: "/Praktikumid/P14"
       pub: false
 
 - title: "Ülesanded"
   categories:
-    - title: ""
-      url: "Ylesanded/Y1"
+    - title: "1 Info kvaliteedi hindamine"
+      url: "/Ylesanded/Y1"
       pub: true
-    - title: ""
-      url: "Ylesanded/Y2"
+    - title: "2 Infovajaduste väljaselgitamine"
+      url: "/Ylesanded/Y2"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y3"
+    - title: "3 Äriprotsessi modelleerimine (IDEF0)"
+      url: "/Ylesanded/Y3"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y4"
+    - title: "4 Äriprotsessi modelleerimine (nn ujumisradade e Swimlanes meetod)"
+      url: "/Ylesanded/Y4"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y5"
+    - title: "Parendamise ja IT toetuse võimaluste leidmine protsessis"
+      url: "/Ylesanded/Y5"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y6"
+    - title: "6 Infoloogiline modelleerimine maatriksite abil"
+      url: "/Ylesanded/Y6"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y7"
+    - title: "7 Arendusettepaneku tasuvuse hindamine"
+      url: "/Ylesanded/Y7"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y8"
+    - title: "8 Süsteemi arhitektuuri kavandamine"
+      url: "/Ylesanded/Y8"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y9"
+    - title: "9 Infosüsteemi prototüüpimine"
+      url: "/Ylesanded/Y9"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y10"
+    - title: "10 Kontseptuaalse mudeli koostamine"
+      url: "/Ylesanded/Y10"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y11"
+    - title: "11 Nõuete dokumendi koostamine"
+      url: "/Ylesanded/Y11"
       pub: false
-    - title: ""
-      url: "Ylesanded/Y12"
+    - title: "12 Infosüsteemi arenduse plaanimine"
+      url: "/Ylesanded/Y12"
       pub: false
 
 - title: "Juhtumid"
   categories:
     - title: "Kursuse minisait"
-      url: "Juhtumid/Minisait"
+      url: "/Juhtumid/Minisait"
       pub: true
