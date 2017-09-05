@@ -7,7 +7,6 @@ defaults:
       path: "" # Kõik failid
     values:
       layout: "Times"
-      draft: "false"
       sidebar: "false"
 
 exclude:

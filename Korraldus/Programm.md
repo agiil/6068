@@ -1,7 +1,6 @@
 ---
 title: Kursuseprogramm
 permalink: Programm
-layout: Times
 ---
 
 # Kursuseprogramm
