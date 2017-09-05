@@ -82,10 +82,10 @@ p { margin: 0 0 1em 0; }
 /* Külgriba loetelud */
 nav > ul {
   font-family: 'Anonymous Pro', sans-serif;
-  list-style: none; 
   margin-bottom: 0;
 }
 nav ul { padding-left: 0; }
+nav > li { list-style: none; }
 
 /* ==== TOC genereeritud === */
 #markdown-toc { padding-left: 0 !important; }
@@ -138,10 +138,27 @@ code code {
 pre { margin-top: 1em; margin-bottom: 1em; }
 
 /* Lingid */
-a, a:hover, a:active, a:visited {
-  color: darkblue !important;
-  text-decoration: underline;
-  text-decoration-style: dashed;
+a[href] {
+  color: $mutedblue;
+  text-decoration: none;
+  border-bottom: 1px solid $mutedblue;
+  padding: 0 1px 0;
+  margin: 0 -1px 0;
+}
+a:visited {
+  border-bottom-color: $mutedblue;
+}
+
+a[href]:focus,
+a[href]:hover {
+  background: $mutedblue;
+  background: rgba(75%, 75%, 75%, .25);
+  border-bottom-width: 3px;
+  margin-bottom: -2px;
+}
+a[href]:active {
+  color: #C00;
+  border-color: #C00;
 }
 
 /* Material design ikoonid */

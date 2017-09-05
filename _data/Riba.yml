@@ -140,3 +140,8 @@
     - title: "Kursuse minisait"
       url: "/Juhtumid/Minisait"
       pub: true
+- title: "Soovituslik"
+  categories:
+    - title: "Tseremooniad"
+      url: "/Soovituslik/Tseremooniad"
+      pub: true
