@@ -25,7 +25,7 @@ Eelistatud ja tavapärane on esitamine faili saatmisega õppejõule. Kokkuleppel
 Dokument peab olema varustatud dokumenti, aga samuti dokumendi autorit kindlalt tuvastavate ja kirjeldavate nn metaandmetega: õppeaine kood ja nimetus, semester, autor(id), esitamise kuupäev. Kui lahendusest esitatakse mitu versiooni, siis tuleb näidata versiooni number või tähis. Need metaandmed peaksid olema dokumendi päises. Soovituslik on järgmine vorming:
 
 ````
-IFI6068  Sissejuhatus infosüsteemidesse
+IFI6068 Sissejuhatus infosüsteemidesse
 Sügissemester 2015
 Arvo METS, Maris MÄGI
 18.09.2015 versioon 1.0
@@ -36,7 +36,7 @@ Arvo METS, Maris MÄGI
 Üheks metaandmeks on ka dokumendi pealkiri ehk nimetus. Igal dokumendil peab olema pealkiri (või nimetus). Pealkirjal võib olla täpsustav või täiendav alampealkiri. Ülesannete lahenduste korral peab pealkiri identifitseerima lahendatava ülesande numbri ja nimetuse. Näiteks:
 
 ````
-ÜLESANNE 2  INFOVAJADUSTE VÄLJASELGITAMINE
+ÜLESANNE 2 INFOVAJADUSTE VÄLJASELGITAMINE
 Lahendusaruanne
 ...
 dokumendi pealkiri

@@ -28,7 +28,7 @@ permalink: Minisait
 
 ## Kasutuslood
 
-`K1 materjalide ülespanemine` - ÕPPEJÕUD koostab loenguteksti, juhendi vm õppematerjali ja paneb KURSUSE MINISAIDILE üles (ülespanek  automatiseeritud).
+`K1 materjalide ülespanemine` - ÕPPEJÕUD koostab loenguteksti, juhendi vm õppematerjali ja paneb KURSUSE MINISAIDILE üles (ülespanek automatiseeritud).
 
 `K2 töö esitamine` - TUDENG (töörühma üks liikmetest) saadab kirjaliku TÖÖ õppejõu Gmaili aadressile.
 

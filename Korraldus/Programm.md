@@ -50,7 +50,7 @@ Teoreetilises osas (loengutes) käsitleme vajaminevat mõistestikku, koos viidet
 Räägime ka arendaja elukutse võludest ja raskustest.
 
 ## Õpiväljundid
- hindab infosüsteemi poolt pakutava info kvaliteeti; selgitab välja kasutajate infovajadusi; modelleerib äri-, menetlus- ja kasutusprotsesse, tehes seda mitmesuguste modelleerimismeetodite (IDEF0, ujumisradade meetod, BPMN, infoloogilised maatriksid) abil; koostab infosüsteemi arendusettepaneku ja teostab kavandatava süsteemi tasuvusanalüüsi;  projekteerib infosüsteemi arhitektuuri; koostab nõuete dokumendi; koostab pakkumuse; koostab infosüsteemi arenduse projektiplaani.
+ hindab infosüsteemi poolt pakutava info kvaliteeti; selgitab välja kasutajate infovajadusi; modelleerib äri-, menetlus- ja kasutusprotsesse, tehes seda mitmesuguste modelleerimismeetodite (IDEF0, ujumisradade meetod, BPMN, infoloogilised maatriksid) abil; koostab infosüsteemi arendusettepaneku ja teostab kavandatava süsteemi tasuvusanalüüsi; projekteerib infosüsteemi arhitektuuri; koostab nõuete dokumendi; koostab pakkumuse; koostab infosüsteemi arenduse projektiplaani.
 
  teab, mis osadest infosüsteem tüüpiliselt koosneb; teab, millised aspektid on infosüsteemi arendamise kavandamisel tüüpiliselt olulised; omab ettekujutust infosüsteemi elutsükli tüüpilistest väljakutsetest ja probleemidest;
 
@@ -59,15 +59,15 @@ Räägime ka arendaja elukutse võludest ja raskustest.
 ## Loengute ja praktikumide toimumise ajad, kohad ja teemad
 
 | akadeemilise kalendri nädal/ loengu (praktikumi) nr | Loengud | `N` `12:15 – 13:45` `A-543` | Praktikumid | `K` `14:15 – 15:45` (rühm 1), `N` `14:15 – 15:45` (rühm 2) `A-402` |
-| 1/1  | `07.09` | Infokäitluse eesmärgid                       | `06(07).09` | Info kvaliteet|
-| 2/2  | `14.09` | Infosüsteemide üldised omadused ja tüpoloogia| `13(14).09` | Infovajadused|
-| 3/3  | `21.09` | Protsessid ja nende uurimine                 | `20(21).09`    | Protsesside modelleerimine (IDEF0) |
-| 4/4  | `28.09` | Protsesside IT toetus; protsesside parendamine| `27(28).09`    | Protsesside modelleerimine (Swimlanes) |
-| 5/5  | `05.10` | Süsteemiarendus ja arendusmeetod             | `04(05).10`    | Protsesside modelleerimine (versioon 2) |
-| 6/6  | `12.10` | Infoökonoomika | `11(12).10` | Maatriks- modelleerimine|
-| 7/7  | `19.10` | Infosüsteemide kaasusi| `18(19).10` | Maatriks- modelleerimine (tööde läbivaatus)|
-| 8    |       | Iseseisva töö nädal|
-| 9/8  | `02.11` | Eriteema ja/või vahekontrolltöö| `01(02).11` | Veel modelleerimis- meetoditest|
+| 1/1 | `07.09` | Infokäitluse eesmärgid      | `06(07).09` | Info kvaliteet|
+| 2/2 | `14.09` | Infosüsteemide üldised omadused ja tüpoloogia| `13(14).09` | Infovajadused|
+| 3/3 | `21.09` | Protsessid ja nende uurimine     | `20(21).09` | Protsesside modelleerimine (IDEF0) |
+| 4/4 | `28.09` | Protsesside IT toetus; protsesside parendamine| `27(28).09` | Protsesside modelleerimine (Swimlanes) |
+| 5/5 | `05.10` | Süsteemiarendus ja arendusmeetod    | `04(05).10` | Protsesside modelleerimine (versioon 2) |
+| 6/6 | `12.10` | Infoökonoomika | `11(12).10` | Maatriks- modelleerimine|
+| 7/7 | `19.10` | Infosüsteemide kaasusi| `18(19).10` | Maatriks- modelleerimine (tööde läbivaatus)|
+| 8 |  | Iseseisva töö nädal|
+| 9/8 | `02.11` | Eriteema ja/või vahekontrolltöö| `01(02).11` | Veel modelleerimis- meetoditest|
 | 10/9 | `09.11` | Süsteemi arhitektuur | `08(09).11` | Süsteemi arhitektuuri kavandamine|
 | 11/10| `15.11` | Infosüsteemi füüsiline dimensioon | `15(16).11` | Infosüsteemi prototüüpimine|
 | 12/11| `23.11` | Andmete (info) roll infosüsteemis | `22(23).11` | Kontseptuaalne modelleerimine|

@@ -1,142 +1,142 @@
 - title: "Korraldus"
   categories:
     - title: "Kursuseprogramm"
-      url: "/Programm"
+      url: "KorraldusPraktikumid/Programm"
       pub: true   
     - title: "Lahenduste vormistamise juhend"
-      url: "/Juhend"
+      url: "Korraldus/Juhend"
       pub: true
 - title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
-      url: "/L1"
+      url: "Loengud/L1"
       pub: true
     - title: "2 "
-      url: "/L2"
+      url: "Loengud/L2"
       pub: false
     - title: "3 "
-      url: "/L3"
+      url: "Loengud/L3"
       pub: false
     - title: "4 "
-      url: "/L4"
+      url: "Loengud/L4"
       pub: false
     - title: "5 "
-      url: "/L5"
+      url: "Loengud/L5"
       pub: false
     - title: "6 "
-      url: "/L6"
+      url: "Loengud/L6"
       pub: false
     - title: "7 "
-      url: "/L7"
+      url: "Loengud/L7"
       pub: false
     - title: "8 "
-      url: "/L8"
+      url: "Loengud/L8"
       pub: false
     - title: "9 "
-      url: "/L9"
+      url: "Loengud/L9"
       pub: false
     - title: "10 "
-      url: "/L10"
+      url: "Loengud/L10"
       pub: false
     - title: "11 "
-      url: "/L11"
+      url: "Loengud/L11"
       pub: false
     - title: "12 "
-      url: "/L12"
+      url: "Loengud/L12"
       pub: false
     - title: "13 "
-      url: "/L13"
+      url: "Loengud/L13"
       pub: false
     - title: "14 "
-      url: "/L14"
+      url: "Loengud/L14"
       pub: false
 
 - title: "Praktikumid"
   categories:
     - title: ""
-      url: "/P1"
+      url: "Praktikumid/P1"
       pub: true
     - title: ""
-      url: "/P2"
+      url: "Praktikumid/P2"
       pub: false
     - title: ""
-      url: "/P3"
+      url: "Praktikumid/P3"
       pub: false
     - title: ""
-      url: "/P4"
+      url: "Praktikumid/P4"
       pub: false
     - title: ""
-      url: "/P5"
+      url: "Praktikumid/P5"
       pub: false
     - title: ""
-      url: "/P6"
+      url: "Praktikumid/P6"
       pub: false
     - title: ""
-      url: "/P7"
+      url: "Praktikumid/P7"
       pub: false
     - title: ""
-      url: "/P8"
+      url: "Praktikumid/P8"
       pub: false
     - title: ""
-      url: "/P9"
+      url: "Praktikumid/P9"
       pub: false
     - title: ""
-      url: "/P10"
+      url: "Praktikumid/P10"
       pub: false
     - title: ""
-      url: "/P11"
+      url: "Praktikumid/P11"
       pub: false
     - title: ""
-      url: "/P12"
+      url: "Praktikumid/P12"
       pub: false
     - title: ""
-      url: "/P13"
+      url: "Praktikumid/P13"
       pub: false
     - title: ""
-      url: "/P14"
+      url: "Praktikumid/P14"
       pub: false
 
 - title: "Ülesanded"
   categories:
     - title: ""
-      url: "/Y1"
+      url: "Ylesanded/Y1"
       pub: true
     - title: ""
-      url: "/Y2"
+      url: "Ylesanded/Y2"
       pub: false
     - title: ""
-      url: "/Y3"
+      url: "Ylesanded/Y3"
       pub: false
     - title: ""
-      url: "/Y4"
+      url: "Ylesanded/Y4"
       pub: false
     - title: ""
-      url: "/Y5"
+      url: "Ylesanded/Y5"
       pub: false
     - title: ""
-      url: "/Y6"
+      url: "Ylesanded/Y6"
       pub: false
     - title: ""
-      url: "/Y7"
+      url: "Ylesanded/Y7"
       pub: false
     - title: ""
-      url: "/Y8"
+      url: "Ylesanded/Y8"
       pub: false
     - title: ""
-      url: "/Y9"
+      url: "Ylesanded/Y9"
       pub: false
     - title: ""
-      url: "/Y10"
+      url: "Ylesanded/Y10"
       pub: false
     - title: ""
-      url: "/Y11"
+      url: "Ylesanded/Y11"
       pub: false
     - title: ""
-      url: "/Y12"
+      url: "Ylesanded/Y12"
       pub: false
 
-- title: "Näited"
+- title: "Juhtumid"
   categories:
     - title: "Kursuse minisait"
-      url: "/Minisait"
+      url: "Juhtumid/Minisait"
       pub: true
