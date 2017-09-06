@@ -1,10 +1,10 @@
 - title: "Korraldus"
   categories:
     - title: "Kursuseprogramm"
-      url: "/Korraldus/Programm"
+      url: "/Programm"
       pub: true   
     - title: "Lahendusaruande vormistamise juhend"
-      url: "/Korraldus/Juhend"
+      url: "/Juhend"
       pub: true
       
 - title: "Loengud"

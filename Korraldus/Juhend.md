@@ -1,3 +1,8 @@
+---
+title: Lahendusaruande vormistamise juhend
+permalink: Juhend
+---
+
 # Lahendusaruande vormistamise juhend
 {: .no_toc}
 
