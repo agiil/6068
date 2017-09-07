@@ -146,3 +146,6 @@
     - title: "Tseremooniad"
       url: "/Tseremooniad"
       pub: true
+    - title: "Programmeerija töötab"
+      url: "/ProgrammeerijaTootab"
+      pub: true
