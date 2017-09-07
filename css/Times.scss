@@ -50,11 +50,12 @@ h1 {
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1rem;
-  text-decoration: underline;
 }
 h2 {
+  font-size: 12pt !important;
   margin-bottom: 0.5rem;
   text-decoration: underline;
+  margin-bottom: 0;
 }
 
 /* ==== Külgriba ======== */
@@ -80,9 +81,9 @@ p { margin: 0 0 1em 0; }
   margin: 0 0 1em 0;
   padding-left: 1em;
 }
-#Tekst > ol { padding: 1em; }
-/* #Tekst > ul > li:before { display: inline-block;
-  content: "-"; width: 1em; margin-left: -1em; } */
+#Tekst > ol {
+  padding-left: 1em;
+}
 
 /* Külgriba loetelud */
 nav > ul {
