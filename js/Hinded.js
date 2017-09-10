@@ -1,5 +1,5 @@
 ﻿// Globaalsed muutujad
-var osalejatePuhver; 			// Kõik osalejate andmed, loetud Parse-st
+var osalejatePuhver; 			// Kõik osalejate andmed, loetud Google Sheet-lt
 var tudengid = []; 				// Massiiv nimedest kuvamiseks ettetrükis
 var tudengLeitud = false; // Kas tudeng on valitud
 var tudengiNr; 						// Valitud tudengi kirje nr massiivis tudengid (baas 0)
@@ -57,35 +57,38 @@ function tootleValik(valitudNimi) {
 }
 
 function seaEttetrykk() {
-	// Loe osalejate andmed Parse-st
-	var query = new Parse.Query(Osalejad);
-	query.ascending('Pnimi');
-	query.find({
-		success: function(loetudOsalejad) {
-			console.log('Loetud ' + loetudOsalejad.length + ' osaleja andmed');
-			$('#teateAla').text(loetudOsalejad.length + ' osalejat').addClass('infoteade');
-			// Kanna osalejate puhvrisse
-			osalejatePuhver = JSON.parse(JSON.stringify(loetudOsalejad));
-			// Koosta massiiv tudengid
-			osalejatePuhver.forEach(function(osaleja, nr){
-				tudengid.push(osaleja.Eesnimi + ' ' + osaleja.Pnimi);
-			});
-			// Initsialiseeri Typeahead
-			$('#valikuvali').typeahead(
-				{ source: tudengid,
-					afterSelect: tootleValik }
-			);
-		},
-		error: function(viga) {
-			console.log('Osalejate lugemine ebaõnnestus. Viga: ' + viga.code + ' ' + viga.message);
-			$('#teateAla').text('Lugemine ebaõnnestus').addClass('veateade');
-		}
-	});									 	
-			
+	/* Loe osalejate andmed Google Sheet-lt */
+  var url = 'https://script.google.com/macros/s/AKfycby1_Xu7BX3iae0AFFfsgD2aH3RabwkniX9Bqu31POJwFbSmmUc/exec';
+  $.get(url,
+    function (data, status, xhr) {
+      // Töötle jQuery vastus
+      if (status !== 'success') {
+        $('#teateAla')
+          .text('Salvestatud hinnete lugemine ebaõnnestus. Status: ' + status)
+          .addClass('infoteade');
+        return
+      }
+      osalejatePuhver = data.KoigiHinded;
+      // Teata, mitme osaleja andmed loeti
+      $('#teateAla')
+        .text(osalejatePuhver.length + ' osalejat')
+        .addClass('infoteade');
+      // Koosta massiiv tudengid
+      osalejatePuhver.forEach(function(osaleja, nr){
+        tudengid.push(osaleja.Eesnimi + ' ' + osaleja.Perenimi);
+      });
+      // Initsialiseeri Typeahead
+      $('#valikuvali').typeahead(
+        { source: tudengid,
+          afterSelect: tootleValik }
+      );
+    }
+  ); 
 }
 
-// Salvesta hinne
 function salvestaHinne(osalejaId, hindeNimi, hinne) {
+  /* Salvesta hinne
+  */
 	console.log('Salvesta osalejaId: ' + osalejaId + ' ' + 
 		hindeNimi + ': ' + hinne);
 	
@@ -112,8 +115,8 @@ function salvestaHinne(osalejaId, hindeNimi, hinne) {
 
 }
 
-// Sea hinde sisestajad/salvestajad
 function seaHindeSisestajad() {
+  // Sea hinde sisestajad/salvestajad
 	// Hindesisestamine ainult konkreetsele inimesele
 	// Korralik teostus oleks rolli Oppejoud kaudu
 	if (Parse.User.current() &&
@@ -172,13 +175,13 @@ function koostaHinneterida() {
 }
 
 function valmistaEtte() {
-	$('#valikuvali').show();
-	seaEttetrykk(); // Asünkroonne
-	koostaHinneterida();
+  koostaHinneterida();
 	seaHindeSisestajad();
 }
-	
+
 ////////////////// Alustamine //////////////////////////////
 function alusta() {
+  $('#valikuvali').show();
+  seaEttetrykk(); // Asünkroonne
 
 }

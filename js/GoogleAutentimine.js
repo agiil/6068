@@ -16,5 +16,6 @@ function onSignIn(googleUser) {
   kasutaja = googleUser;
   var kasutajaProfiil = googleUser.getBasicProfile();
   autenditud = true;
-  $('#Kasutaja').text(kasutajaProfiil.getGivenName());
+  $('#Kasutaja').text(kasutajaProfiil.getGivenName() + ' ' + kasutajaProfiil.getFamilyName());
+  $('#KasutajaEmail').text(kasutajaProfiil.getEmail());
 };
