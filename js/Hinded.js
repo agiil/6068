@@ -1,5 +1,5 @@
 ﻿// Globaalsed muutujad
-var osalejatePuhver; 			// Kõik osalejate andmed, loetud Google Sheet-lt
+var tudengitePuhver; 			// Kõik tudengite andmed, loetud Google Sheet-lt
 var tudengid = []; 				// Massiiv nimedest kuvamiseks ettetrükis
 var tudengLeitud = false; // Kas tudeng on valitud
 var tudengiNr; 						// Valitud tudengi kirje nr massiivis tudengid (baas 0)
@@ -17,18 +17,17 @@ var ylNimetus = [  				// Massiiv ülesannete nimetustest (tekstid)
 	'Nõuete dokumendi koostamine',
 	'Infosüsteemi arenduse plaanimine'
 ];
-
 var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
 /* Google Sign-In funktsioon, millega saab salvestamisel
 pärida ID token-i */
 var kasutaja;
 
-function tootleValik(valitudNimi) {
+function tootleTudengiValik(valitudNimi) {
 	// Kustuta eelmine teade
 	$('#teateAla').text('').removeClass('infoteade veateade');
-	// Valitud tudengi nimi
-	for (var i = 0; i < osalejatePuhver.length; i++) {
-		if ((osalejatePuhver[i].Eesnimi + ' ' + osalejatePuhver[i].Pnimi) ==
+	// Leia valitud nimile vastav kirje
+	for (var i = 0; i < tudengitePuhver.length; i++) {
+		if ((tudengitePuhver[i].Eesnimi + ' ' + tudengitePuhver[i].Pnimi) ==
 				valitudNimi) {
 			 tudengLeitud = true; 
 			 tudengiNr = i;
@@ -36,11 +35,12 @@ function tootleValik(valitudNimi) {
 		 }
 	}
 	if (tudengLeitud) {
-		// Kuva tudengi andmed
+		// Kuva tudengi hinded
 		for (var j = 1; j <= 12; j++) {
 			var ylNr = 'Y' + j.toString();
-			if ((osalejatePuhver[tudengiNr][ylNr]) && 
-					(osalejatePuhver[tudengiNr][ylNr].length > 0)) {
+      if ((tudengitePuhver[tudengiNr].Hinded[ylNr]) &&
+          (tudengitePuhver[tudengiNr].Hinded[ylNr] !== null) &&
+					(tudengitePuhver[tudengiNr].Hinded[ylNr].length > 0)) {
 				$('#' + ylNr).text('check_circle')
 				.removeClass('mitteaktiivne').addClass('aktiivne');				
 			}
@@ -57,7 +57,7 @@ function tootleValik(valitudNimi) {
 }
 
 function seaEttetrykk() {
-	/* Loe osalejate andmed Google Sheet-lt */
+	/* Loe tudengite andmed Google Sheet-lt */
   var url = 'https://script.google.com/macros/s/AKfycby1_Xu7BX3iae0AFFfsgD2aH3RabwkniX9Bqu31POJwFbSmmUc/exec';
   $.get(url,
     function (data, status, xhr) {
@@ -68,32 +68,32 @@ function seaEttetrykk() {
           .addClass('infoteade');
         return
       }
-      osalejatePuhver = data.KoigiHinded;
-      // Teata, mitme osaleja andmed loeti
+      tudengitePuhver = data.KoigiHinded;
+      // Teata, mitme tudengi andmed loeti
       $('#teateAla')
-        .text(osalejatePuhver.length + ' osalejat')
+        .text(tudengitePuhver.length + ' tudengit')
         .addClass('infoteade');
       // Koosta massiiv tudengid
-      osalejatePuhver.forEach(function(osaleja, nr){
-        tudengid.push(osaleja.Eesnimi + ' ' + osaleja.Perenimi);
+      tudengitePuhver.forEach(function(osaleja, nr){
+        tudengid.push(osaleja.Eesnimi + ' ' + tudeng.Perenimi);
       });
       // Initsialiseeri Typeahead
       $('#valikuvali').typeahead(
         { source: tudengid,
-          afterSelect: tootleValik }
+          afterSelect: tootleTudengiValik }
       );
     }
   ); 
 }
 
-function salvestaHinne(osalejaId, hindeNimi, hinne) {
+function salvestaHinne(tudengiID, hindeNimi, hinne) {
   /* Salvesta hinne
   */
-	console.log('Salvesta osalejaId: ' + osalejaId + ' ' + 
+	console.log('Salvesta tudengiID: ' + tudengiID + ' ' + 
 		hindeNimi + ': ' + hinne);
 	
 	var query = new Parse.Query(Osalejad);
-	query.get(osalejaId, {
+	query.get(tudengiID, {
 		success: function(osaleja) {
 			osaleja.set(hindeNimi, hinne);
 			osaleja.save(null, {
@@ -116,41 +116,37 @@ function salvestaHinne(osalejaId, hindeNimi, hinne) {
 }
 
 function seaHindeSisestajad() {
-  // Sea hinde sisestajad/salvestajad
-	// Hindesisestamine ainult konkreetsele inimesele
-	// Korralik teostus oleks rolli Oppejoud kaudu
-	if (Parse.User.current() &&
-		Parse.User.current().id == 'wkozXvOEhl') {
-		for (var i = 1; i <= 12; i++) {
-			// Sea hinde sisestaja/salvestaja
-			$('#Y' + i.toString())
-			.on('click', function(){
-				// Sisestada saab ainult õppejõud
-				// Ainult siis, kui tudeng on valitud
-				if (Parse.User.current() && tudengLeitud) {
-					// Pööra väärtus vastupidiseks
-					// Kasutame ikooni id ja osalejatePuhvris hoitava väärtuse nime samasust
-					var ylNr = this.id;
-					var hinne;
-					if ((osalejatePuhver[tudengiNr][ylNr]) && 
-							(osalejatePuhver[tudengiNr][ylNr].length > 0)) {
-						$('#' + ylNr).text('panorama_fish_eye')
-						.removeClass('aktiivne').addClass('mitteaktiivne');
-						hinne = '';
-					}
-					else {
-						$('#' + ylNr).text('check_circle')
-						.removeClass('mitteaktiivne').addClass('aktiivne');
-						hinne = 'E';
-					}
-					// Salvesta kohe muudetud kirje
-					osalejatePuhver[tudengiNr][ylNr] = hinne;
-					var osalejaId = osalejatePuhver[tudengiNr]['objectId'];
-					salvestaHinne(osalejaId, ylNr, hinne);
-				}
-			});
-		}		
-	}
+  /* Sea hinde sisestajad/salvestajad
+	   Hindesisestamine ainult konkreetsele inimesele
+  */
+  for (var i = 1; i <= 12; i++) {
+    // Sea hinde sisestaja/salvestaja
+    $('#Y' + i.toString())
+    .on('click', function(){
+      // Ainult siis, kui tudeng on valitud
+      if (tudengLeitud) {
+        // Pööra väärtus vastupidiseks
+        // Kasutame ikooni id ja tudengitePuhvris hoitava väärtuse nime samasust
+        var ylNr = this.id;
+        var hinne;
+        if ((tudengitePuhver[tudengiNr][ylNr]) && 
+            (tudengitePuhver[tudengiNr][ylNr].length > 0)) {
+          $('#' + ylNr).text('panorama_fish_eye')
+          .removeClass('aktiivne').addClass('mitteaktiivne');
+          hinne = '';
+        }
+        else {
+          $('#' + ylNr).text('check_circle')
+          .removeClass('mitteaktiivne').addClass('aktiivne');
+          hinne = 'E';
+        }
+        // Salvesta kohe muudetud kirje
+        tudengitePuhver[tudengiNr][ylNr] = hinne;
+        var tudengiID = tudengitePuhver[tudengiNr]['objectId'];
+        salvestaHinne(tudengiID, ylNr, hinne);
+      }
+    });
+  }		
 }
 
 function koostaHinneterida() {
