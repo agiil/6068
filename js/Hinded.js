@@ -74,8 +74,8 @@ function seaEttetrykk() {
         .text(tudengitePuhver.length + ' tudengit')
         .addClass('infoteade');
       // Koosta massiiv tudengid
-      tudengitePuhver.forEach(function(osaleja, nr){
-        tudengid.push(osaleja.Eesnimi + ' ' + tudeng.Perenimi);
+      tudengitePuhver.forEach(function(tudeng, nr){
+        tudengid.push(tudeng.Eesnimi + ' ' + tudeng.Perenimi);
       });
       // Initsialiseeri Typeahead
       $('#valikuvali').typeahead(
