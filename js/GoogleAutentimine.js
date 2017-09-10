@@ -17,7 +17,4 @@ function onSignIn(googleUser) {
   var kasutajaProfiil = googleUser.getBasicProfile();
   autenditud = true;
   $('#Kasutaja').text(kasutajaProfiil.getGivenName());
-  if (t.length > 1) {
-    $('#Salvesta1').removeClass('disabled');
-  }
 };

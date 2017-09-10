@@ -18,111 +18,10 @@ var ylNimetus = [  				// Massiiv ülesannete nimetustest (tekstid)
 	'Infosüsteemi arenduse plaanimine'
 ];
 
-// Parse algväärtustamine
-Parse.$ = jQuery;
-// Rakendus 6068
-Parse.initialize("TvhWFqKT1rJ5dgp4syQkgvUxYBVAE6MrYDDEzs5K",
-							 "EwWH4WmSQnQwJF0ZQPqU7eVomhc6PmGJteXtuNJO");
-							 
-var Osalejad = Parse.Object.extend('Osalejad');
-	
-// Autentimine ja pääsuõigused Hinnete lehel
-function SeaAutentimisala() {
-	// Class Level Permissions
-	// Vt: https://www.parse.com/docs/ios/guide#security-class-level-permissions
-	// Priit Parmakson - Read/Write
-	// Osaleja (objectId: tqCcGJibAu) - Read
-	//
-	
-	// Kuva kasutajanimi (kui on)
-	if (Parse.User.current()) { 
-		// Kasutaja on varasemast sisse logitud
-		// Kuva kasutaja nimi
-		var a = JSON.stringify(Parse.User.current());
-		var b = JSON.parse(a);
-		console.log('Kasutaja: ' + b.username);
-		$('#kasutajanimi').text(b.username).show();
-	} else {
-		$('#kasutajanimi').hide();				
-	}
-	
-	// Sündmusekäsitleja Sisse/väljalogimisnupule
-	$('#logimisnupp').click(function(event) {
-		event.preventDefault();
-		
-		if (Parse.User.current()) {
-			//////// Logi välja ////////////////////////////////
-			Parse.User.logOut();
-			$('#kasutajanimi').hide();
-			$('#teateAla').text('Nõuab sisselogimist').addClass('infoteade');
-			// Teabe eemaldamine
-			osalejatePuhver = [];
-			tudengid = [];
-			tudengLeitud = false;
-			// Hinnete riba eemaldamine
-			$('#hinneterida').empty();
-			// Nime valiku (ettetrüki) tühjendamine
-			$('input.typeahead').typeahead('destroy');
-			// Valikuvälja peitmine
-			$('#valikuvali').hide();
-			// $('.loginupp').blur();
-		} else {
-			// Kas sisenemisvorm on avatud?
-			if ($('#logimisvorm').is(':visible')) {
-					// ei reageeri
-			} else {
-				// Peida logimisnupp
-				$('#logimisnupp').hide();
-				// Ava sisenemisvorm)
-				$('#logimisvorm').toggle();
-				$('#logimisvorm .sisene').focus();		
-			} 
-		}				
-	});
-	
-	// Sündmusekäsitlejad sisenemisvormi Sisene nupule
-	$('#sisene').click(function(event) {
-		event.preventDefault();
-		
-		// Võta kasutajanimi ja salasõna vormilt
-		var kasutajanimi = $('#login-username').val();
-		var salasona = $('#login-password').val();
-
-		// Sisselogimine Parse-s ////////////////////////////////
-		Parse.User.logIn(kasutajanimi, salasona, {
-			// Edukas sisselogimine
-			success: function(user) {
-				var a = JSON.stringify(user);
-				var b = JSON.parse(a);
-				console.log(b.username + ' logis sisse');
-				// Kuva kasutaja nimi
-				$('#kasutajanimi').text(b.username).show();
-				// Sulge sisenemisvorm
-				$('#logimisvorm').toggle();
-				// Kuva logimisnupp
-				$('#logimisnupp').show();
-				// Eemalda sisenemiskutse
-				$('#teateAla').text('').removeClass('infoteade');
-				// Ettevalmistused autenditud kasutajale
-				valmistaEtte();
-			},
-			error: function(user, error) {
-				// Kuva veateade
-				$("#autentimisala .VEATEADE").html("Vale nimi või salasõna.").show();
-			}
-		});
-		
-	});
-
-	// Sündmusekäsitleja sisenemisvormi Katkesta nupule
-	$('#katkesta').click(function(event) {
-		event.preventDefault();
-		// Sule vorm
-		$('#logimisvorm').toggle();
-		$('#logimisnupp').show();
-	});
-	
-}
+var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
+/* Google Sign-In funktsioon, millega saab salvestamisel
+pärida ID token-i */
+var kasutaja;
 
 function tootleValik(valitudNimi) {
 	// Kustuta eelmine teade
@@ -281,5 +180,5 @@ function valmistaEtte() {
 	
 ////////////////// Alustamine //////////////////////////////
 function alusta() {
-  
+
 }
