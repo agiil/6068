@@ -1,26 +1,28 @@
 ﻿// Globaalsed muutujad
-var tudengitePuhver; 			// Kõik tudengite andmed, loetud Google Sheet-lt
-var tudengid = []; 				// Massiiv nimedest kuvamiseks ettetrükis
-var tudengLeitud = false; // Kas tudeng on valitud
-var tudengiNr; 						// Valitud tudengi kirje nr massiivis tudengid (baas 0)
-var ylNimetus = [  				// Massiiv ülesannete nimetustest (tekstid)
-	'Info kvaliteedi hindamine',
-	'Infovajaduste väljaselgitamine',
-	'Äriprotsessi modelleerimine (IDEF0)',
-	'Äriprotsessi modelleerimine (Swimlanes)',
-	'Parendamise ja IT toetuse võimaluste leidmine protsessis',
-	'Infotehnoloogiline modelleerimine maatriksite abil',
-	'Arendusettepaneku tasuvuse hindamine',
-	'Süsteemi arhitektuuri kavandamine',
-	'Infosüsteemi prototüüpimine',
-	'Kontseptuaalse mudeli koostamine',
-	'Nõuete dokumendi koostamine',
-	'Infosüsteemi arenduse plaanimine'
-];
-var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
-/* Google Sign-In funktsioon, millega saab salvestamisel
-pärida ID token-i */
-var kasutaja;
+  /* REST API-t pakkuv Google Sheet, kus hindeid hoitakse. */
+  var url = 'https://script.google.com/macros/s/AKfycby1_Xu7BX3iae0AFFfsgD2aH3RabwkniX9Bqu31POJwFbSmmUc/exec';
+  var tudengitePuhver; 			// Kõik tudengite andmed, loetud Google Sheet-lt
+  var tudengid = []; 				// Massiiv nimedest kuvamiseks ettetrükis
+  var tudengLeitud = false; // Kas tudeng on valitud
+  var tudengiNr; 						// Valitud tudengi kirje nr massiivis tudengid (baas 0)
+  var ylNimetus = [  				// Massiiv ülesannete nimetustest (tekstid)
+    'Info kvaliteedi hindamine',
+    'Infovajaduste väljaselgitamine',
+    'Äriprotsessi modelleerimine (IDEF0)',
+    'Äriprotsessi modelleerimine (Swimlanes)',
+    'Parendamise ja IT toetuse võimaluste leidmine protsessis',
+    'Infotehnoloogiline modelleerimine maatriksite abil',
+    'Arendusettepaneku tasuvuse hindamine',
+    'Süsteemi arhitektuuri kavandamine',
+    'Infosüsteemi prototüüpimine',
+    'Kontseptuaalse mudeli koostamine',
+    'Nõuete dokumendi koostamine',
+    'Infosüsteemi arenduse plaanimine'
+  ];
+  var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
+  /* Google Sign-In funktsioon, millega saab salvestamisel
+  pärida ID token-i */
+  var kasutaja;
 
 function tootleTudengiValik(valitudNimi) {
 	// Kustuta eelmine teade
@@ -38,9 +40,9 @@ function tootleTudengiValik(valitudNimi) {
 		// Kuva tudengi hinded
 		for (var j = 1; j <= 12; j++) {
 			var ylNr = 'Y' + j.toString();
-      if ((tudengitePuhver[tudengiNr].Hinded[ylNr]) &&
-          (tudengitePuhver[tudengiNr].Hinded[ylNr] !== null) &&
-					(tudengitePuhver[tudengiNr].Hinded[ylNr].length > 0)) {
+      if ((tudengitePuhver[tudengiNr].Hinded[ylNr - 1]) &&
+          (tudengitePuhver[tudengiNr].Hinded[ylNr - 1] !== null) &&
+					(tudengitePuhver[tudengiNr].Hinded[ylNr - 1].length > 0)) {
 				$('#' + ylNr).text('check_circle')
 				.removeClass('mitteaktiivne').addClass('aktiivne');				
 			}
@@ -57,7 +59,6 @@ function tootleTudengiValik(valitudNimi) {
 
 function seaEttetrykk() {
 	/* Loe tudengite andmed Google Sheet-lt */
-  var url = 'https://script.google.com/macros/s/AKfycby1_Xu7BX3iae0AFFfsgD2aH3RabwkniX9Bqu31POJwFbSmmUc/exec';
   $.get(url,
     function (data, status, xhr) {
       // Töötle jQuery vastus
@@ -85,32 +86,47 @@ function seaEttetrykk() {
   ); 
 }
 
-function salvestaHinne(tudengiID, hindeNimi, hinne) {
+function salvestaHinne(tudengiID, hindeNr, hinne) {
   /* Salvesta hinne
   */
 	console.log('Salvesta tudengiID: ' + tudengiID + ' ' + 
 		hindeNimi + ': ' + hinne);
   return
   
-	var query = new Parse.Query(Osalejad);
-	query.get(tudengiID, {
-		success: function(osaleja) {
-			osaleja.set(hindeNimi, hinne);
-			osaleja.save(null, {
-				success: function(osaleja) {
-					console.log('Hinne salvestatud.');
-					$('#teateAla').text('Salvestatud').addClass('infoteade');
-				},
-				error: function(osaleja, error) {
-					console.log('Hinde salvestamine ebaõnnestus: ' + error.message);
-					$('#teateAla').text('Salvestamine ebaõnnestus').addClass('veateade');
-				}
-			});
-		},
-		error: function(object, error) {
-			console.log('Hinde salvestamine ebaõnnestus: ' + error.message);
-			$('#teateAla').text('Salvestamine ebaõnnestus').addClass('veateade');
-		}
+  /* ID token on oluline võtta iga kord enne salvestamist, sest see aegub tunniga. */  
+  var id_token = kasutaja.getAuthResponse().id_token;  
+
+  /* Saadetav struktuur */
+  var s = {
+    TudengiID: tudengiID,
+    HindeNr: hindeNr,
+    Hinne: hinne,
+    IDToken: id_token 
+  }; 
+
+  var postDeferred = $.post(url, s);
+  postDeferred.done(function(data, status) {
+    console.log('salvestaHinne: POST vastus: data (töölehe tulemus): ' + data.result);
+    console.log('salvestaHinne: POST vastus: status: ' + status);
+    // Töötle jQuery vastus
+    if (status !== 'success') {
+      $('#teateAla')
+        .text('Salvestamine ebaõnnestus. JQuery POST päringu vastus:  staatus: ' + status)
+        .addClass('veateade');
+      return
+    }
+    // Töötle töölehe vastus
+    if (data.result == 'success') {
+      $('#teateAla')
+        .text('Salvestatud')
+        .addClass('infoteade');
+    } else { 
+      $('#teateAla')
+        .text('Salvestamine ebaõnnestus. Viga: ' + data.error)
+        .addClass('infoteade');
+      return
+    }
+  
 	});
 
 }

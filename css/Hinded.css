@@ -1,10 +1,6 @@
 ﻿.armata24 {
 	font-size: 24px; font-family: 'Armata', Sans-Serif; color: #888; line-height: 1.4; }
 	
-/* //// Kasutajanimi //// */
-#kasutajanimi { float: right; font-size: 14px; display: none; }	
-	
-
 /* //// Material design ikoonid //// */
 .ikoon { color: #00E; /* Sinine */
   font-size: 48px !important; }
