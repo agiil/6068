@@ -27,7 +27,7 @@ function tootleTudengiValik(valitudNimi) {
 	$('#teateAla').text('').removeClass('infoteade veateade');
 	// Leia valitud nimile vastav kirje
 	for (var i = 0; i < tudengitePuhver.length; i++) {
-		if ((tudengitePuhver[i].Eesnimi + ' ' + tudengitePuhver[i].Pnimi) ==
+		if ((tudengitePuhver[i].Eesnimi + ' ' + tudengitePuhver[i].Perenimi) ==
 				valitudNimi) {
 			 tudengLeitud = true; 
 			 tudengiNr = i;
@@ -51,7 +51,6 @@ function tootleTudengiValik(valitudNimi) {
 		}
 	}
 	else {
-		console.log('Valitud tudengi andmeid ei leitud');
 		$('#teateAla').text('Sisemine viga').addClass('veateade');
 	} 
 }
