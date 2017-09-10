@@ -40,9 +40,9 @@ function tootleTudengiValik(valitudNimi) {
 		// Kuva tudengi hinded
 		for (var j = 1; j <= 12; j++) {
 			var ylNr = 'Y' + j.toString();
-      if ((tudengitePuhver[tudengiNr].Hinded[ylNr - 1]) &&
-          (tudengitePuhver[tudengiNr].Hinded[ylNr - 1] !== null) &&
-					(tudengitePuhver[tudengiNr].Hinded[ylNr - 1].length > 0)) {
+      if ((tudengitePuhver[tudengiNr].Hinded[j]) &&
+          (tudengitePuhver[tudengiNr].Hinded[j] !== null) &&
+					(tudengitePuhver[tudengiNr].Hinded[j].length > 0)) {
 				$('#' + ylNr).text('check_circle')
 				.removeClass('mitteaktiivne').addClass('aktiivne');				
 			}
@@ -138,24 +138,26 @@ function seaHindeSisestajad() {
       // Ainult siis, kui tudeng on valitud
       if (tudengLeitud) {
         // Pööra väärtus vastupidiseks
-        // Kasutame ikooni id ja tudengitePuhvris hoitava väärtuse nime samasust
-        var ylNr = this.id;
+        // Arvuta hinde nr. this.id esisümbol 'Y' ja teisenda arvuks
+        var hindeNr = parseInt(this.id.substring(1));
         var hinne;
-        if ((tudengitePuhver[tudengiNr].Hinded[ylNr]) && 
-            (tudengitePuhver[tudengiNr].Hinded[ylNr].length > 0)) {
-          $('#' + ylNr).text('panorama_fish_eye')
-          .removeClass('aktiivne').addClass('mitteaktiivne');
+        if ((tudengitePuhver[tudengiNr].Hinded[hindeNr - 1]) && 
+            (tudengitePuhver[tudengiNr].Hinded[hindeNr - 1].length > 0)) {
+          $('#' + this.id).text('panorama_fish_eye')
+            .removeClass('aktiivne')
+            .addClass('mitteaktiivne');
           hinne = '';
         }
         else {
-          $('#' + ylNr).text('check_circle')
-          .removeClass('mitteaktiivne').addClass('aktiivne');
+          $('#' + this.id).text('check_circle')
+            .removeClass('mitteaktiivne')
+            .addClass('aktiivne');
           hinne = 'E';
         }
         // Salvesta kohe muudetud kirje
-        tudengitePuhver[tudengiNr].Hinded[ylNr] = hinne;
-        var tudengiID = tudengitePuhver[tudengiNr].Nr;
-        salvestaHinne(tudengiID, ylNr, hinne);
+        tudengitePuhver[tudengiNr].Hinded[hindeNr - 1] = hinne;
+        var tudengiID = tudengitePuhver[tudengiNr].TudengiID;
+        salvestaHinne(tudengiID, hindeNr, hinne);
       }
     });
   }		
