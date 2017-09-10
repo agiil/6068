@@ -90,7 +90,8 @@ function salvestaHinne(tudengiID, hindeNimi, hinne) {
   */
 	console.log('Salvesta tudengiID: ' + tudengiID + ' ' + 
 		hindeNimi + ': ' + hinne);
-	
+  return
+  
 	var query = new Parse.Query(Osalejad);
 	query.get(tudengiID, {
 		success: function(osaleja) {
@@ -116,7 +117,6 @@ function salvestaHinne(tudengiID, hindeNimi, hinne) {
 
 function seaHindeSisestajad() {
   /* Sea hinde sisestajad/salvestajad
-	   Hindesisestamine ainult konkreetsele inimesele
   */
   for (var i = 1; i <= 12; i++) {
     // Sea hinde sisestaja/salvestaja
@@ -128,8 +128,8 @@ function seaHindeSisestajad() {
         // Kasutame ikooni id ja tudengitePuhvris hoitava väärtuse nime samasust
         var ylNr = this.id;
         var hinne;
-        if ((tudengitePuhver[tudengiNr][ylNr]) && 
-            (tudengitePuhver[tudengiNr][ylNr].length > 0)) {
+        if ((tudengitePuhver[tudengiNr].Hinded[ylNr]) && 
+            (tudengitePuhver[tudengiNr].Hinded[ylNr].length > 0)) {
           $('#' + ylNr).text('panorama_fish_eye')
           .removeClass('aktiivne').addClass('mitteaktiivne');
           hinne = '';
@@ -140,8 +140,8 @@ function seaHindeSisestajad() {
           hinne = 'E';
         }
         // Salvesta kohe muudetud kirje
-        tudengitePuhver[tudengiNr][ylNr] = hinne;
-        var tudengiID = tudengitePuhver[tudengiNr]['objectId'];
+        tudengitePuhver[tudengiNr].Hinded[ylNr] = hinne;
+        var tudengiID = tudengitePuhver[tudengiNr].Nr;
         salvestaHinne(tudengiID, ylNr, hinne);
       }
     });
@@ -170,13 +170,9 @@ function koostaHinneterida() {
 	}
 }
 
-function valmistaEtte() {
-  seaHindeSisestajad();
-}
-
 ////////////////// Alustamine //////////////////////////////
 function alusta() {
   seaEttetrykk(); // Asünkroonne
   koostaHinneterida();
-
+  seaHindeSisestajad();
 }

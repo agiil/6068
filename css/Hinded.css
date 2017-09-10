@@ -1,39 +1,9 @@
-﻿/* //////// Üldised seaded //////// */
-body {
+﻿.armata24 {
 	font-size: 24px; font-family: 'Armata', Sans-Serif; color: #888; line-height: 1.4; }
-
-/* Lingid NB! Bootstrapi ümberdefineerimine */
-a { background-color: inherit; color: #009999;
-  text-decoration: none; }
-	
-/* //////// Ülariba //////// */
-.navbar { margin-bottom: 0; /* Bootstrapi ümberdefineerimine */ }
-.navbar-header { width: 100%; }
-
-/* //// Kursuse nimetus //// */
-#kursusenimetus { float: left; }
-.sissejuhatus {
-	font-weight: 300;
-	font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	font-size: 1.5rem; letter-spacing: 2px; line-height: 1em;
-	margin-left: 1rem; }
-
-/* //// Logimisvorm //// */
-#logimisvorm { float: right; font-size: 14px; display: none; }		
-#logimisvorm input { padding: 0; vertical-align: 16px; }
-#login-username { width: 15rem; }
-#login-password { width: 6rem; }	
 	
 /* //// Kasutajanimi //// */
 #kasutajanimi { float: right; font-size: 14px; display: none; }	
 	
-/* //// Logimisnupp //// */
-#logimisnupp { float: right; margin-right: 1rem; }
-	
-/* //// Redaktorinupp //// */
-.redaktoriNupp { float: right; display: none; }
-.sees { background-color: #E7E7E7; }	
 
 /* //// Material design ikoonid //// */
 .ikoon { color: #00E; /* Sinine */
