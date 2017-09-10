@@ -153,8 +153,10 @@ function seaHindeSisestajad() {
 	}
 }
 
-// Koosta hinneterida
 function koostaHinneterida() {
+  /* Koosta hinneterida
+    Vt http://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element
+  */
 	for (var i = 1; i <= 12; i++) {
 		$('#hinneterida')
 		.append('<i id="Y' + i.toString() + '" class="ikoon mitteaktiivne material-icons">panorama_fish_eye</i>');
@@ -171,17 +173,15 @@ function koostaHinneterida() {
 		});
 					
 	}
-	// Vt http://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element
 }
 
 function valmistaEtte() {
-  koostaHinneterida();
-	seaHindeSisestajad();
+  seaHindeSisestajad();
 }
 
 ////////////////// Alustamine //////////////////////////////
 function alusta() {
-  $('#valikuvali').show();
   seaEttetrykk(); // Asünkroonne
+  koostaHinneterida();
 
 }
