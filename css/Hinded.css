@@ -1,0 +1,79 @@
+﻿/* //////// Üldised seaded //////// */
+body {
+	font-size: 24px; font-family: 'Armata', Sans-Serif; color: #888; line-height: 1.4; }
+
+/* Lingid NB! Bootstrapi ümberdefineerimine */
+a { background-color: inherit; color: #009999;
+  text-decoration: none; }
+	
+/* //////// Ülariba //////// */
+.navbar { margin-bottom: 0; /* Bootstrapi ümberdefineerimine */ }
+.navbar-header { width: 100%; }
+
+/* //// Kursuse nimetus //// */
+#kursusenimetus { float: left; }
+.sissejuhatus {
+	font-weight: 300;
+	font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5rem; letter-spacing: 2px; line-height: 1em;
+	margin-left: 1rem; }
+
+/* //// Logimisvorm //// */
+#logimisvorm { float: right; font-size: 14px; display: none; }		
+#logimisvorm input { padding: 0; vertical-align: 16px; }
+#login-username { width: 15rem; }
+#login-password { width: 6rem; }	
+	
+/* //// Kasutajanimi //// */
+#kasutajanimi { float: right; font-size: 14px; display: none; }	
+	
+/* //// Logimisnupp //// */
+#logimisnupp { float: right; margin-right: 1rem; }
+	
+/* //// Redaktorinupp //// */
+.redaktoriNupp { float: right; display: none; }
+.sees { background-color: #E7E7E7; }	
+
+/* //// Material design ikoonid //// */
+.ikoon { color: #00E; /* Sinine */
+  font-size: 48px !important; }
+.mitteaktiivne { color: #EEE; cursor: pointer; }
+.aktiivne { color: #00E; cursor: pointer; }	
+	
+/* //////// Põhiala //////// */
+.pohiala { position: relative; margin: 70px 100px; }
+
+#teatealaYmbris { min-height: 60px; }
+#teateAla { 
+  font-size: 24px;
+	min-height: 30px; line-height: 30px;
+	outline: medium none; padding: 8px 12px;
+	width: 40rem;
+ }
+.infoteade { border: 1px solid Aquamarine; border-radius: 8px; 
+  background-color: Azure; }
+.veateade { border: 1px solid Red; border-radius: 8px; 
+  background-color: Bisque; }
+	
+/* //// Ettetrükk //// */	
+#valikuvali { height: 46px !important; }
+.typeahead, .tt-query, .tt-hint {
+ /* border: 1px solid #CCCCCC; border-radius: 8px; */
+ font-size: 24px !important;
+ height: 30px !important; line-height: 30px !important;
+ outline: medium none; padding: 8px 12px;
+ width: 40rem;
+}
+.dropdown-menu { 
+  box-shadow: none !important;
+  background-color: transparent !important;
+	border: 0px solid red !important;
+}
+
+/* ---- ---- */
+
+#ylNimetuseRida { min-height: 40px; }
+#ylNimetus { }	
+	
+#hinneterida { margin-top: 2rem; }
