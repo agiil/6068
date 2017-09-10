@@ -89,9 +89,6 @@ function seaEttetrykk() {
 function salvestaHinne(tudengiID, hindeNr, hinne) {
   /* Salvesta hinne
   */
-	console.log('Salvesta tudengiID: ' + tudengiID + ' ' + 
-		hindeNimi + ': ' + hinne);
-  return
   
   /* ID token on oluline võtta iga kord enne salvestamist, sest see aegub tunniga. */  
   var id_token = kasutaja.getAuthResponse().id_token;  
