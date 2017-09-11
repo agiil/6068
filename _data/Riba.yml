@@ -6,6 +6,9 @@
     - title: "Lahendusaruande vormistamise juhend"
       url: "/Juhend"
       pub: true
+    - title: "Hinded"
+      url: "/Hinded.html"
+      pub: true
       
 - title: "Loengud"
   categories:
