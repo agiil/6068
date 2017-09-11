@@ -13,9 +13,15 @@
             {% for category in nav.categories %}
               <li{% if category.title == page.title %} class="active"{% endif %}>
                 {% if category.pub %}
-                  <a href="{{ site.baseurl }}{{ category.url }}">
-                    {{ category.title }}
-                  </a>
+                  {% if category.outerLink %}
+                    <a href="{{ category.url }}" target="_new">
+                      {{ category.title }}
+                    </a>
+                  {% else %}
+                    <a href="{{ site.baseurl }}{{ category.url }}">
+                      {{ category.title }}
+                    </a>
+                  {% endif %}
                 {% else %}
                   <span class="disabled">
                     {{ category.title }}

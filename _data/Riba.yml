@@ -136,11 +136,27 @@
       url: "/Ylesanded/Y12"
       pub: false
 
-- title: "Juhtumid"
+- title: "Näiterakendused"
   categories:
     - title: "Kursuse minisait"
       url: "/Minisait"
       pub: true
+    - title: "OAuth demorakendus"
+      url: "https://priitparmakson.github.io/Samategev/"
+      pub: true
+      outerLink: true
+    - title: "Hinnete sisestaja"
+      url: "https://github.com/agiil/6068"
+      pub: true
+      outerLink: true
+    - title: "Samatekstiredaktor"
+      url: "https://github.com/PriitParmakson/Samatekst"
+      pub: true
+      outerLink: true
+    - title: "Agiilsõnastik"
+      url: "https://github.com/agiil/sonastik"
+      pub: true
+      outerLink: true
 - title: "Soovituslik"
   categories:
     - title: "Tseremooniad"
