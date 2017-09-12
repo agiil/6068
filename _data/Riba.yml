@@ -10,7 +10,7 @@
       url: "/Hinded.html"
       pub: true
       
-- title: "/Loengud"
+- title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
       url: "/L1"
@@ -171,3 +171,6 @@
     - title: "Murdskriptimine"
       url: "/Murdskriptimine"
       pub: true
+- title: "IT sõnastikke"
+  url: "/Sonastikud"
+  pub: true      
