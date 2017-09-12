@@ -60,9 +60,9 @@
     - title: "Info kvaliteet"
       url: "/Praktikumid/P1"
       pub: true
-    - title: "Infovajadused"
+    - title: "Infovajadused ja ärinõuded"
       url: "/Praktikumid/P2"
-      pub: false
+      pub: true
     - title: "Protsesside modelleerimine (IDEF0)"
       url: "/Praktikumid/P3"
       pub: false
@@ -107,7 +107,7 @@
       pub: true
     - title: "2 Infovajaduste väljaselgitamine"
       url: "/Ylesanded/Y2"
-      pub: false
+      pub: true
     - title: "3 Äriprotsessi modelleerimine (IDEF0)"
       url: "/Ylesanded/Y3"
       pub: false
