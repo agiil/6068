@@ -168,3 +168,6 @@
     - title: "Programmeerija töötab"
       url: "/ProgrammeerijaTootab"
       pub: true
+    - title: "Murdskriptimine"
+      url: "/Murdskriptimine"
+      pub: true
