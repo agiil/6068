@@ -13,7 +13,7 @@ permalink: Sonastikud
 
 [ISTQB Glossary of Testing Terms](http://www.istqb.org/downloads/viewcategory/20.html)
 
-[ITIL® V3 terminite ja määratluste sõnastik](http://www.itsmf.ee/itsmf/wp-content/uploads/2013/01/ITIL_V3_Glossary_100313.pdf), koostaja Avo Raup
+[ITIL® V3 terminite ja määratluste sõnastik](https://itsmf.ee/itil-sonastik/), koostaja Avo Raup
 
 [The Simplified Javascript Jargon](http://jargon.js.org/)
 
