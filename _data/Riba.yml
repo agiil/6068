@@ -13,130 +13,130 @@
 - title: "Loengud"
   categories:
     - title: "1 Infokäitluse eesmärgid"
-      url: "/Loengud/L1"
+      url: "L1"
       pub: true
     - title: "2 Infosüsteemide üldised omadused ja tüpoloogia"
-      url: "/Loengud/L2"
+      url: "L2"
       pub: false
     - title: "3 Protsessid ja nende uurimine"
-      url: "/Loengud/L3"
+      url: "L3"
       pub: false
     - title: "4 Protsesside IT toetus; protsesside parendamine"
-      url: "/Loengud/L4"
+      url: "L4"
       pub: false
     - title: "5 Süsteemiarendus ja arendusmeetod"
-      url: "/Loengud/L5"
+      url: "L5"
       pub: false
     - title: "6 Infoökonoomika"
-      url: "/Loengud/L6"
+      url: "L6"
       pub: false
     - title: "7 Infosüsteemide kaasusi"
-      url: "/Loengud/L7"
+      url: "L7"
       pub: false
     - title: "8 Eriteema ja/või vahekontrolltöö"
-      url: "/Loengud/L8"
+      url: "L8"
       pub: false
     - title: "9 Süsteemi arhitektuur"
-      url: "/Loengud/L9"
+      url: "L9"
       pub: false
     - title: "10 Infosüsteemi füüsiline dimensioon"
-      url: "/Loengud/L10"
+      url: "L10"
       pub: false
     - title: "11 Andmete (info) roll infosüsteemis"
-      url: "/Loengud/L11"
+      url: "L11"
       pub: false
     - title: "12 Inimene ja infosüsteem"
-      url: "/Loengud/L12"
+      url: "L12"
       pub: false
     - title: "13 Arendus- ja muutusprotsessid infosüsteemides"
-      url: "/Loengud/L13"
+      url: "L13"
       pub: false
     - title: "14 Infosüsteemide arengutendentsidest"
-      url: "/Loengud/L14"
+      url: "L14"
       pub: false
 
 - title: "Praktikumid"
   categories:
     - title: "Info kvaliteet"
-      url: "/Praktikumid/P1"
+      url: "P1"
       pub: true
     - title: "Infovajadused ja ärinõuded"
-      url: "/Praktikumid/P2"
+      url: "P2"
       pub: true
     - title: "Protsesside modelleerimine (IDEF0)"
-      url: "/Praktikumid/P3"
+      url: "P3"
       pub: false
     - title: "Protsesside modelleerimine (Swimlanes)"
-      url: "/Praktikumid/P4"
+      url: "P4"
       pub: false
     - title: "Protsesside modelleerimine (versioon 2)"
-      url: "/Praktikumid/P5"
+      url: "P5"
       pub: false
     - title: "Maatriks- modelleerimine"
-      url: "/Praktikumid/P6"
+      url: "P6"
       pub: false
     - title: "Maatriksmodelleerimine (tööde läbivaatus)"
-      url: "/Praktikumid/P7"
+      url: "P7"
       pub: false
     - title: "Veel modelleerimismeetoditest"
-      url: "/Praktikumid/P8"
+      url: "P8"
       pub: false
     - title: "Süsteemi arhitektuuri kavandamine"
-      url: "/Praktikumid/P9"
+      url: "P9"
       pub: false
     - title: "Infosüsteemi prototüüpimine"
-      url: "/Praktikumid/P10"
+      url: "P10"
       pub: false
     - title: "Kontseptuaalne modelleerimine"
-      url: "/Praktikumid/P11"
+      url: "P11"
       pub: false
     - title: "Nõuete dokumendi koostamine"
-      url: "/Praktikumid/P12"
+      url: "P12"
       pub: false
     - title: "Infosüsteemi arendusplaani koostamine"
-      url: "/Praktikumid/P13"
+      url: "P13"
       pub: false
     - title: "Infosüsteemi arendusplaani läbivaatus"
-      url: "/Praktikumid/P14"
+      url: "P14"
       pub: false
 
 - title: "Ülesanded"
   categories:
     - title: "1 Info kvaliteedi hindamine"
-      url: "/Ylesanded/Y1"
+      url: "Y1"
       pub: true
     - title: "2 Infovajaduste väljaselgitamine"
-      url: "/Ylesanded/Y2"
+      url: "Y2"
       pub: true
     - title: "3 Äriprotsessi modelleerimine (IDEF0)"
-      url: "/Ylesanded/Y3"
+      url: "Y3"
       pub: false
     - title: "4 Äriprotsessi modelleerimine (nn ujumisradade e Swimlanes meetod)"
-      url: "/Ylesanded/Y4"
+      url: "Y4"
       pub: false
     - title: "Parendamise ja IT toetuse võimaluste leidmine protsessis"
-      url: "/Ylesanded/Y5"
+      url: "Y5"
       pub: false
     - title: "6 Infoloogiline modelleerimine maatriksite abil"
-      url: "/Ylesanded/Y6"
+      url: "Y6"
       pub: false
     - title: "7 Arendusettepaneku tasuvuse hindamine"
-      url: "/Ylesanded/Y7"
+      url: "Y7"
       pub: false
     - title: "8 Süsteemi arhitektuuri kavandamine"
-      url: "/Ylesanded/Y8"
+      url: "Y8"
       pub: false
     - title: "9 Infosüsteemi prototüüpimine"
-      url: "/Ylesanded/Y9"
+      url: "Y9"
       pub: false
     - title: "10 Kontseptuaalse mudeli koostamine"
-      url: "/Ylesanded/Y10"
+      url: "Y10"
       pub: false
     - title: "11 Nõuete dokumendi koostamine"
-      url: "/Ylesanded/Y11"
+      url: "Y11"
       pub: false
     - title: "12 Infosüsteemi arenduse plaanimine"
-      url: "/Ylesanded/Y12"
+      url: "Y12"
       pub: false
 
 - title: "Näiterakendused"
