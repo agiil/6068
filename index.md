@@ -12,8 +12,8 @@ layout: Avaleht
  <i class="material-icons ikoon yellow100">cloud_circle</i>
 </p>
 
-UUS: [Murdskriptimine](Murdskriptimine)
-{: .note}
+<p class='tags'><span class='tag'>UUS</span></p>
+[Murdskriptimine](Murdskriptimine)
 
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 

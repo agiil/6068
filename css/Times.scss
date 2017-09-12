@@ -175,7 +175,7 @@ a[href]:active {
 .ikoon { color: $grey700; font-size: 48px !important; }
 
 /* Silt e tag */
-.tags { margin: 1em 0 0 -8em; 
+.tags { margin: 1em 0 0 0; 
   text-transform: uppercase;
   color: $pruun700; 
   font-family: 'Roboto Condensed', sans-serif;
@@ -186,14 +186,6 @@ a[href]:active {
   border-radius: 8px;
   padding: 4px;
   }
-
-/* Mis on uut? */
-.uut { text-transform: uppercase;
-  color: $pruun700; 
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 8pt;
-  letter-spacing: 2px; 
-}
 
 /* ======== Paneelid ======== */
 .action, .note, .teade, .noue { border-radius: 8px; padding: 1rem; }
