@@ -24,7 +24,7 @@ permalink: Infosusteeme
 
 [Käivitus ülelinnaline huvihariduse register. 19.09.2013](https://www.kuressaare.ee/uus/kaivitus-ulelinnaline-huvihariduse-register/)
 
-![](http://3.bp.blogspot.com/-oqQINdIJORU/UjarYAWgQ6I/AAAAAAAAFSY/YBK5KwjUe9k/s1600/Julianus+Inkasso.PNG) [Julianus inkasso võlaregister](https://www.julianus.ee/debt_registers?for=client)
+![](http://3.bp.blogspot.com/-oqQINdIJORU/UjarYAWgQ6I/AAAAAAAAFSY/YBK5KwjUe9k/s1600/Julianus+Inkasso.PNG) [Julianus inkasso võlaregister](https://www.julianus.ee)
 
 [Maksehäirete avaldamine](https://www.aki.ee/et/juhised/maksehairete-avaldamine). Andmekaitse Inspektsiooni juhis
 
@@ -52,7 +52,7 @@ permalink: Infosusteeme
 
 ![](http://4.bp.blogspot.com/-degmbqtUTRk/UkGTY4Pdc3I/AAAAAAAAFUs/Pj2SXJrnjZ8/s1600/Stuudium.PNG) [Stuudium](https://stuudium.com/) (Koolidele loodud veebirakenduste komplekt, mis võimaldab õpetajatel täita päevikut, jagada õppematerjale, suhelda õpilaste ja lapsevanematega. Tallinna Inglise Kolledž)  
 
-![](http://4.bp.blogspot.com/-CHlGXtyyz5k/UlQZ6WWG-6I/AAAAAAAAFYM/MUGrBEeiMQ0/s1600/Shoeftr.PNG) [ Shoefitr](http://shoefitr.com/), virtuaalne kinga suuruse määramise abivahend.
+![](http://4.bp.blogspot.com/-CHlGXtyyz5k/UlQZ6WWG-6I/AAAAAAAAFYM/MUGrBEeiMQ0/s1600/Shoeftr.PNG) [ Shoefitr](https://en.wikipedia.org/wiki/Shoefitr), virtuaalne kinga suuruse määramise abivahend.
 
 ![](http://4.bp.blogspot.com/-mvMXARJ-vag/UkKL9yxB2QI/AAAAAAAAFV8/EPfO3tJI3gQ/s1600/Tark+tee.PNG) [ Tark Tee](https://tarktee.mnt.ee/), https://riha.eesti.ee/riha/main/inf/tark_tee
 

@@ -175,6 +175,8 @@
   url: "/Sonastikud"
   pub: true
 - title: "Mitmesugust"
-  url: "/Infosusteeme"
-  pub: true
+  categories:
+    - title: "Infosüsteeme"
+      url: "/Infosusteeme"
+      pub: true
 
