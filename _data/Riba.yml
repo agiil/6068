@@ -17,7 +17,7 @@
       pub: true
     - title: "2 Infosüsteemide üldised omadused ja tüpoloogia"
       url: "/L2"
-      pub: false
+      pub: true
     - title: "3 Protsessid ja nende uurimine"
       url: "/L3"
       pub: false
