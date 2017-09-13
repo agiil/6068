@@ -160,7 +160,7 @@
       url: "https://github.com/agiil/sonastik"
       pub: true
       outerLink: true
-- title: "Soovituslik"
+- title: "Lisamaterjale"
   categories:
     - title: "Tseremooniad"
       url: "/Tseremooniad"
@@ -170,6 +170,9 @@
       pub: true
     - title: "Murdskriptimine"
       url: "/Murdskriptimine"
+      pub: true
+    - title: "Versiooniuuendus"
+      url: "/Versiooniuuendus"
       pub: true
 - title: "IT sõnastikke"
   url: "/Sonastikud"
