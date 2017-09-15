@@ -162,6 +162,9 @@
       outerLink: true
 - title: "Soovituslik"
   categories:
+    - title: "Backlogijuhtimine"
+      url: "/Backlog"
+      pub: true
     - title: "Tseremooniad"
       url: "/Tseremooniad"
       pub: true
