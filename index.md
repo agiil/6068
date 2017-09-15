@@ -12,6 +12,10 @@ layout: Avaleht
  <i class="material-icons ikoon yellow100">cloud_circle</i>
 </p>
 
+<p class='tags'><span class='tag'>UUS</span></p>
+[Murdskriptimine](Murdskriptimine)<br>
+[Praktikum 2](P2)
+
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 
 Infosüsteem on organisatsiooni äri- või tegevuseesmärkide saavutamisele suunatud süsteemne tarkvaralahendus. Infosüsteemide tegemisel ei piisa ainult programmeerimisest. Samavõrra olulised on oskus modelleerida (nii äriprotsesse kui ka tehnilisi lahendusi), süsteemselt mõelda ja järjekindlalt tegutseda. IT tähendab ka innovatsiooni. Äärmiselt olulised on ka arendaja suhtlemisoskused - võimekus ärikasutajate ja kaasarendajate vajadustest aru saada ja oma töö tulemusi esitleda.

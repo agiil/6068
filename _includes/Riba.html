@@ -33,7 +33,7 @@
           </li>
         {% else %}
           <li{% if nav.title == page.title %} class="active"{% endif %}>
-            {% if category.pub %}
+            {% if nav.pub %}
               <a href="{{ site.baseurl }}{{ nav.url }}">
                 {{ nav.title }}
               </a>
@@ -47,5 +47,9 @@
       {% endfor %}
     </ul>
   </nav>
+
+  <p>···</p>
+
+  <a href='https://news.ycombinator.com/news'>Hacker News</a>
 
 </div>
