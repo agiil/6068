@@ -162,6 +162,9 @@
       outerLink: true
 - title: "Lisamaterjale"
   categories:
+    - title: "Kuidas tekib ülekoormatus"
+      url: "/Vaja"
+      pub: true
     - title: "Backlogijuhtimine"
       url: "/Backlog"
       pub: true
