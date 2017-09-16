@@ -13,8 +13,8 @@ layout: Avaleht
 </p>
 
 <p class='tags'><span class='tag'>UUS</span></p>
-[Murdskriptimine](Murdskriptimine)<br>
-[Praktikum 2](P2)
+[Backlogijuhtimine](Backlog)<br>
+[Ülesanne 2](Y2)
 
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 
