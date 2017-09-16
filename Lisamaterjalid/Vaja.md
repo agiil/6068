@@ -2,7 +2,7 @@
 permalink: Vaja
 ---
 
-![](img/Vaja.PNG)
+<img src='img/Vaja.PNG' style='width:350px;'>
 
 ***Kuidas tekib ülekoormatus?***
 
