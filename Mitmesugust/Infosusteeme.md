@@ -6,6 +6,8 @@ permalink: Infosusteeme
 
 #    Infosüsteeme
 
+[Reval takso](http://www.reval-takso.ee/), arvuta taksosõidu maksumus
+
 ![](http://1.bp.blogspot.com/-e0F1xLkZTwo/UjHPgxqW3KI/AAAAAAAAFR8/WGlvYHnb9sc/s1600/Basecamp.PNG) [BaseCamp](https://basecamp.com/) (Populaarne projektikeskkond)
 
 ![](http://3.bp.blogspot.com/-pXyDKxdrzDs/VFdasNJ6P4I/AAAAAAAAF4U/Ogx2JPWrfrQ/s1600/Ello.PNG) [Ello, sotsiaalvõrgustik](https://ello.co/beta-public-profiles)
