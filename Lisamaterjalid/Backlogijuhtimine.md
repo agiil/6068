@@ -4,7 +4,7 @@ permalink: Backlog
 
 # Backlogijuhtimine
 
-![](img/Backlog.PNG)
+<img src='img/Backlog.PNG' style='width:350px;'>
 
 ***Backlogijuhtimise*** ülesanne on tuua planeerimisse realismi, paindlikkust, ressurssikasutusse fookust ja klientide vajadustele kiiremat reageerimist.
 
