@@ -164,6 +164,10 @@
       url: "https://e-gov.github.io/TARA-Doku"
       pub: true
       outerLink: true
+    - title: "Ikoonivärvija"
+      url: "https://e-gov.github.io/Ikoonivarvija.html"
+      pub: true
+      outerLink: true
 - title: "Lisamaterjale"
   categories:
     - title: "Kuidas tekib ülekoormatus"
