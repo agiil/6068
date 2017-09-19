@@ -1,0 +1,248 @@
+/* Fondid
+  ------
+  Times New Roman 14pt - tekst
+  Roboto, Arial, sans-serif 10pt, Gainsboro - tooltips, vihjed
+*/
+/* Värviskeem
+  ----------
+    * DarkBlue
+                - keskelemendi rõhutus
+    * #757575 (keskmiselt hall)
+                - võimaldatud nupp
+    * Gainsboro (helehall)
+                - mittevõimalik nupp, tooltip, vihje  
+    * #464a4c (tumehall)
+                - sisestatav tekst 
+    * Azure (pastellroheline)
+                - informatsioonilise paani (Infopaan, Kool) taust
+                - OK teate taust (teatepaan)
+    * Aqua (ereroheline)
+                - OK teate paani ääris
+    * DarkSlateGay (sinakasroheline)
+                - OK teate tekst 
+    * Tomato
+                - pöördtekst
+    * Coral
+                - NOK teatepaani ääris,
+                  NOK teate tekst
+    * Lavenderblush
+                - NOK teatepaani taust
+    * Gray
+                - paani sulgur
+    * #C5E1A5 (nõrk roheline)
+                - normaaltoimingu nupp (Salvesta)
+                - dialoogikasti ääris, märgendi ääris
+    * #F48FB1 (punane)
+                - tühistava toimingu nupp 
+    * 292B2C (Bootstrap4 vaikimisi tekstivärv)
+      - DarkBlue - allpunktiir
+                - link
+
+    (värvimääranguid on ka HTML-is)
+
+*/
+  /* Keha */
+  body { padding: 2rem 2rem 8rem 2rem; }
+  
+      /* Üldine font ja fondisuurus */
+      body, textarea, button, input, legend {  
+        font-family: 'Times New Roman', serif !important;
+        font-size: 14pt !important;
+      }
+  
+    /* Mitmesugused korduvkasutatavad stiilid */
+      .tooltip-inner, .vihje {
+        background-color: White;
+        font-family: 'Roboto', 'Arial', sans-serif !important;
+        font-size: 10pt !important;
+        color: Gray;
+      }
+  
+    /* Tekstisisestusala
+      Content-editable div, kujundus imiteeritud Bootstrap input elemendi järele */
+      #Tekst { 
+        display: block;
+        width: 100%;
+        height: auto; /* 2.5rem; */
+        padding: 0.5rem 0.75rem;
+        line-height: 1.25;
+        color: #464a4c;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-bottom: 1rem; }
+      #Tekst:focus {
+        border-color: LightGray;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.055) inset, 0 0 8px rgba(220, 180, 220, 0.6);
+        outline: 0 none;
+      }
+  
+      .kesk { color: DarkBlue;
+        font-weight: 600; }
+      .poord { color: Tomato; }  
+      .ikoon { font-family: 'Material Icons';
+        font-size: 48px;
+      }
+    /* Tekstitöötluse nupud */
+      #Tekstitootlus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+  
+    /* Paanid - Ühised omadused */
+      /* Paanid on: 1) Infopaan; 2) Teatepaan; 3) Koolitekst; 4) Salvestusdialoog; 5) Oigekirjadialoog; 6) Filtridialoog. 
+      */
+        .paan {
+        border-radius: 4px; 
+        padding: 0 0 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem; 
+      }
+      .peidetud { 
+        /* display: flex; ülekirjutamiseks */
+        display: none !important;
+      }
+      .sulgemisnupuke {
+        /* Sulgemisnupuke */
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 16pt;
+        font-weight: bold;
+        color: Gray;
+      }
+      .dialoog {
+        /* Avatav/suletav dialoogivorm */
+        border: 1px solid #C5E1A5;
+      }
+    /* Teabepaan */
+      .teabepaan {
+        /* Teavet esitav paan */
+        border: 1px solid Aqua;
+        background-color: Azure;
+      }
+  
+    /* Teatepaan */
+      #Teatepaan { 
+        border: 1px solid #C5E1A5;
+      }
+      .OKteade {
+        color: darkslategray;
+        border: 1px solid Aqua;
+        background-color: azure;
+      }
+      .NOKteade {
+        color: coral;
+        border: 1px solid coral;
+        background-color: lavenderblush;
+      }
+  
+    /* Nupud */
+      .nupp { margin: 1rem 0.5rem;
+        cursor: pointer;
+        color: #757575;
+      }
+      .disabled { color: Gainsboro !important; cursor: auto; }
+  
+    /* Paanide spetsiifilised elemendid */
+      #Infotekst,
+      /* #KoolitekstSisemine, */
+      #LeitudSeosed,
+      #Teatetekst {
+        margin: 1rem;
+      }   
+      .klahv {
+        border-radius: 3px;
+        padding-left: 1px; padding-right: 1px;
+        border: 1px solid #757575;
+        font-family: 'Courier New', monospace;
+      }
+  
+    /* Jaotisepealkirjad */
+      h1 {
+      font-size: 14pt !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      }
+      h2 {
+        font-size: 14pt !important;
+        font-weight: bold;
+      }
+  
+    /* Tekstikogu */
+      .kirje { 
+        text-indent: -3rem;
+        padding-left: 3rem;
+        margin: 0;
+      }
+      .margend { 
+        border: 1px dotted Aqua;
+        border-radius: 2px;
+        padding: 2px;
+        font-family: 'Courier New', monospace;
+        font-size: 10pt;
+        text-transform: uppercase;
+        margin-left: 1rem; }
+      
+    /* Sirvimisnupud */
+      #Sirvimine {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      #PageNo { 
+        margin-left: 1rem; margin-right: 1rem;
+      }
+      #PageNo:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+  
+    /* Filter */
+      #Filtritekst { margin: 1rem;
+        width: 8rem;
+        color: #757575 !important; }
+      #Filtritekst:focus {
+        border-color: #C5E1A5 !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.055) inset, 0 0 8px rgba(220, 180, 220, 0.6);
+        outline: 0 none;      
+      }
+  
+    /* Õigekirjakontrolli dialoog */
+      #KontrTekstiblokk {
+        margin: 1rem;
+      }
+      #KontrollitavTekst { 
+        width: 24rem;
+      }
+  
+    /* SamatekstidTekstist dialoog */
+      #SamatekstidTekstistBlokk1 {
+        margin: 1rem;
+      }
+      #SamatekstidTekstistTekst {
+        width: 24rem;
+      }
+      #SamatekstidTekstistTulemus {
+        margin: 1rem;
+      }
+  
+    /* Määra üle Bootstrapi lingivärv */
+      a, a:hover, a:active, a:visited {
+        color: #292B2C !important;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+      }
+  
+    .Loendur {
+      border: 1px dotted Tomato;
+      color: Tomato;
+      border-radius: 2px;
+      padding: 2px;
+      font-family: 'Courier New', monospace;
+      font-size: 12pt;
+    }

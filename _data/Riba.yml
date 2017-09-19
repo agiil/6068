@@ -3,7 +3,7 @@
     - title: "Kursuseprogramm"
       url: "/Programm"
       pub: true   
-    - title: "/Lahendusaruande vormistamise juhend"
+    - title: "Lahendusaruande vormistamise juhend"
       url: "/Juhend"
       pub: true
     - title: "Hinded"
@@ -158,6 +158,10 @@
       outerLink: true
     - title: "Agiilsõnastik"
       url: "https://github.com/agiil/sonastik"
+      pub: true
+      outerLink: true
+    - title: "TARA autentimisteenus"
+      url: "https://e-gov.github.io/TARA-Doku"
       pub: true
       outerLink: true
 - title: "Lisamaterjale"
