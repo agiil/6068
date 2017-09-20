@@ -188,6 +188,9 @@
     - title: "Versiooniuuendus"
       url: "/Versiooniuuendus"
       pub: true
+    - title: "Sa ei vaja seda"
+      url: "/SaEiVaja"
+      pub: true
 - title: "IT sõnastikke"
   url: "/Sonastikud"
   pub: true
