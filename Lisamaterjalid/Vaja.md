@@ -2,6 +2,9 @@
 permalink: Vaja
 ---
 
+<i class="material-icons ikoon" style='color:BlueViolet;'>code</i> 
+<i class="material-icons ikoon" style='color:aqua;'>pan_tool</i>
+
 <img src='img/Vaja.PNG' style='width:350px;'>
 
 ***Kuidas tekib ülekoormatus?***

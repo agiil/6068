@@ -20,7 +20,7 @@
       pub: true
     - title: "3 Protsessid ja nende uurimine"
       url: "/L3"
-      pub: false
+      pub: true
     - title: "4 Protsesside IT toetus; protsesside parendamine"
       url: "/L4"
       pub: false
