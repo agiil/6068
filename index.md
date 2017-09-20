@@ -15,6 +15,7 @@ layout: Avaleht
 <p class='tags'><span class='tag'>UUS</span></p>
 [Backlogijuhtimine](Backlog)<br>
 [Ülesanne 2](Y2)
+[Ülesanne 3](Y3)
 
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 

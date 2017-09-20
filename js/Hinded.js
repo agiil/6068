@@ -2,7 +2,7 @@
   /* REST API-t pakkuv Google Sheet, kus hindeid hoitakse. */
   var url = 'https://script.google.com/macros/s/AKfycby1_Xu7BX3iae0AFFfsgD2aH3RabwkniX9Bqu31POJwFbSmmUc/exec';
   var tudengitePuhver; 			// Kõik tudengite andmed, loetud Google Sheet-lt
-  var tudengid = []; 				// Massiiv nimedest kuvamiseks ettetrükis
+  var tudengid = []; // Massiiv nimedest kuvamiseks ettetrükis
   var tudengLeitud = false; // Kas tudeng on valitud
   var tudengiNr; 						// Valitud tudengi kirje nr massiivis tudengid (baas 0)
   var ylNimetus = [  				// Massiiv ülesannete nimetustest (tekstid)
