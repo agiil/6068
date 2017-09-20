@@ -65,7 +65,7 @@
       pub: true
     - title: "Protsesside modelleerimine (IDEF0)"
       url: "/P3"
-      pub: false
+      pub: true
     - title: "Protsesside modelleerimine (Swimlanes)"
       url: "/P4"
       pub: false
@@ -108,9 +108,9 @@
     - title: "2 Infovajaduste väljaselgitamine"
       url: "/Y2"
       pub: true
-    - title: "3 Äriprotsessi modelleerimine (IDEF0)"
+    - title: "3 Äriprotsessi modelleerimine I"
       url: "/Y3"
-      pub: false
+      pub: true
     - title: "4 Äriprotsessi modelleerimine (nn ujumisradade e Swimlanes meetod)"
       url: "/Y4"
       pub: false
@@ -160,7 +160,7 @@
       url: "https://github.com/agiil/sonastik"
       pub: true
       outerLink: true
-- title: "Lisamaterjale"
+- title: "Lisamaterjalid"
   categories:
     - title: "Kuidas tekib ülekoormatus"
       url: "/Vaja"
@@ -179,6 +179,9 @@
       pub: true
     - title: "Versiooniuuendus"
       url: "/Versiooniuuendus"
+      pub: true
+    - title: "Tagasiside lahendus"
+      url: "/Tagasiside"
       pub: true
 - title: "IT sõnastikke"
   url: "/Sonastikud"
