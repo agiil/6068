@@ -46,16 +46,17 @@ body {
 
 /* ==== Pealkirjad ==== */
 h1 {
-  font-size: 14pt !important;
+  font-size: 16pt !important;
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 h2 {
-  font-size: 12pt !important;
+  font-size: 14pt !important;
+  font-weight: bold;
   margin-bottom: 0.5rem;
-  text-decoration: underline;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 /* ==== Külgriba ======== */
@@ -136,7 +137,8 @@ blockquote {
 /* Kood; asciiflow joonised */
 pre, code, samp {
   font-family: 'Anonymous Pro', monospace;
-  font-size: 16px; color: blue;
+  font-size: 16px; color: IndianRed !important;
+  background-color: LightCyan !important;
   overflow-y: hidden; overflow-x: hidden;
   page-break-inside: avoid; hyphens: none;
   text-transform: none;

@@ -18,9 +18,9 @@
     - title: "2 Infosüsteemide üldised omadused ja tüpoloogia"
       url: "/L2"
       pub: true
-    - title: "3 Protsessid ja nende uurimine"
+    - title: "3 IT-põhise äriprotsessi (-teenuse) disain"
       url: "/L3"
-      pub: false
+      pub: true
     - title: "4 Protsesside IT toetus; protsesside parendamine"
       url: "/L4"
       pub: false
@@ -187,6 +187,9 @@
       pub: true
     - title: "Versiooniuuendus"
       url: "/Versiooniuuendus"
+      pub: true
+    - title: "Sa ei vaja seda"
+      url: "/SaEiVaja"
       pub: true
     - title: "Tagasiside lahendus"
       url: "/Tagasiside"
