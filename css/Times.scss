@@ -147,7 +147,7 @@ code code {
 }
 pre { margin-top: 1em; margin-bottom: 1em; }
 
-/* Lingid */
+/* ==== Lingid ==== */
 a[href] {
   color: $mutedblue;
   text-decoration: none;
@@ -174,7 +174,7 @@ a[href]:active {
 /* Material design ikoonid */
 .ikoon { color: $grey700; font-size: 48px !important; }
 
-/* Silt e tag */
+/* ==== Silt e tag ==== */
 .tags { margin: 1em 0 0 0; 
   text-transform: uppercase;
   color: $pruun700; 
@@ -190,18 +190,18 @@ a[href]:active {
 /* ======== Paneelid ======== */
 .action, .note, .teade, .noue { border-radius: 8px; padding: 1rem; }
 
-/* Tegevus */
+/* ==== Tegevus ==== */
 .action {
   border: 1px solid $bluegrey100; 
   background-color: $bluegrey100; 
 }
-/* Märkus */
+/* ==== Märkus ==== */
 .note { 
   border: 1px solid coral;
   background-color: lavenderblush;
   color: coral;
 }
-/* TL;DR */
+/* ==== TL;DR ==== */
 .tldr {
   margin: 2rem 0;
   border-radius: 8px;
