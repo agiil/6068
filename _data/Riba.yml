@@ -111,9 +111,9 @@
     - title: "3 Äriprotsessi modelleerimine I"
       url: "/Y3"
       pub: true
-    - title: "4 Äriprotsessi modelleerimine (nn ujumisradade e Swimlanes meetod)"
+    - title: "4 Äriprotsessi modelleerimine II"
       url: "/Y4"
-      pub: false
+      pub: true
     - title: "Parendamise ja IT toetuse võimaluste leidmine protsessis"
       url: "/Y5"
       pub: false
