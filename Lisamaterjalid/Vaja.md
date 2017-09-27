@@ -14,7 +14,7 @@ A on hinnatud, autoriteetne, positsiooniga, kuid arendusega otseselt mitte seotu
 Kuid A ise ei osale tema ettepandud lisafeatuuride või -tööde tegemises - kui ettepaneku või idee andmist mitte lugeda arendustööks.
 A ei osale ka täiendava arendusressursi hankimises - ja isegi kui ressurss põhimõtteliselt on olemas, siis selle rakendamises.<br>
 Lähemalt vaadates A ei ole ka tarkvaratoote tulevane Kasutaja.<br>
-Oluline, kuigi väherääkiv osalemine selles mängus on nn _audience_.<br>
+Oluline, kuigi väherääkiv osaleja selles mängus on nn _audience_.<br>
 Korraldajal - kes ettepaneku teokstegemiseks ressursi peab leidma ja tiimiga koos töö ära tegema - on raske vastu vaielda, sest kes tahab olla _chicken_? Eriti _audience_-i ees.<br>
 Mida Korraldaja peaks tegema?<br>
 Küsima, kas ja millisel määral A on ise valmis töös kaasa lööma?<br>
