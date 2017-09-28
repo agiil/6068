@@ -21,9 +21,9 @@
     - title: "3 IT-põhise äriprotsessi (-teenuse) disain"
       url: "/L3"
       pub: true
-    - title: "4 Protsesside IT toetus; protsesside parendamine"
+    - title: "4 Protsessi parendamine ja automatiseerimine"
       url: "/L4"
-      pub: false
+      pub: true
     - title: "5 Süsteemiarendus ja arendusmeetod"
       url: "/L5"
       pub: false
@@ -68,7 +68,7 @@
       pub: true
     - title: "Protsesside modelleerimine (Swimlanes)"
       url: "/P4"
-      pub: false
+      pub: true
     - title: "Protsesside modelleerimine (versioon 2)"
       url: "/P5"
       pub: false

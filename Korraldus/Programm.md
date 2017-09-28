@@ -61,7 +61,7 @@ Räägime ka arendaja elukutse võludest ja raskustest.
 | 1/1 | `07.09` | Infokäitluse eesmärgid      | `06(07).09` | Info kvaliteet|
 | 2/2 | `14.09` | Infosüsteemide üldised omadused ja tüpoloogia| `13(14).09` | Infovajadused|
 | 3/3 | `21.09` | Protsessid ja nende uurimine     | `20(21).09` | Protsesside modelleerimine (IDEF0) |
-| 4/4 | `28.09` | Protsesside IT toetus; protsesside parendamine| `27(28).09` | Protsesside modelleerimine (Swimlanes) |
+| 4/4 | `28.09` | Protsessi parendamine ja automatiseerimine | `27(28).09` | Protsesside modelleerimine (Swimlanes) |
 | 5/5 | `05.10` | Süsteemiarendus ja arendusmeetod    | `04(05).10` | Protsesside modelleerimine (versioon 2) |
 | 6/6 | `12.10` | Infoökonoomika | `11(12).10` | Maatriks- modelleerimine|
 | 7/7 | `19.10` | Infosüsteemide kaasusi| `18(19).10` | Maatriks- modelleerimine (tööde läbivaatus)|
