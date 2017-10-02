@@ -176,6 +176,9 @@
     - title: "Backlogijuhtimine"
       url: "/Backlog"
       pub: true
+    - title: "Barcelona"
+      url: "/Barcelona"
+      pub: true
     - title: "Tseremooniad"
       url: "/Tseremooniad"
       pub: true
