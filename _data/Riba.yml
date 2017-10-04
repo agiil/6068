@@ -69,9 +69,9 @@
     - title: "Protsesside modelleerimine (Swimlanes)"
       url: "/P4"
       pub: true
-    - title: "Protsesside modelleerimine (versioon 2)"
+    - title: "Protsessi parendamine"
       url: "/P5"
-      pub: false
+      pub: true
     - title: "Maatriks- modelleerimine"
       url: "/P6"
       pub: false
@@ -116,7 +116,7 @@
       pub: true
     - title: "Parendamise ja IT toetuse võimaluste leidmine protsessis"
       url: "/Y5"
-      pub: false
+      pub: true
     - title: "6 Infoloogiline modelleerimine maatriksite abil"
       url: "/Y6"
       pub: false
