@@ -170,6 +170,14 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Taasesitusrünne ja kaitse selle vastu"
+      url: "https://e-gov.github.io/TARA-Doku/Nonss"
+      pub: true
+      outerLink: true
+    - title: "Võltspäringurünne ja kaitse selle vastu"
+      url: "https://e-gov.github.io/TARA-Doku/Volts"
+      pub: true
+      outerLink: true
     - title: "Kuidas tekib ülekoormatus"
       url: "/Vaja"
       pub: true
