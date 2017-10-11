@@ -74,7 +74,7 @@
       pub: true
     - title: "Maatriks- modelleerimine"
       url: "/P6"
-      pub: false
+      pub: true
     - title: "Maatriksmodelleerimine (tööde läbivaatus)"
       url: "/P7"
       pub: false
@@ -119,7 +119,7 @@
       pub: true
     - title: "6 Infoloogiline modelleerimine maatriksite abil"
       url: "/Y6"
-      pub: false
+      pub: true
     - title: "7 Arendusettepaneku tasuvuse hindamine"
       url: "/Y7"
       pub: false
