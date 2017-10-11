@@ -176,11 +176,9 @@
     - title: "Taasesitusrünne ja kaitse selle vastu"
       url: "/Nonss"
       pub: true
-      outerLink: true
     - title: "Võltspäringurünne ja kaitse selle vastu"
       url: "/Volts"
       pub: true
-      outerLink: true
     - title: "Kuidas tekib ülekoormatus"
       url: "/Vaja"
       pub: true

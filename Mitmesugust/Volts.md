@@ -2,13 +2,13 @@
 permalink: Volts
 ---
 
-# Võltspäringurünne ja kaitse selle vastu
+## Võltspäringurünne ja kaitse selle vastu
 
 ![](img/Volts.PNG)
 
 TL;DR Võltspäringutõke tuleb siduda sessiooniga, muidu pole sellest kasu.
 
-## Normaalprotsess
+***Normaalprotsess***
 
 1a Kasutaja vajutab nupule "Logi sisse" vms. Selle toimel saadab sirvija serverisse päringu
 
@@ -56,7 +56,7 @@ state=hkMVY7vjuN7xyLl5
 
 Sellega on autentimisprotsess lõppenud.
 
-## Rünne
+***Rünne***
 
 Ründaja laeb klientrakenduse oma sirvijasse. Vajutab "Logi sisse" ja teeb autentimisteenuses läbi autentimise. Püüab kinni autentimisteenuse vastuse 2b ja tõkestab selles sisalduva ümbersuunamiskorralduse täitmist. See tähendab, et päring 3a sirvijast välja ei lähegi.
 
@@ -69,7 +69,7 @@ code=71ed5797c3d957817d31&state=hkMVY7vjuN7xyLl5">
 
 Kui selline päring jõuab serverisse ja server ei suuda aru saada, et 1a ja 3a tulevad erinevatest sirvijatest, siis ta pahaaimamatult täidab päringu. Tulemusena logitakse ründaja ohvri sirvijas klientrakendusse sisse.
 
-## Kaitse
+***Kaitse***
 
 Võltspäringuründe vastu pakub kaitset tõkestav element `state`. Kuid `state` peab olema sirvijaga seotud. Korrektne kaitseprotseduur on järgmine:
 
