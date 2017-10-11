@@ -57,46 +57,46 @@
 
 - title: "Praktikumid"
   categories:
-    - title: "Info kvaliteet"
+    - title: "1 Info kvaliteet"
       url: "/P1"
       pub: true
-    - title: "Infovajadused ja ärinõuded"
+    - title: "2 Infovajadused ja ärinõuded"
       url: "/P2"
       pub: true
-    - title: "Protsesside modelleerimine (IDEF0)"
+    - title: "3 Protsesside modelleerimine (IDEF0)"
       url: "/P3"
       pub: true
-    - title: "Protsesside modelleerimine (Swimlanes)"
+    - title: "4 Protsesside modelleerimine (Swimlanes)"
       url: "/P4"
       pub: true
-    - title: "Protsessi parendamine"
+    - title: "5 Protsessi parendamine"
       url: "/P5"
       pub: true
-    - title: "Maatriksmodelleerimine"
+    - title: "6 Maatriksmodelleerimine"
       url: "/P6"
       pub: true
-    - title: "Maatriksmodelleerimine (tööde läbivaatus)"
+    - title: "7 Maatriksmodelleerimine (tööde läbivaatus)"
       url: "/P7"
       pub: false
-    - title: "Veel modelleerimismeetoditest"
+    - title: "8 Veel modelleerimismeetoditest"
       url: "/P8"
       pub: false
-    - title: "Süsteemi arhitektuuri kavandamine"
+    - title: "9 Süsteemi arhitektuuri kavandamine"
       url: "/P9"
       pub: false
-    - title: "Infosüsteemi prototüüpimine"
+    - title: "10 Infosüsteemi prototüüpimine"
       url: "/P10"
       pub: false
-    - title: "Kontseptuaalne modelleerimine"
+    - title: "11 Kontseptuaalne modelleerimine"
       url: "/P11"
       pub: false
-    - title: "Nõuete dokumendi koostamine"
+    - title: "12 Nõuete dokumendi koostamine"
       url: "/P12"
       pub: false
-    - title: "Infosüsteemi arendusplaani koostamine"
+    - title: "13 Infosüsteemi arendusplaani koostamine"
       url: "/P13"
       pub: false
-    - title: "Infosüsteemi arendusplaani läbivaatus"
+    - title: "14 Infosüsteemi arendusplaani läbivaatus"
       url: "/P14"
       pub: false
 
