@@ -26,7 +26,7 @@
       pub: true
     - title: "5 Süsteemiarendus ja arendusmeetod"
       url: "/L5"
-      pub: false
+      pub: true
     - title: "6 Infoökonoomika"
       url: "/L6"
       pub: false

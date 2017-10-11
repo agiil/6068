@@ -160,6 +160,9 @@ a[href] {
 a:visited {
   border-bottom-color: $mutedblue;
 }
+nav > a[href] {
+  border-bottom: none;
+}
 
 a[href]:focus,
 a[href]:hover {
