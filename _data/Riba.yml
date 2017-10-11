@@ -174,10 +174,10 @@
       url: "/Kood"
       pub: true
     - title: "Taasesitusrünne ja kaitse selle vastu"
-      url: "/Nonss"
+      url: "/6068/Nonss"
       pub: true
     - title: "Võltspäringurünne ja kaitse selle vastu"
-      url: "/Volts"
+      url: "/6068/Volts"
       pub: true
     - title: "Kuidas tekib ülekoormatus"
       url: "/Vaja"
