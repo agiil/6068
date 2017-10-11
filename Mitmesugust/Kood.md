@@ -2,6 +2,8 @@
 permalink: Kood
 ---
 
+## Tõendamine räsi abil
+
 PROBLEEM<br>
 A peab saatma B-le sõnumi (sõnum 1) ja mõni aeg hiljem veel ühe sõnumi (sõnum 2).<br>
 Ründaja suudab võrguliiklust pealt kuulata. Ründaja võib ka võltsida saatja aadressi, näiteks saates A-na esinedes B-le võltssõnumi. Ründaja võib A-d isegi blokeerida - takistada A-d sõnumeid saatmast.<br>

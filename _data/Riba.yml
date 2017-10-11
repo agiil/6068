@@ -170,6 +170,9 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Tõendamine räsi abil"
+      url: "/Kood"
+      pub: true
     - title: "Taasesitusrünne ja kaitse selle vastu"
       url: "https://e-gov.github.io/TARA-Doku/Nonss"
       pub: true
