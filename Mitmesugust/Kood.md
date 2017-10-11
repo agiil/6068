@@ -2,7 +2,7 @@
 permalink: Kood
 ---
 
-## Tõendamine räsi abil
+## Räsi kui asitõend
 
 PROBLEEM<br>
 A peab saatma B-le sõnumi (sõnum 1) ja mõni aeg hiljem veel ühe sõnumi (sõnum 2).<br>
