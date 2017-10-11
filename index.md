@@ -13,8 +13,8 @@ layout: Avaleht
 </p>
 
 <p class='tags'><span class='tag'>UUS</span></p>
-[Ülesanne 3](Y3)
-[Ülesanne 4](Y4)
+[Praktikum 6](P6)
+[Ülesanne 6](Y6)
 
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 
