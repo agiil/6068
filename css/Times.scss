@@ -153,16 +153,16 @@ pre { margin-top: 1em; margin-bottom: 1em; }
 a[href] {
   color: $mutedblue;
   text-decoration: none;
-  border-bottom: 1px solid $mutedblue;
+  border-bottom: 1px dotted $mutedblue;
   padding: 0 1px 0;
   margin: 0 -1px 0;
 }
 a:visited {
   border-bottom-color: $mutedblue;
 }
-nav a[href] {
+/* nav a[href] {
   border-bottom: none;
-}
+} */
 
 a[href]:focus,
 a[href]:hover {
