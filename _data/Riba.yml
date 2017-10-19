@@ -29,7 +29,7 @@
       pub: true
     - title: "6 Infoökonoomika"
       url: "/L6"
-      pub: false
+      pub: true
     - title: "7 Infosüsteemide kaasusi"
       url: "/L7"
       pub: false
@@ -173,6 +173,9 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "16 põhimõtet"
+      url: "/16pohimotet"
+      pub: true
     - title: "Räsi kui asitõend"
       url: "/Kood"
       pub: true
