@@ -29,7 +29,7 @@
       pub: true
     - title: "6 Infoökonoomika"
       url: "/L6"
-      pub: false
+      pub: true
     - title: "7 Infosüsteemide kaasusi"
       url: "/L7"
       pub: false
@@ -77,7 +77,7 @@
       pub: true
     - title: "7 Maatriksmodelleerimine (tööde läbivaatus)"
       url: "/P7"
-      pub: false
+      pub: true
     - title: "8 Veel modelleerimismeetoditest"
       url: "/P8"
       pub: false
@@ -119,6 +119,9 @@
       pub: true
     - title: "6 Infoloogiline modelleerimine maatriksite abil"
       url: "/Y6"
+      pub: true
+    - title: "Lisaülesanne"
+      url: "/Extra"
       pub: true
     - title: "7 Arendusettepaneku tasuvuse hindamine"
       url: "/Y7"
@@ -173,14 +176,17 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "16 põhimõtet"
+      url: "/16pohimotet"
+      pub: true
     - title: "Räsi kui asitõend"
       url: "/Kood"
       pub: true
     - title: "Taasesitusrünne ja kaitse selle vastu"
-      url: "/6068/Nonss"
+      url: "/Nonss"
       pub: true
     - title: "Võltspäringurünne ja kaitse selle vastu"
-      url: "/6068/Volts"
+      url: "/Volts"
       pub: true
     - title: "Kuidas tekib ülekoormatus"
       url: "/Vaja"
