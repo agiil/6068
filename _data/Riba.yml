@@ -141,6 +141,9 @@
 
 - title: "Näiterakendused"
   categories:
+    - title: "ROBO"
+      url: "/ROBO"
+      pub: true
     - title: "Kursuse minisait"
       url: "/Minisait"
       pub: true
