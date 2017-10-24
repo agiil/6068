@@ -13,7 +13,7 @@ layout: Avaleht
 </p>
 
 <p class='tags'><span class='tag'>UUS</span></p>
-[Praktikum 6](P6) · [Ülesanne 6](Y6) · [Räsi kui asitõend](Kood)
+[ROBO](ROBO) · [Praktikum 6](P6) · [Ülesanne 6](Y6) · [Räsi kui asitõend](Kood)
 
 Uurimisobjektiks on IT rakendamine organisatsioonis, ettevõtte või asutuse äri- ja tegevuseesmärkide saavutamiseks. Seda nii, et arendused õnnestuksid ja klient oleks rahul.
 
