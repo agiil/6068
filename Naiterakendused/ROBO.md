@@ -2,6 +2,8 @@
 permalink: ROBO
 ---
 
+## Õppejõu abiline ROBO
+
 ````
 /*
 - Gmail teenus: https://developers.google.com/apps-script/reference/gmail/
@@ -14,17 +16,24 @@ tudengeidKokku = 80;
 
 function saadaKiri() {
   var aadressid = aadressileht.getDataRange().getValues();
-  var keha = 'Tere! Aitan õppejõudul ettekantud tööde arvestust pidada.' + 
+  var keha = 'Tere! Näen, et inimesed on mulle kirju saatnud. Vist ROBO ei saanud kõiki töid ' + 
+    'tabelisse kirja. Kuidas ROBO intelligentsemaks teha? ROBO kood on siin: ' +
+    'https://agiil.github.io/6068/ROBO. Kas teil on ettepanekuid? ' +
+    ' ===Edastas õppejõu korraldusel, lugupidamisega ROBO'  ;
+  for (var i = 0; i < aadressid.length; i++) {
+     MailApp.sendEmail(aadressid[i],
+       "IFI 6068 Sissejuhatus infosüsteemidesse KÕIK TÖÖD KIRJAS?",
+       keha);
+  }     
+}
+
+/* ---- Saadetud kirjad --- 
+
+25.10.2017 'Tere! Aitan õppejõudul ettekantud tööde arvestust pidada.' + 
     ' Vahekokkuvõttega saate tutvuda ' + 
     'https://docs.google.com/a/tlu.ee/spreadsheets/d/1Gqi8Art_AA1Q-sAdj7z5EATPs43NtpJ_JA2A9EIuc_Q/edit?usp=sharing. ' +
-    'Minu endaga: https://agiil.github.io/6068/ROBO. Terv! ROBO' ;
-  for (var i = 0; i < 1 /* aadressid.length */; i++) {
-     MailApp.sendEmail('priit.parmakson@gmail.com' /* aadressid[i] */ ,
-       "IFI 6068 Sissejuhatus infosüsteemidesse VAHEKOKKUVÕTE",
-       keha);
-  } 
-    
-}  
+    'Minu endaga: https://agiil.github.io/6068/ROBO. Terv! ROBO'
+*/
 
 function koguAadressid() {
 /*
@@ -119,4 +128,5 @@ function leiaPerenimed() {
   } 
   return perenimed;
 }
+
 ````
