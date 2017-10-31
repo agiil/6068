@@ -176,6 +176,9 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Salasõna"
+      url: "/Salasona"
+      pub: true
     - title: "16 põhimõtet"
       url: "/16pohimotet"
       pub: true
