@@ -80,7 +80,7 @@
       pub: true
     - title: "8 Veel modelleerimismeetoditest"
       url: "/P8"
-      pub: false
+      pub: true
     - title: "9 Süsteemi arhitektuuri kavandamine"
       url: "/P9"
       pub: false
