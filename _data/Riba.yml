@@ -80,7 +80,7 @@
       pub: true
     - title: "8 Veel modelleerimismeetoditest"
       url: "/P8"
-      pub: false
+      pub: true
     - title: "9 Süsteemi arhitektuuri kavandamine"
       url: "/P9"
       pub: false
@@ -125,7 +125,7 @@
       pub: true
     - title: "7 Arendusettepaneku tasuvuse hindamine"
       url: "/Y7"
-      pub: false
+      pub: true
     - title: "8 Süsteemi arhitektuuri kavandamine"
       url: "/Y8"
       pub: false
