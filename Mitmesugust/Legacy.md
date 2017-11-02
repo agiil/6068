@@ -14,6 +14,6 @@ __2a__ Rakenduse __A__ serverikomponent saadab X-tee päringu rakenduse __B__ se
 
 __2b__ Rakendus __B__ kontrollib, kas juurdepääsu andmiseks on alust, genereerib juhusliku sõne, lisab selle rakenduse __B__ URL-le ja saadab moodustatud URL-i ("turva-URL-i") rakendusele __A__.
 
-__1b__ Rakendus __A__ saadab päringu __1a__ vastusega __1b__ veebisirvijasse ümbersuunamiskorralduse (_redirect_) rakenduselt __B__ saadud URL-le.
+__1b__ Rakendus __A__ saadab päringu __1a__ vastusega __1b__ veebisirvijasse ümbersuunamiskorralduse (_redirect_), mille toimel kasutajale suuna rakenduselt __B__ saadud URL-le.
 
-__3__ Rakendus __B__ kontrollib, kas saabunud URL on sama, mille ta väljastas ja loob kasutajale sessiooni. 
+__3__ Rakendus __B__ kontrollib, kas saabunud URL on see, mida ta on väljastanud, loob __kasutajale__ sessiooni ja saadab veebisirvijasse rakenduse avalehe. __Kasutaja__ alustab (sisselogitult) tööd rakenduses __B__. 
