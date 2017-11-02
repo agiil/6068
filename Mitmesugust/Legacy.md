@@ -16,4 +16,8 @@ __2b__ Rakendus __B__ kontrollib, kas juurdepääsu andmiseks on alust, genereer
 
 __1b__ Rakendus __A__ saadab päringu __1a__ vastusega __1b__ veebisirvijasse ümbersuunamiskorralduse (_redirect_), mille toimel kasutajale suuna rakenduselt __B__ saadud URL-le.
 
-__3__ Rakendus __B__ kontrollib, kas saabunud URL on see, mida ta on väljastanud, loob __kasutajale__ sessiooni ja saadab veebisirvijasse rakenduse avalehe. __Kasutaja__ alustab (sisselogitult) tööd rakenduses __B__. 
+__3__ Rakendus __B__ kontrollib, kas saabunud URL on see, mida ta on väljastanud, loob __kasutajale__ sessiooni ja saadab veebisirvijasse rakenduse avalehe. __Kasutaja__ alustab (sisselogitult) tööd rakenduses __B__.
+
+----
+
+Turvaanalüüs. Rakendused __A__ ja __B__ suhtlevad X-teel, seega omavad usaldusväärseid identiteete ja vahetatavad sõnumid (__2a__ ja __2b__) on allkirjastatud. URL-is sisalduv juhuslik URL toimib taasesitus- ja päringuvõltsimisrünnete tõkkena. Skeem on turvaline.
