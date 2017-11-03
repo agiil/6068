@@ -22,4 +22,6 @@ Joonis 3
 
 <img src='https://agiil.github.io/6068/img/CORS-03.PNG' width='340'>
 
+Hea praktika on pakkuda avalikku API-t CORS-põhimõttel. Nt [GitHubi API](https://developer.github.com/v3/) "supports Cross Origin Resource Sharing (CORS) for AJAX requests from any origin."
+
 CORS turvalisusest vt [Guide to Secure Implementation of HTML5's Cross Origin Requests](https://code.google.com/archive/p/html5security/wikis/CrossOriginRequestSecurity.wiki)
