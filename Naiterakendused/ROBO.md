@@ -2,7 +2,40 @@
 permalink: ROBO
 ---
 
-## Õppejõu abiline ROBO
+# Õppejõu abiline ROBO
+
+## Arhitektuuri ülevaade
+
+<img src='https://agiil.github.io/6068/img/ROBO.PNG' width='420'>
+
+Joonis 1. ROBO arhitektuur
+
+ROBO on rakendus, mis:
+- täidab hindetabelit
+- saadab kursusel osalevatele tudengitele e-postiga teavitusi.
+
+ROBO on Google Apps Script-is kirjutatud rakendus. Rakenduse lähtekood on toodud allpool. Oluliste vahenditena kasutab rakendus Google Gmail ja Mail API-sid.
+
+__Hindetabel__. Rakendus on seotud hindetabeliga. Hindetabelis märgitakse iseseisvate tööde (ülesannete lahendamise) tulemused. Hindetabel on Google Docs arvutustabel. Juurdepääs hindetabelile on õppejõul (kõik õigused) ja tudengitel (vaatamis- ja kommenteerimisõigus).
+
+__Isikuandmete kaitse__. Tudengile antakse juurdepääs juhu-URL-ga, mille ROBO saadab tudengile e-postiga. Juhu-URL-i avalikult välja ei panda.
+
+__E-posti aadressid__. ROBO on õppejõud postkastist tuvastanud tudengite e-posti aadressid ja koostanud neist aadressinimistu (vt koodis funktsioon `koguAadressid()`). Tudeng, kelle aadressi ei ole nimistus, peab teavituste saamiseks pöörduma õppejõu poole, kes lisab tudengi aadressi aadressinimistusse.
+
+__Teavitused__. Õppejõud võib ROBO abil saata e-kirja kõigile aadressinimistus olevatele tudengitele (vt koodis funktsioon `saadaKiri()`).
+
+__Töö arvestamise algoritm__. Hindetabelit täites ROBO (vt koodis funktsioon `registreeri()`):
+1. käib läbi õppejõu postkasti
+2. valib avatud kirjad
+3. tuvastab kirja teemarealt ülesande numbri (lähtudes [lahendusaruande vormistamise juhendis](Juhend) sätestatud vormingust `Ül <n>`)
+4. tuvastab kirja teemarealt ülesande lahendanud tudengite nimed
+5. teeb hindetabelis vastavate tudengite kohta märke, et ülesanne on tehtud.
+
+__Teadaolevad vead ja nõrkused__.
+1. ROBO ei käsitle praegu õigesti juhtu, kus praktikumirühmas (või ühes ja teises praktikumirühmas) on kaks sama perekonnanimega tudengit. Vastavate tudengite hinded peab õppejõud märkima käsitsi.
+2. Ülesande numbri tuvastamiseks kasutab ROBO regulaaravaldist. Kõiki [lahendusaruande vormistamise juhendis](Juhend) sätestatud vormingust `Ül <n>` kõrvalekaldumisi ei suuda programm siiski ära tunda. 
+
+## Rakenduse lähtekood
 
 ````
 /*
