@@ -38,7 +38,7 @@
       pub: false
     - title: "9 Süsteemi arhitektuur"
       url: "/L9"
-      pub: false
+      pub: true
     - title: "10 Infosüsteemi füüsiline dimensioon"
       url: "/L10"
       pub: false
@@ -83,7 +83,7 @@
       pub: true
     - title: "9 Süsteemi arhitektuuri kavandamine"
       url: "/P9"
-      pub: false
+      pub: true
     - title: "10 Infosüsteemi prototüüpimine"
       url: "/P10"
       pub: false
