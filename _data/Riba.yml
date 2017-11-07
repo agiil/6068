@@ -176,6 +176,9 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Sessiooni üleandmise" e Legacy muster"
+      url: "/Legacy"
+      pub: true
     - title: "Salasõna"
       url: "/Salasona"
       pub: true
