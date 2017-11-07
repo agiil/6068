@@ -8,7 +8,7 @@
       pub: true
     - title: "Hinded"
       url: "/Hinded.html"
-      pub: true
+      pub: false
       
 - title: "Loengud"
   categories:
@@ -128,7 +128,7 @@
       pub: true
     - title: "8 Süsteemi arhitektuuri kavandamine"
       url: "/Y8"
-      pub: false
+      pub: true
     - title: "9 Infosüsteemi prototüüpimine"
       url: "/Y9"
       pub: false
