@@ -144,6 +144,10 @@
 
 - title: "Näiterakendused"
   categories:
+    - title: "RIHA API demo"
+      url: "https://apidemojatest.herokuapp.com/watch"
+      pub: true
+      outerLink: true
     - title: "ROBO"
       url: "/ROBO"
       pub: true
