@@ -6,7 +6,7 @@ _Õppejõu abiline ROBO_
 
 ## Vastuskirjade saatmine
 
-````javascript
+{% highlight ruby %}
 function vastaKiri() {
 /*
   Vaatab läbi postkasti saabunud kirjad. Uurib teemarida, üritab tuvastada ülesande numbri ja
@@ -96,4 +96,4 @@ function tuvastaNimed(teemarida) {
   }
   return leitudNimed;
 }
-````
+{% endhighlight %}
