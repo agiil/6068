@@ -6,7 +6,7 @@ _Õppejõu abiline ROBO_
 
 ## Vastuskirjade saatmine
 
-{% highlight ruby %}
+{% highlight javascript %}
 function vastaKiri() {
 /*
   Vaatab läbi postkasti saabunud kirjad. Uurib teemarida, üritab tuvastada ülesande numbri ja
