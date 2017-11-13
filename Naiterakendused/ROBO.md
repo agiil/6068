@@ -4,6 +4,8 @@ permalink: ROBO
 
 # Õppejõu abiline ROBO
 
+Vt ka [Vastuskirjade saatmine](ROBO2) (lisatud 13.11.2017)
+
 ## Arhitektuuri ülevaade
 
 <img src='https://agiil.github.io/6068/img/ROBO.PNG' width='420'>
@@ -37,7 +39,7 @@ __Teadaolevad vead ja nõrkused__.
 
 ## Rakenduse lähtekood
 
-````
+````javascript
 /*
 - Gmail teenus: https://developers.google.com/apps-script/reference/gmail/
 - Regex exec(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec 
