@@ -39,7 +39,7 @@ __Teadaolevad vead ja nõrkused__.
 
 ## Rakenduse lähtekood
 
-````javascript
+{% highlight javascript %}
 /*
 - Gmail teenus: https://developers.google.com/apps-script/reference/gmail/
 - Regex exec(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec 
@@ -170,4 +170,4 @@ function puhastaTabel() {
   }
 }
 
-````
+{% endhighlight %}
