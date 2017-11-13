@@ -1,5 +1,5 @@
 ---
-permalink: ROBO
+permalink: ROBO2
 ---
 
 _Õppejõu abiline ROBO_
