@@ -10,7 +10,7 @@ __Õpetaja Lauri uued õpetused__
 
 3 Kui tervet rehkendust ei jõua, tee pool, aga tee ise.
 
-4 Kui tervet rehkendust ei jõua, ära tee, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja
+4 Kui tervet rehkendust ei jõua, ära tee, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
 
 5 Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
