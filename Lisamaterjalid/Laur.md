@@ -42,7 +42,7 @@ Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks
 
 "Tee kogu rehkendus ära ja näed, et polnudki vaja."
 
-"Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_. Hinda mitu aastat kulub kogu rehkenduse tegemiseks."
+"Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_. Hinda mitu aastat kulub kogu rehkenduse tegemiseks. Seejärel kavanda edasised tegevused."
 
 "Hakka tagant otsast tegema."
 
