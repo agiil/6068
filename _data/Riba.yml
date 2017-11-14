@@ -8,7 +8,7 @@
       pub: true
     - title: "Hinded"
       url: "/Hinded.html"
-      pub: true
+      pub: false
       
 - title: "Loengud"
   categories:
@@ -38,7 +38,7 @@
       pub: false
     - title: "9 Süsteemi arhitektuur"
       url: "/L9"
-      pub: false
+      pub: true
     - title: "10 Infosüsteemi füüsiline dimensioon"
       url: "/L10"
       pub: false
@@ -83,7 +83,7 @@
       pub: true
     - title: "9 Süsteemi arhitektuuri kavandamine"
       url: "/P9"
-      pub: false
+      pub: true
     - title: "10 Infosüsteemi prototüüpimine"
       url: "/P10"
       pub: false
@@ -128,7 +128,7 @@
       pub: true
     - title: "8 Süsteemi arhitektuuri kavandamine"
       url: "/Y8"
-      pub: false
+      pub: true
     - title: "9 Infosüsteemi prototüüpimine"
       url: "/Y9"
       pub: false
@@ -144,6 +144,10 @@
 
 - title: "Näiterakendused"
   categories:
+    - title: "RIHA API demo"
+      url: "https://apidemojatest.herokuapp.com/watch"
+      pub: true
+      outerLink: true
     - title: "ROBO"
       url: "/ROBO"
       pub: true
@@ -176,6 +180,12 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Õpetaja Laur"
+      url: "/Laur"
+      pub: true
+    - title: "Sessiooni üleandmise e Legacy muster"
+      url: "/Legacy"
+      pub: true
     - title: "Salasõna"
       url: "/Salasona"
       pub: true

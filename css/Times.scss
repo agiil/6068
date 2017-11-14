@@ -96,6 +96,7 @@ nav ul {
   padding-left: 0;
   list-style: none;
 }
+nav ul li { margin-bottom: 1em; }
 nav ul ul { margin-left: 1em; }
 
 /* ==== TOC genereeritud === */
@@ -138,7 +139,6 @@ blockquote {
 pre, code, samp {
   font-family: 'Anonymous Pro', monospace;
   font-size: 16px; color: IndianRed !important;
-  background-color: LightCyan !important;
   overflow-y: hidden; overflow-x: hidden;
   page-break-inside: avoid; hyphens: none;
   text-transform: none;
