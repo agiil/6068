@@ -14,11 +14,11 @@ __Õpetaja Lauri uued õpetused__
 
 5 Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
-6 Kui kogu rehkendust ei jõua, kutsu sõber appi. Sina teed pool ja sõber pool. _Win-win_ situatsioon. Seda nimetatakse rühmatööks. 
+6 Kui kogu rehkendust ei jõua, kutsu sõber appi. Sina teed pool ja sõber pool. _Win-win_ situatsioon! (Seda nimetatakse ka rühmatööks). 
 
 7 Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks.
 
-8 Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuge, 51% on uue õppestandardi kohaselt juba läbiv hinne.
+8 Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuge, 51% on Bologna õppestandardi kohaselt juba läbiv hinne.
 
 9 Ülesanded? Saada nad kõik p....se!
 
