@@ -180,6 +180,9 @@
       outerLink: true
 - title: "Lisamaterjalid"
   categories:
+    - title: "Abiteksti koostamise näide"
+      url: "APIabi"
+      pub: true
     - title: "Õpetaja Laur"
       url: "/Laur"
       pub: true
