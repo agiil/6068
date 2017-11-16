@@ -14,7 +14,7 @@ function vastaKiri() {
   Vastatud kirjale lisab märgendi VASTATUD. Märgendi abil väldib ka vastuse korduvat saatmist.
   Programm käivitub perioodiliselt. 
 */
-  const vaadeldavaidLoimi = 3;
+  const vaadeldavaidLoimi = 30;
   const maksKirju = 10; // Veatõkkeks, et programm "hulluks ei läheks".
   var kirjuSaadetud = 0;
   Logger.log('**** vastaKiri ****');
@@ -41,13 +41,13 @@ function vastaKiri() {
           var teemarida = kiri.getSubject();
           Logger.log(teemarida);
           var otsimuster = /ÜL.*?(\d)/i
-          var otsitulemus = otsimuster.exec(teemarida.toUpperCase())[1];
+          var otsitulemus = otsimuster.exec(teemarida.toUpperCase());
           Logger.log(otsitulemus);
           var tuvastatudNimed = tuvastaNimed(teemarida);
           // Moodusta vastuskirja sisu
           var sisu = 
               'Tere! Mina olen ROBO, õppejõu automaatabiline. Vaatan regulaarselt läbi ' +
-                'postkasti ja kinnitan iseseivate tööde raportite kättesaamist. ';  
+                'postkasti ja kinnitan iseseisvate tööde raportite kättesaamist. ';  
           if ((otsitulemus === null) && (tuvastatudNimed.length == 0)) { // Ei ole vist raport
             sisu = sisu +
               'Aga see ei ole vist raport. Palun vabandust tülitamise pärast!';
@@ -55,7 +55,7 @@ function vastaKiri() {
           else {
             var s1;
             if (otsitulemus != null) {
-              s1 = 'Vaatan teemarealt, et ülesande nr on ' + otsitulemus + '. ';
+              s1 = 'Vaatan teemarealt, et ülesande nr on ' + otsitulemus[1] + '. ';
             } else {
               s1 = 'Vaatan, et teemareal ei ole ülesande numbrit. ';
             }
@@ -96,4 +96,5 @@ function tuvastaNimed(teemarida) {
   }
   return leitudNimed;
 }
+
 {% endhighlight %}
