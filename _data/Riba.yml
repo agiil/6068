@@ -41,7 +41,7 @@
       pub: true
     - title: "10 Infosüsteemi füüsiline dimensioon"
       url: "/L10"
-      pub: false
+      pub: true
     - title: "11 Andmete (info) roll infosüsteemis"
       url: "/L11"
       pub: false
@@ -86,7 +86,7 @@
       pub: true
     - title: "10 Infosüsteemi prototüüpimine"
       url: "/P10"
-      pub: false
+      pub: true
     - title: "11 Kontseptuaalne modelleerimine"
       url: "/P11"
       pub: false
@@ -131,7 +131,7 @@
       pub: true
     - title: "9 Infosüsteemi prototüüpimine"
       url: "/Y9"
-      pub: false
+      pub: true
     - title: "10 Kontseptuaalse mudeli koostamine"
       url: "/Y10"
       pub: false
