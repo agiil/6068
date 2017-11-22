@@ -89,7 +89,7 @@
       pub: true
     - title: "11 Kontseptuaalne modelleerimine"
       url: "/P11"
-      pub: false
+      pub: true
     - title: "12 Nõuete dokumendi koostamine"
       url: "/P12"
       pub: false
@@ -134,7 +134,7 @@
       pub: true
     - title: "10 Kontseptuaalse mudeli koostamine"
       url: "/Y10"
-      pub: false
+      pub: true
     - title: "11 Nõuete dokumendi koostamine"
       url: "/Y11"
       pub: false
