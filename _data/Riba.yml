@@ -44,7 +44,7 @@
       pub: true
     - title: "11 Andmete (info) roll infosüsteemis"
       url: "/L11"
-      pub: false
+      pub: true
     - title: "12 Inimene ja infosüsteem"
       url: "/L12"
       pub: false
