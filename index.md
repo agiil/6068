@@ -13,7 +13,7 @@ layout: Avaleht
 </p>
 
 <p class='tags'><span class='tag'>UUS</span></p>
-[ROBO 2](ROBO2) · [Loeng 11](L11) · [Praktikum 12](P12) · [Ülesanne 10](Y10) · [Ülesanne 11](Y11)
+[ROBO 2](ROBO2) · [Loeng 12](L12) · [Praktikum 12](P12) · [Ülesanne 10](Y10) · [Ülesanne 11](Y11)
 
 
 __Infosüsteem__ on organisatsiooni äri- või tegevuseesmärkide saavutamisele suunatud süsteemne tarkvaralahendus.

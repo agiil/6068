@@ -47,7 +47,7 @@
       pub: true
     - title: "12 Inimene ja infosüsteem"
       url: "/L12"
-      pub: false
+      pub: true
     - title: "13 Arendus- ja muutusprotsessid infosüsteemides"
       url: "/L13"
       pub: false
