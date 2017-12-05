@@ -4,8 +4,6 @@ permalink: ROBO
 
 # Õppejõu abiline ROBO
 
-Vt ka [Vastuskirjade saatmine](ROBO2) (lisatud 13.11.2017)
-
 ## Arhitektuuri ülevaade
 
 <img src='https://agiil.github.io/6068/img/ROBO.PNG' width='420'>
@@ -40,50 +38,14 @@ __Teadaolevad vead ja nõrkused__.
 ## Rakenduse lähtekood
 
 {% highlight javascript %}
-/*
-- Gmail teenus: https://developers.google.com/apps-script/reference/gmail/
-- Regex exec(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec 
-*/
-
-var tooLeht = SpreadsheetApp.getActiveSheet();
-var aadressileht = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('AADRESSID');
-tudengeidKokku = 80;
-
-function saadaKiri() {
-  var aadressid = aadressileht.getDataRange().getValues();
-  var keha = 'Tere! ROBO siin. Olen nüüd natuke targem ja oskan aru saada ka Teie lihtsamatest "kirjavigadest". ' +
-    'Näiteks kui kirjutate Ül1, saan aru. Üks viga tekkis ka sellest, et 1. praktikumirühmas' +
-    'on HINREK Saar, 2. rühmas aga MARGE Saar. Mina võtan alati esimese nime, mis tabelis ette tuleb!' + 
-    'Nime vahetama te ei pea siiski minema. Õppejõud lubas selle ja võimalikud muud asjad järgmise' +
-    ' loengu või praktikumi järel koos teiega käsitsi korda seda!' +
-      ' lugupidamisega, ROBO'  ;
-  for (var i = 0; i < aadressid.length; i++) {
-     MailApp.sendEmail(aadressid[i],
-       "IFI 6068 VIGA LEITUD!",
-       keha);
-  }     
-}
-
-/* ---- Saadetud kirjad --- 
-
-xx.10.2017 Tere! Näen, et inimesed on mulle kirju saatnud. Vist ROBO ei saanud kõiki töid ' + 
-    'tabelisse kirja. Kuidas ROBO intelligentsemaks teha? ROBO kood on siin: ' +
-    'https://agiil.github.io/6068/ROBO. Kas teil on ettepanekuid? 
-
-25.10.2017 'Tere! Aitan õppejõudul ettekantud tööde arvestust pidada.' + 
-    ' Vahekokkuvõttega saate tutvuda ' + 
-    'https://docs.google.com/a/tlu.ee/spreadsheets/d/1Gqi8Art_AA1Q-sAdj7z5EATPs43NtpJ_JA2A9EIuc_Q/edit?usp=sharing. ' +
-    'Minu endaga: https://agiil.github.io/6068/ROBO. Terv! ROBO'
-*/
-
 function registreeri() {
 /*
-  Vaatab läbi postkasti ja registreerib ettekantud tööd.
+  Vaatab läbi postkasti viimased 100 lõime ja registreerib ettekantud tööd.
 */
   // puhastaTabel(); 
   var perenimed = leiaPerenimed();
   var loimed = GmailApp.getInboxThreads();
-  for (var i = 0; i < loimed.length; i++) {
+  for (var i = 0; (i < loimed.length) && (i < 100); i++) {
     var loimekirjad = loimed[i].getMessages();
     for (var j = 0; j < loimekirjad.length; j++) {
       var kiri = loimekirjad[j];
@@ -91,14 +53,15 @@ function registreeri() {
         var teemarida = kiri.getSubject();
         var ylNr = leiaYlesandeNr(teemarida);
         if (ylNr > 0) {
-          leiaTudengid(teemarida, ylNr, perenimed);
+          leiaTudengidJaKannaSisse(teemarida, ylNr, perenimed);
         }
       }
     }
   }
-}  
+}{% endhighlight %}
 
-function leiaTudengid(teemarida, ylNr, perenimed) {
+{% highlight javascript %}
+function leiaTudengidJaKannaSisse(teemarida, ylNr, perenimed) {
   var c = 0;
   var i = 0;
   do {
@@ -110,22 +73,26 @@ function leiaTudengid(teemarida, ylNr, perenimed) {
   }
   while (i < perenimed.length && c < 5);
 }
+{% endhighlight %}
 
+{% highlight javascript %}
 function kannaSisse(i, perenimi, ylNr) {
-  Logger.log(i.toString() + ' ' + perenimi + ' ' + ylNr.toString());
-  tooLeht.getRange(i + 2, ylNr + 3).setValue('A');
-}
-
-function leiaYlesandeNr(teemarida) {
-  var otsimuster = /ÜL.*?(\d)/i
-  var otsitulemus = otsimuster.exec(teemarida.toUpperCase());
-  if (otsitulemus == null) {
-    return 0;
-  } else {
-    return parseInt(otsitulemus[1]);
+  // Kontrollida, kas märge on juba olemas
+  if (tooLeht.getRange(i + 2, ylNr + 3).getValue() !== 'A') {
+    Logger.log('Tabelisse kantud: ' + perenimi + ' ' + ylNr.toString());
+    tooLeht.getRange(i + 2, ylNr + 3).setValue('A');  
   }
-}  
+}
+{% endhighlight %}
 
+{% highlight javascript %}
+function puhastaTabel() {
+  for (var i = 1; i <= tudengeidKokku; i++) {
+    tooLeht.getRange(i + 1, 4, 80, 12).setValue('');
+  }
+}{% endhighlight %}
+
+{% highlight javascript %}
 function leiaPerenimed() {
   var andmed = tooLeht.getDataRange().getValues();
   var perenimed = [];
@@ -134,7 +101,37 @@ function leiaPerenimed() {
   } 
   return perenimed;
 }
+{% endhighlight %}
 
+{% highlight javascript %}
+function leiaYlesandeNr(teemarida) {
+/*
+  Kontrollib, kas sõnes teemarida sisaldub ülesande number.
+  Number võib olla vahemikus 1..12.
+  Kui ei leita, siis tagastab väärtuse 0.
+  NB Otsitulemus on massiiv, kus kirjes 0 on vastanud sõne,
+  kirjes 1 on esimese grupi väärtus
+*/
+  var otsimuster = /ÜL.*?(\d{1,2})/i
+  var otsitulemus = otsimuster.exec(teemarida.toUpperCase());
+  // Logger.log('leiaYlesandeNr: Otsitulemus: ' + otsitulemus);
+  var t = 0; // Tagastatav väärtus
+  if (otsitulemus == null) {
+    t = 0;
+  } else {
+    var v = parseInt(otsitulemus[1]);
+    if (v <= 12) {
+      t = v;
+    } else {
+      t = 0;
+    }
+  }
+  Logger.log('leiaYlesandeNr: Leitud ülesande nr: ' + t.toString());
+  return t;
+}  
+{% endhighlight %}
+
+{% highlight javascript %}
 function koguAadressid() {
 /*
   Käib läbi postkasti ja kogub saatjate aadressid lehele AADRESSID.
@@ -163,11 +160,124 @@ function koguAadressid() {
     aadressileht.getRange(k + 1, 1).setValue(aadressid[k]);
   }
 }
+{% endhighlight %}
 
-function puhastaTabel() {
-  for (var i = 1; i <= tudengeidKokku; i++) {
-    tooLeht.getRange(i + 1, 4, 80, 12).setValue('');
-  }
+{% highlight javascript %}
+function saadaKiri() {
+  var aadressid = aadressileht.getDataRange().getValues();
+  var keha = 'Tere! Vastan nüüd kõigile kirjadele. Kontrollin, et ülesande number ' +
+    'ja tiimiliikmete nimed on teemareal kirjas. Käin postkasti lugemas kord päevas. ' +
+    'Kuidas see täpselt käib, vaadake https://agiil.github.io/6068/ROBO2. ' +
+    ' lugupidamisega, ROBO'  ;
+  for (var i = 0; i < aadressid.length; i++) {
+     MailApp.sendEmail(aadressid[i],
+       "IFI 6068 VIGA LEITUD!",
+       keha);
+  }     
 }
+{% endhighlight %}
 
+{% highlight javascript %}
+function vastaKiri() {
+/*
+  Vaatab läbi postkasti saabunud kirjad. Uurib teemarida, üritab tuvastada ülesande numbri ja
+  tiimiliikmete perekonnanimed. Saadab kinnituse raporti kättesaamises kohta.
+  Vastatud kirjale lisab märgendi VASTATUD. Märgendi abil väldib ka vastuse korduvat saatmist.
+  Programm käivitub perioodiliselt. 
+*/
+  const vaadeldavaidLoimi = 30;
+  const maksKirju = 10; // Veatõkkeks, et programm "hulluks ei läheks".
+  var kirjuSaadetud = 0;
+  Logger.log('**** vastaKiri ****');
+ 
+  var vastatudM = GmailApp.getUserLabelByName("VASTATUD");
+  
+  var loimed = GmailApp.getInboxThreads(0, vaadeldavaidLoimi - 1);
+  for (var i = 0; i < loimed.length; i++) {
+    var loim = loimed[i]; 
+    // Kontrolli, kas kiri on juba vastatud
+    var loimeMargendid = loim.getLabels();
+    var jubaVastatud = false;
+    for (var j = 0; j < loimeMargendid.length; j++) {
+      if (loimeMargendid[j].getName() == "VASTATUD") {
+        jubaVastatud = true;
+        break;
+      }
+    }
+    if (!jubaVastatud) { 
+      var loimekirjad = loim.getMessages();
+      for (var j = 0; j < loimekirjad.length; j++) {
+        var kiri = loimekirjad[j];
+        if (kiri.isUnread()) {
+          var teemarida = kiri.getSubject();
+          Logger.log(teemarida);
+          var otsimuster = /ÜL.*?(\d)/i
+          var otsitulemus = otsimuster.exec(teemarida.toUpperCase());
+          Logger.log(otsitulemus);
+          var tuvastatudNimed = tuvastaNimed(teemarida);
+          // Moodusta vastuskirja sisu
+          var sisu = 
+              'Tere! Mina olen ROBO, õppejõu automaatabiline. Vaatan regulaarselt läbi ' +
+                'postkasti ja kinnitan iseseisvate tööde raportite kättesaamist. ';  
+          if ((otsitulemus === null) && (tuvastatudNimed.length == 0)) { // Ei ole vist raport
+            sisu = sisu +
+              'Aga see ei ole vist raport. Palun vabandust tülitamise pärast!';
+          }
+          else {
+            var s1;
+            if (otsitulemus != null) {
+              s1 = 'Vaatan teemarealt, et ülesande nr on ' + otsitulemus[1] + '. ';
+            } else {
+              s1 = 'Vaatan, et teemareal ei ole ülesande numbrit. ';
+            }
+            var s2;
+            if (tuvastatudNimed.length > 0) {
+              s2 = 'Teemarealt leian ' + tuvastatudNimed.length.toString() + ' nime: ' + 
+                tuvastatudNimed.toString() + '.';
+            } else {
+              s2 = 'Teemarealt ei leia ühtki nime.';
+            }
+            sisu = sisu + s1 + s2;
+          }  
+          // Saada vastuskiri välja
+          if (kirjuSaadetud <= maksKirju) {
+            MailApp.sendEmail(kiri.getFrom(),
+                              "IFI 6068 Kiri kätte saadud", sisu);
+            Logger.log('Saadetud vastuskiri: ' + kiri.getFrom() + ' | ' + sisu);
+            // Märgi lõim vastatuks
+            loim.addLabel(vastatudM);
+            kirjuSaadetud++;
+          }  
+        }
+      }
+    } // !jubaVastatud  
+  }
+}  
+{% endhighlight %}
+
+{% highlight javascript %}
+function tuvastaNimed(teemarida) {
+/*
+  Tagastab massiivi (võib olla tühi) argumendist leitud perenimedega
+*/
+  var perenimed = leiaPerenimed(); // Kaaluda refaktoorimist, ebaefektiivne.
+  var leitudNimed = [];
+  for (var i = 0; i < perenimed.length; i++) {
+    if (teemarida.indexOf(perenimed[i]) >= 0) {
+      leitudNimed.push(perenimed[i]);
+    }
+  }
+  return leitudNimed;
+}
+{% endhighlight %}
+
+{% highlight javascript %}
+/*
+- Gmail teenus: https://developers.google.com/apps-script/reference/gmail/
+- Regex exec(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec 
+*/
+
+var tooLeht = SpreadsheetApp.getActiveSheet();
+var aadressileht = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('AADRESSID');
+tudengeidKokku = 80;
 {% endhighlight %}
