@@ -186,7 +186,7 @@ function vastaKiri() {
   Programm käivitub perioodiliselt. 
 */
   const vaadeldavaidLoimi = 30;
-  const maksKirju = 10; // Veatõkkeks, et programm "hulluks ei läheks".
+  const maksKirju = 40; // Veatõkkeks, et programm "hulluks ei läheks".
   var kirjuSaadetud = 0;
   Logger.log('**** vastaKiri ****');
  
@@ -211,7 +211,7 @@ function vastaKiri() {
         if (kiri.isUnread()) {
           var teemarida = kiri.getSubject();
           Logger.log(teemarida);
-          var otsimuster = /ÜL.*?(\d)/i
+          var otsimuster = /ÜL.*?(\d{1,2})/i
           var otsitulemus = otsimuster.exec(teemarida.toUpperCase());
           Logger.log(otsitulemus);
           var tuvastatudNimed = tuvastaNimed(teemarida);
