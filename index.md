@@ -7,13 +7,13 @@ layout: Avaleht
 <p>
  <i class="material-icons ikoon teal">code</i>
  <i class="material-icons ikoon purple">account_circle</i>
- <i class="material-icons ikoon">highlight</i>
+ <!-- i class="material-icons ikoon">highlight</i>
  <i class="material-icons ikoon brown400">swap_calls</i>
- <i class="material-icons ikoon erepunane">cloud_circle</i>
+ <i class="material-icons ikoon erepunane">cloud_circle</i -->
 </p>
 
 <p class='tags'><span class='tag'>UUS</span></p>
-[ROBO](ROBO) · [Loeng 13](L13) · [Praktikum 13](P13) · [Ülesanne 12](Y12)
+[ROBO](ROBO) · [Praktikum 13](P13) · [Ülesanne 12](Y12)
 
 
 __Infosüsteem__ on organisatsiooni äri- või tegevuseesmärkide saavutamisele suunatud süsteemne tarkvaralahendus.
