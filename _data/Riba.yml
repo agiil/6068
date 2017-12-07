@@ -50,7 +50,7 @@
       pub: true
     - title: "13 Arendus- ja muutusprotsessid infosüsteemides"
       url: "/L13"
-      pub: false
+      pub: true
     - title: "14 Infosüsteemide arengutendentsidest"
       url: "/L14"
       pub: false
