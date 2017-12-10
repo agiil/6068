@@ -17,4 +17,7 @@
   background-color: Bisque;
   border-style: solid;
 }
-	
+
+.form-control, button {
+  font-family: 'Times New Roman', serif;
+}
