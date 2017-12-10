@@ -55,6 +55,23 @@ function esitaEksamitoo() {
 
 function alusta() {
   // Kontrolli, kas Google tööleht on valmis tulemusi vastu võtma
+
+  console.log(url);
+  fetch(url)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(saadudJSON => {
+    $('#teenuseSeisund').text('Teenus on avatud.');
+    console.log('Teenus on avatud.');
+  })
+  .catch(error => {
+    $('#teenuseSeisund').text('Teenus ei ole avatud.');
+    console.log('Teenus ei ole avatud.');
+  });
+
+  return
+
   $.get({
     url: url,
     dataType: 'text',
