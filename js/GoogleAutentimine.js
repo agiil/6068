@@ -8,9 +8,9 @@ function onSignIn(googleUser) {
     Arusaamatu, kuidas googleUser moodustatakse.
     GoogleUser kirjeldus vt: https://developers.google.com/identity/sign-in/web/reference#users 
 
-    ID token pannakse kaasa uue teksti salvestamispäringus ja valideeritakse serveri poolel - Google Apps Script rakenduses
+    ID token pannakse kaasa uue salvestamispäringus ja valideeritakse serveri poolel - Google Apps Script rakenduses
 
-    ID tokeni audience-ks on CLIENT_ID '554561859935-1ojca8mj94fa41mebnjnhqvt83t4gdfj.apps.googleusercontent.com', see on seatud HTML-avalehel meta-päises 'google-signin-client_id'.
+    ID tokeni audience-ks on CLIENT_ID, mis on seatud HTML-avalehel meta-päises 'google-signin-client_id'.
 
   */
   kasutaja = googleUser;

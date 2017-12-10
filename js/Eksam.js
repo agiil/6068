@@ -1,6 +1,6 @@
 // Globaalsed muutujad
   /* REST API-t pakkuv Google Sheet, kus hindeid hoitakse. */
-  var url = 'https://script.google.com/a/macros/tlu.ee/s/AKfycbybjF4-1pNhu5QLtUCPvBXIw8VBv7BFEDKkyBRy-8fyLk5h6iY/exec';
+  var url = 'https://script.google.com/macros/s/AKfycbzykGrxNind0D5zx2-NkooaDLBRCjZfZE_3cnO5KMesAVhinerW/exec';
   var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
   /* Google Sign-In funktsioon, millega saab salvestamisel
   pärida ID token-i */
