@@ -13,7 +13,7 @@ function esitaEksamitoo() {
   var id_token = kasutaja.getAuthResponse().id_token;  
 
   // Kogu vastused
-  // Vastusest edastatakse ainult esimene tärk (A, B, C või D)
+  // Vastusest edastatakse ainult esimene tärk (-, A, B, C või  D)
   var vastused = [
     $("#s1").val().substring(0, 1),
     $("#s2").val().substring(0, 1)
