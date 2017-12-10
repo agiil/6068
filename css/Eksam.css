@@ -1,0 +1,19 @@
+/* //// Material design ikoonid //// */
+.ikoon { color: #00E; /* Sinine */
+  font-size: 48px !important; }
+	
+/* //////// Põhiala //////// */
+.vastusteAla { position: relative; margin: 70px 100px; }
+
+#teatealaYmbris { min-height: 60px; }
+#teateAla { 
+  font-size: 24px;
+	min-height: 30px; line-height: 30px;
+	outline: medium none; padding: 8px 12px;
+	width: 40rem;
+ }
+.infoteade { border: 1px solid Aquamarine; border-radius: 8px; 
+  background-color: Azure; }
+.veateade { border: 1px solid Red; border-radius: 8px; 
+  background-color: Bisque; }
+	
