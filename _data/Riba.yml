@@ -41,16 +41,16 @@
       pub: true
     - title: "10 Infosüsteemi füüsiline dimensioon"
       url: "/L10"
-      pub: false
+      pub: true
     - title: "11 Andmete (info) roll infosüsteemis"
       url: "/L11"
-      pub: false
+      pub: true
     - title: "12 Inimene ja infosüsteem"
       url: "/L12"
-      pub: false
+      pub: true
     - title: "13 Arendus- ja muutusprotsessid infosüsteemides"
       url: "/L13"
-      pub: false
+      pub: true
     - title: "14 Infosüsteemide arengutendentsidest"
       url: "/L14"
       pub: false
@@ -86,16 +86,16 @@
       pub: true
     - title: "10 Infosüsteemi prototüüpimine"
       url: "/P10"
-      pub: false
+      pub: true
     - title: "11 Kontseptuaalne modelleerimine"
       url: "/P11"
-      pub: false
+      pub: true
     - title: "12 Nõuete dokumendi koostamine"
       url: "/P12"
-      pub: false
+      pub: true
     - title: "13 Infosüsteemi arendusplaani koostamine"
       url: "/P13"
-      pub: false
+      pub: true
     - title: "14 Infosüsteemi arendusplaani läbivaatus"
       url: "/P14"
       pub: false
@@ -131,16 +131,16 @@
       pub: true
     - title: "9 Infosüsteemi prototüüpimine"
       url: "/Y9"
-      pub: false
+      pub: true
     - title: "10 Kontseptuaalse mudeli koostamine"
       url: "/Y10"
-      pub: false
+      pub: true
     - title: "11 Nõuete dokumendi koostamine"
       url: "/Y11"
-      pub: false
+      pub: true
     - title: "12 Infosüsteemi arenduse plaanimine"
       url: "/Y12"
-      pub: false
+      pub: true
 
 - title: "Näiterakendused"
   categories:
