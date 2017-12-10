@@ -8,6 +8,7 @@
 
 function esitaEksamitoo() {
   /* Saada vastused Google Apps töölehele */
+  console.log('esitaEksamitöö: Saada vastused Google Apps töölehele');
 
   /* ID token on oluline võtta iga kord enne salvestamist, sest see aegub tunniga. */  
   var id_token = kasutaja.getAuthResponse().id_token;  
@@ -55,8 +56,6 @@ function esitaEksamitoo() {
 
 function alusta() {
   // Kontrolli, kas Google tööleht on valmis tulemusi vastu võtma
-
-  console.log(url);
   fetch(url)
   .then(function (response) {
     return response.json();
@@ -68,19 +67,5 @@ function alusta() {
   .catch(error => {
     $('#teenuseSeisund').text('Teenus ei ole avatud.');
     console.log('Teenus ei ole avatud.');
-  });
-
-  return
-
-  $.get({
-    url: url,
-    dataType: 'text',
-    success: function( resp ) {
-      $('#teenuseSeisund').text('Teenus on avatud.');
-    },
-    error: function (req, status, err) {
-      $('#teenuseSeisund').text('Teenus ei ole avatud.');
-      console.log( 'alusta: Google tööleht ei tööta: ', status, err );
-    }
   });
 }
