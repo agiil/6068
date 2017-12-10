@@ -43,11 +43,11 @@ function esitaEksamitoo() {
     // Töötle töölehe vastus
     if (data.result == 'success') {
       $('#teateAla')
-        .text('Salvestatud')
+        .text('Salvestatud.')
         .addClass('infoteade');
     } else { 
       $('#teateAla')
-        .text('Salvestamine ebaõnnestus. Veakood: Google Apps ' + data.error)
+        .text('Salvestamine ebaõnnestus. Veakood: Google Apps ' + data.error.message)
         .addClass('veateade');
       return
     }
