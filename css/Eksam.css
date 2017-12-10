@@ -3,16 +3,18 @@
 .vastusteAla { position: relative; margin: 70px 100px; }
 
 .teade {
-  width: 40rem;
+  width: 40rem; min-height: 2rem;
   border-radius: 8px; padding: 4px;
-  border-width: 1px; border-style: solid;
+  border-width: 1px; border-style: none;
  } 
 .infoteade {
   border-color: Aquamarine;
   background-color: Azure;
+  border-style: solid;
 }
 .veateade {
   border-color: Red;
   background-color: Bisque;
+  border-style: solid;
 }
 	

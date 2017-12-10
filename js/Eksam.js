@@ -47,7 +47,7 @@ function esitaEksamitoo() {
     } else { 
       $('#teateAla')
         .text('Salvestamine ebaõnnestus. Veakood: Google Apps ' + data.error)
-        .addClass('infoteade');
+        .addClass('veateade');
       return
     }
 	});
@@ -61,11 +61,15 @@ function alusta() {
     return response.json();
   })
   .then(saadudJSON => {
-    $('#teenuseSeisund').text('Teenus on avatud.');
+    $('#teenuseSeisund')
+      .addClass('infoteade')
+      .text('Teenus on avatud.');
     console.log('Teenus on avatud.');
   })
   .catch(error => {
-    $('#teenuseSeisund').text('Teenus ei ole avatud.');
+    $('#teenuseSeisund')
+      .addClass('veateade')
+      .text('Teenus ei ole avatud.');
     console.log('Teenus ei ole avatud.');
   });
   // Käsitleja eksamitöö esitamise nupule
