@@ -53,6 +53,17 @@ function esitaEksamitoo() {
 
 }    
 
-////////////////// Alustamine //////////////////////////////
 function alusta() {
+  // Kontrolli, kas Google tööleht on valmis tulemusi vastu võtma
+  $.get({
+    url: url,
+    dataType: 'text',
+    success: function( resp ) {
+      $('#teenuseSeisund').text('Teenus on avatud.');
+    },
+    error: function (req, status, err) {
+      $('#teenuseSeisund').text('Teenus ei ole avatud.');
+      console.log( 'alusta: Google tööleht ei tööta: ', status, err );
+    }
+  });
 }
