@@ -11,7 +11,11 @@ function esitaEksamitoo() {
   /* Saada vastused Google Apps töölehele */
   console.log('esitaEksamitöö: Saada vastused Google Apps töölehele');
 
-  /* ID token on oluline võtta iga kord enne salvestamist, sest see aegub tunniga. */  
+  $('#teateAla')
+    .text('Oodake, salvestan...')
+    .addClass('infoteade');
+
+  /* ID token on oluline võtta iga kord enne salvestamist, sest see aegub tunniga. */
   var id_token = kasutaja.getAuthResponse().id_token;  
 
   // Kogu vastused
@@ -37,6 +41,7 @@ function esitaEksamitoo() {
     if (status !== 'success') {
       $('#teateAla')
         .text('Salvestamine ebaõnnestus. Veakood: jQuery ' + status)
+        .removeClass('infoteade')
         .addClass('veateade');
       return
     }
@@ -48,6 +53,7 @@ function esitaEksamitoo() {
     } else { 
       $('#teateAla')
         .text('Salvestamine ebaõnnestus. Veakood: Google Apps ' + data.error.message)
+        .removeClass('infoteade')
         .addClass('veateade');
       return
     }
