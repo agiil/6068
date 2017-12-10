@@ -68,4 +68,9 @@ function alusta() {
     $('#teenuseSeisund').text('Teenus ei ole avatud.');
     console.log('Teenus ei ole avatud.');
   });
+  // Käsitleja eksamitöö esitamise nupule
+  $('#esitaNupp').on('click', e => {
+    e.preventDefault(); 
+    esitaEksamitoo();
+  });
 }
