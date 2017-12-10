@@ -1,10 +1,11 @@
 // Globaalsed muutujad
-  /* REST API-t pakkuv Google Sheet, kus hindeid hoitakse. */
-  var url = 'https://script.google.com/macros/s/AKfycbzykGrxNind0D5zx2-NkooaDLBRCjZfZE_3cnO5KMesAVhinerW/exec';
-  var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
-  /* Google Sign-In funktsioon, millega saab salvestamisel
-  pärida ID token-i */
-  var kasutaja;
+var kysimusi = 2; // Küsimuste arv eksamitöös
+/* REST API-t pakkuv Google Sheet, kus hindeid hoitakse. */
+var url = 'https://script.google.com/macros/s/AKfycbzykGrxNind0D5zx2-NkooaDLBRCjZfZE_3cnO5KMesAVhinerW/exec';
+var autenditud = false; // Kas kasutaja on Google Sign-In teenuse abil autenditud
+/* Google Sign-In funktsioon, millega saab salvestamisel
+pärida ID token-i */
+var kasutaja;
 
 function esitaEksamitoo() {
   /* Saada vastused Google Apps töölehele */
@@ -15,11 +16,11 @@ function esitaEksamitoo() {
 
   // Kogu vastused
   // Vastusest edastatakse ainult esimene tärk (-, A, B, C või  D)
-  var vastused = [
-    $("#s1").val().substring(0, 1),
-    $("#s2").val().substring(0, 1)
-  ];  
-
+  // Vastused sidurdatakse üheks sõneks
+  var vastused = '';
+  for (var i = 1; i <= kysimusi; i++) {
+    vastused = vastused + $('#s' + i.toString()).val().substring(0, 1);
+  }
   // Koosta saadetav objekt
   var s = {
     IDToken: id_token, 
