@@ -17,7 +17,7 @@ v.2.0
 
 \* Kui tervet loengut ei jõua, seisa ja vaiki, sest nagu ütleb Wittgenstein, "wovon man nicht reden kann, darüber muss man schweigen".
 
-\* Kui tervet loengut ei jõua, tsiteeri John Cage-i: "I have nothing to say and I am saying it" ("Lecture on Nothing" (1949)).
+\* Kui tervet loengut ei jõua, järgi John Cage-i: "I have nothing to say and I am saying it" /"Lecture on Nothing" (1949)/.
 
 \* Kui kogu rehkendust ei jõua, tee pool.
 
@@ -29,7 +29,7 @@ v.2.0
 
 \* Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
-\* Kui kogu rehkendust ei jõua, las sõber teeb pool ja sina pool - _win-win_ situatsioon. 
+\* Kui kogu rehkendust ei jõua, las sõber teeb pool ja sina pool &mdash; _win-win_ situatsioon. 
 
 \* Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks.
 
