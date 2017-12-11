@@ -29,7 +29,9 @@
 </head>
 
 <body onload='alusta()'>
-  {% include KursusePais.html %}
+  {% if page.puhas != true %}
+    {% include KursusePais.html %}
+  {% endif %}
   
   <div id='Tekst'>      
     {{ content }}

@@ -1,5 +1,6 @@
 ---
 permalink: Laur
+puhas: true
 ---
 
 __Õpetaja Lauri uued õpetused__

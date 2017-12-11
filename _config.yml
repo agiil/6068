@@ -8,6 +8,7 @@ defaults:
     values:
       layout: "Times"
       sidebar: "false"
+      puhas: false
 
 exclude:
   - Ettevalmistus
