@@ -3,6 +3,10 @@ permalink: ROBO
 ---
 
 # Õppejõu abiline ROBO
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ## Arhitektuuri ülevaade
 
