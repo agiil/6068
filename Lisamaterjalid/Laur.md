@@ -4,49 +4,59 @@ permalink: Laur
 
 __Õpetaja Lauri uued õpetused__
 
-1 Kui kogu rehkendust ei jõua, tee pool.
+\* Kui kogu loengut pidada ei jõua, pea pool.
 
-2 Kui kogu rehkendust ei jõua, tee pool, aga tee hästi!
+\* Küsi, kas nad tahavad loengut.
 
-3 Kui tervet rehkendust ei jõua, tee pool, aga tee ise.
+\* Asenda loeng rühmatööga.
 
-4 Kui tervet rehkendust ei jõua, ära tee, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
+\* Anna neile rehkendus, mis palju aega nõuab, näiteks räsifunktsiooni ümberpööramine.
 
-5 Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
+\* Kui kogu loengut pidada ei jõua, jäta loeng ära - sest poolikult käsitlusel pole ju mõtet.
 
-6 Kui kogu rehkendust ei jõua, kutsu sõber appi. Sina teed pool ja sõber pool. _Win-win_ situatsioon! (Seda nimetatakse ka rühmatööks). 
+\* Kui kogu rehkendust ei jõua, tee pool.
 
-7 Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks.
+\* Kui kogu rehkendust ei jõua, tee pool, aga tee hästi!
 
-8 Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuge, 51% on Bologna õppestandardi kohaselt juba läbiv hinne.
+\* Kui tervet rehkendust ei jõua, tee pool, aga tee ise.
 
-9 Ülesanded? Saada nad kõik p....se!
+\* Kui tervet rehkendust ei jõua, ära tee, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
 
-10 Sa ei pea tegema kõiki ülesandeid.
+\* Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
-11 Sa ei jõua teha kõiki ülesandeid.
+\* Kui kogu rehkendust ei jõua, kutsu sõber appi. Sina teed pool ja sõber pool. _Win-win_ situatsioon! (Seda nimetatakse ka rühmatööks). 
 
-12 Ära tee iga ülesannet. aga kui teed, siis tee korralikult!
+\* Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks.
 
-13 Kui teed, siis tee korralikult. Ära jebi. Sa ei ole ometi mõni MacGyver.
+\* Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuke, \*% on Bologna õppestandardi kohaselt juba läbiv hinne.
 
-14 Kui teed, tee ühe raksuga. Pusides ei jõua kaugele. Või ära tee üldse.
+\* Ülesanded? Saada nad kõik p....se!
 
-15 Otsusta siis lõpuks ära, kas teed või ei tee!
+\* Sa ei pea tegema kõiki ülesandeid.
 
-16 Kui kogu rehkendust ei jõua teha, siis vali sellised osad, mis loovad kliendile kõige rohkem kohest väärtust. Tee need kõigepealt ära.
+\* Sa ei jõua teha kõiki ülesandeid.
 
-17 Sa ei jõua teha kogu rehkendust.
+\* Ära tee iga ülesannet. aga kui teed, siis tee korralikult!
 
-18 Kogu rehkendust polegi vaja.
+\* Kui teed, siis tee korralikult. Ära jebi. Sa ei ole ometi mõni MacGyver.
 
-19 Kui kogu rehkendusega valmis jõuad, on klientide vajadused juba muutunud.
+\* Kui teed, tee ühe raksuga. Pusides ei jõua kaugele. Või ära tee üldse.
 
-20 Tee kogu rehkendus ära ja näed, et polnudki vaja.
+\* Otsusta siis lõpuks ära, kas teed või ei tee!
 
-21 Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_. Hinda mitu aastat kulub kogu rehkenduse tegemiseks. Seejärel kavanda edasised tegevused.
+\* Kui kogu rehkendust ei jõua teha, siis vali sellised osad, mis loovad kliendile kõige rohkem kohest väärtust. Tee need kõigepealt ära.
 
-22 Alusta tegemist tagant otsast.
+\* Sa ei jõua teha kogu rehkendust.
+
+\* Kogu rehkendust polegi vaja.
+
+\* Kui kogu rehkendusega valmis jõuad, on klientide vajadused juba muutunud.
+
+\* Tee kogu rehkendus ära ja näed, et polnudki vaja.
+
+\* Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_. Hinda mitu aastat kulub kogu rehkenduse tegemiseks. Seejärel kavanda edasised tegevused.
+
+\* Alusta tegemist tagant otsast.
 
 
 
