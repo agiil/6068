@@ -4,6 +4,8 @@ permalink: Laur
 
 __Õpetaja Lauri uued õpetused__
 
+v.2.0
+
 \* Kui tervet loengut ei jõua, pea pool. Võimalusel asenda loeng rühmaaruteluga vm aktiivõppe vormiga.
 
 \* Kui tervet loengut ei jõua, siis küsi, äkki nad ei tahagi loengut?
