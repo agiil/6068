@@ -7,9 +7,9 @@ __Õpetaja Lauri uued õpetused__
 
 v.2.0
 
-\* Kui tervet loengut ei jõua, pea pool. Võimalusel asenda loeng rühmaaruteluga vm aktiivõppe vormiga.
+\* Kui tervet loengut ei jõua, teel pool. Võimalusel asenda loeng rühmaaruteluga vm aktiivõppe vormiga.
 
-\* Kui tervet loengut ei jõua, siis küsi, äkki nad ei tahagi loengut?
+\* Kui tervet loengut ei jõua, siis uuri, äkki nad ei tahagi loengut?
 
 \* Kui tervet loengut ei jõua, siis anna   räsifunktsiooni ümberpööramise rehkendus, selle lahendamiseks kulub 2<sup>60</sup> aastat.
 
@@ -25,15 +25,15 @@ v.2.0
 
 \* Kui tervet rehkendust ei jõua, tee pool, aga tee ise.
 
-\* Kui tervet rehkendust ei jõua, ära punnita, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
+\* Kui tervet rehkendust ei jõua, siis ära ürita, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
 
 \* Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
-\* Kui kogu rehkendust ei jõua, kutsu sõber appi. Sina teed pool ja sõber pool. _Win-win_ situatsioon. 
+\* Kui kogu rehkendust ei jõua, las sõber teeb pool ja sina pool - _win-win_ situatsioon. 
 
 \* Kui kogu rehkendust ei jõua, tee pool, aga tee tähtajaks.
 
-\* Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuke, 51% on Bologna õppestandardis läbiv hinne.
+\* Kui kogu rehkendust ei jõua, tee pool ja veel natuke, 51% on Bologna õppestandardis läbiv hinne.
 
 \* Kui tervet rehkendust ei jõua, tee pool, või veel parem saada nad ülesannetega üldse pikalt.
 
