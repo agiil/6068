@@ -11,19 +11,19 @@ v.2.0
 
 \* Kui tervet loengut ei jõua, siis küsi, äkki nad ei tahagi loengut?
 
-\* Kui tervet loengut ei jõua, siis anna neile  räsifunktsiooni ümberpööramise rehkendus, selleks kulub 2<sup>60</sup> aastat.
+\* Kui tervet loengut ei jõua, siis anna   räsifunktsiooni ümberpööramise rehkendus, neil kulub selleks 2<sup>60</sup> aastat.
 
 \* Kui tervet loengut ei jõua, jäta loeng ära. Poolikul loengul pole mõtet.
 
-\* Kui tervet loengut ei jõua, vaiki, sest "wovon man nicht reden kann, darüber muss man schweigen", ütleb Wittgenstein.
+\* Kui tervet loengut ei jõua, vaiki, sest nagu ütleb Wittgenstein, "wovon man nicht reden kann, darüber muss man schweigen".
 
 \* Kui kogu rehkendust ei jõua, tee pool.
 
-\* Kui kogu rehkendust ei jõua, tee pool, aga tee hästi!
+\* Kui kogu rehkendust ei jõua, tee pool, aga tee hästi.
 
 \* Kui tervet rehkendust ei jõua, tee pool, aga tee ise.
 
-\* Kui tervet rehkendust ei jõua, ära tee, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
+\* Kui tervet rehkendust ei jõua, ära punnita, sest Confucious ütleb, et ära tee midagi ja kõik saab tehtud. Confucius aga on suurim õpetaja.
 
 \* Kui kogu rehkendust ei jõua, tee vähemalt pool, aga tee ise ja korralikult.
 
@@ -33,7 +33,7 @@ v.2.0
 
 \* Kui kogu rehkendust ei jõua, tee pool ja veel kriipsuke, 51% on Bologna õppestandardis läbiv hinne.
 
-\* Kui tervet rehkendust ei jõua, tee pool, või Saada nad üldse ülesannetega p....se!
+\* Kui tervet rehkendust ei jõua, tee pool, või veel parem saada nad ülesannetega üldse pikalt.
 
 \* Sa ei pea tegema kõiki rehkendusi.
 
@@ -43,27 +43,25 @@ v.2.0
 
 \* Kogu rehkendust polegi vaja.
 
-\* Sa ei taha teha kõiki rehkendusi.
-
 \* Ei ole mõtet teha kõiki rehkendusi.
 
-\* Ära tee iga rehkendusi. Aga kui teed, siis tee korralikult!
+\* Sa tegelikult ei tahagi teha kõiki rehkendusi.
 
-\* Kui teed, siis tee korralikult. Ära jebi. Sa ei ole mõni MacGyver.
+\* Aga kui teed, siis tee korralikult.
 
-\* Kui teed, tee ühe raksuga. Pusides ei jõua kaugele. Või ära tee üldse.
+\* Kui teed, siis tee põhjalikult. Ära jebi. Sa ei ole mõni MacGyver.
 
-\* Otsusta siis lõpuks ära, kas teed või ei tee.
+\* Kui teed, tee ühe raksuga. Pusides ei jõua kaugele.
 
-\* Kui kogu rehkendust ei jõua teha, siis vali sellised osad, mis loovad kliendile kõige rohkem kohest väärtust. Tee need kõigepealt ära.
+\* Kui kogu rehkendust ei jõua, otsusta siis lõpuks ära, kas hakkad tegema või mitte.
 
-\* Kui kogu rehkendusega valmis jõuad, on klientide vajadused juba muutunud.
+\* Kui kogu rehkendust ei jõua, siis vali sellised osad, mis loovad kliendile kõige rohkem kohest väärtust. Tee need kõigepealt ära.
 
-\* Tee kogu rehkendus ära ja näed, et polnudki vaja.
+\* Kui kogu rehkendust ei jõua, tee pool ja vaata, kas rohkemaks on enam vajadust.
 
-\* Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_.
+\* Kui kogu rehkendust ei jõua, siis hakka otsast tegema. Mõõda aega, mis kulub. Arvuta edenemise kiirus. Seda nimetatakse _velocity_-ks.
 
-\* Kui tervet rehkendust ei jõua, jaota see osadeks ja tee osade kaupa.
+\* Kui tervet rehkendust ei jõua, jaota see loogilisteks tükkideks ja tee tükikaupa.
 
 \* Alusta tegemist tagant otsast.
 
