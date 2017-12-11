@@ -11,11 +11,13 @@ v.2.0
 
 \* Kui tervet loengut ei jõua, siis küsi, äkki nad ei tahagi loengut?
 
-\* Kui tervet loengut ei jõua, siis anna   räsifunktsiooni ümberpööramise rehkendus, neil kulub selleks 2<sup>60</sup> aastat.
+\* Kui tervet loengut ei jõua, siis anna   räsifunktsiooni ümberpööramise rehkendus, selle lahendamiseks kulub 2<sup>60</sup> aastat.
 
-\* Kui tervet loengut ei jõua, jäta loeng ära. Poolikul loengul pole mõtet.
+\* Kui tervet loengut ei jõua, jäta loeng ära, sest poolikul loengul pole mõtet.
 
-\* Kui tervet loengut ei jõua, vaiki, sest nagu ütleb Wittgenstein, "wovon man nicht reden kann, darüber muss man schweigen".
+\* Kui tervet loengut ei jõua, seisa ja vaiki, sest nagu ütleb Wittgenstein, "wovon man nicht reden kann, darüber muss man schweigen".
+
+\* Kui tervet loengut ei jõua, tsiteeri John Cage-i: "I have nothing to say and I am saying it" ("Lecture on Nothing" (1949)).
 
 \* Kui kogu rehkendust ei jõua, tee pool.
 
