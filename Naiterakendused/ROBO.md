@@ -42,7 +42,7 @@ __Teadaolevad vead ja nõrkused__.
 
 ## Eksamitöö vastuvõtmine
 
-<img src='https://agiil.github.io/6068/img/Eksam.PNG' width='420'>
+<img src='https://agiil.github.io/6068/img/Eksam.PNG' width='600'>
 
 Joonis 2. Eksamitöö vastuvõtmise arhitektuur
 
