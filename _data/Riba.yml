@@ -98,7 +98,7 @@
       pub: true
     - title: "14 Infosüsteemi arendusplaani läbivaatus"
       url: "/P14"
-      pub: false
+      pub: true
 
 - title: "Ülesanded"
   categories:
