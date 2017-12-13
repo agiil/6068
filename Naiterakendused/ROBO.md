@@ -16,7 +16,8 @@ Joonis 1. ROBO arhitektuur
 
 ROBO on rakendus, mis:
 - täidab hindetabelit
-- saadab kursusel osalevatele tudengitele e-postiga teavitusi.
+- saadab kursusel osalevatele tudengitele e-postiga teavitusi
+- võtab vastu e-eksamitöid.
 
 ROBO on Google Apps Script-is kirjutatud rakendus. Rakenduse lähtekood on toodud allpool. Oluliste vahenditena kasutab rakendus Google Gmail ja Mail API-sid.
 
@@ -38,6 +39,12 @@ __Töö arvestamise algoritm__. Hindetabelit täites ROBO (vt koodis funktsioon 
 __Teadaolevad vead ja nõrkused__.
 1. ROBO ei käsitle praegu õigesti juhtu, kus praktikumirühmas (või ühes ja teises praktikumirühmas) on kaks sama perekonnanimega tudengit. Vastavate tudengite hinded peab õppejõud märkima käsitsi.
 2. Ülesande numbri tuvastamiseks kasutab ROBO regulaaravaldist. Kõiki [lahendusaruande vormistamise juhendis](Juhend) sätestatud vormingust `Ül <n>` kõrvalekaldumisi ei suuda programm siiski ära tunda. Vormistusnõude täitmatajätmisel hinne siiski kaotsi ei lähe. Tudeng peab valesti vormistatud teemarea korral pöörduma õppejõud poole (praktikumi eel või järel), kes kannab hinde sisse.
+
+## Eksamitöö vastuvõtmine
+
+<img src='https://agiil.github.io/6068/img/Eksam.PNG' width='420'>
+
+Joonis 2. Eksamitöö vastuvõtmise arhitektuur
 
 ## Rakenduse lähtekood
 
