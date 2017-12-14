@@ -15,6 +15,8 @@ layout: Avaleht
 <p class='tags'><span class='tag'>UUS</span></p>
 [Eksamitöö (testiversioon)](Eksam) · [Praktikum 14](P14) · [Ülesanne 12](Y12) · [ROBO](ROBO)
 
+___Hindetabel__. [https://docs.google.com/a/tlu.ee/spreadsheets/d/1VdDcbh5LrM_GEdEXUomjtGuxMCaUJohxBcw-B8BCmvA/edit?usp=sharing](https://docs.google.com/a/tlu.ee/spreadsheets/d/1VdDcbh5LrM_GEdEXUomjtGuxMCaUJohxBcw-B8BCmvA/edit?usp=sharing). Hindetabeliga saavad tutvuda ainult Tallinna Ülikooli domeenis sisseloginud kasutajad.
+
 __Eksamid__.<br>
 K 20.12.2017 kell 14.15-15.45 ruum A-402 põhieksam<br>
 N 21.12.2017 kell 14.15-15.45 ruum A-402 põhieksam<br>
