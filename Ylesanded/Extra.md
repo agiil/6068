@@ -2,7 +2,7 @@
 permalink: Extra
 ---
 
-<div style='display: inline-block;'> <i class="material-icons ikoon teal">assignment</i></div>
+<div style='display: inline-block;'> <i class="material-icons ikoon tomato">assignment</i></div>
 
 # Lisaülesanne  · Artikli läbitöötamine
 
@@ -14,10 +14,10 @@ Leidke üks infosüsteeme käsitlev artikkel ja lugege see iseseisva töö näda
 
 Kuidas kirjandust leida ja valida, räägime praktikumis.
 
-<div style='display: inline-block;'> <i class="material-icons ikoon teal">group_work</i></div>
+<div style='display: inline-block;'> <i class="material-icons ikoon tomato">group_work</i></div>
 
 Ülesanne on individuaalne, kuid ei ole takistusi ja on isegi soovitatav lugeda sama artiklit, võimalusel seda koos arutada.
 
-<div style='display: inline-block;'> <i class="material-icons ikoon teal">schedule</i></div>
+<div style='display: inline-block;'> <i class="material-icons ikoon tomato">schedule</i></div>
 
 Esitamise tähtaeg: üks nädal alates ülesande andmisest.
