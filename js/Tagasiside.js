@@ -21,9 +21,9 @@ function esitaTagasiside() {
   // Kogu vastused
   // Vastusest edastatakse ainult esimene tärk (-, A, B, C või  D)
   // Vastused sidurdatakse üheks sõneks
-  var vastused = '';
+  var vastused = '| ';
   for (var i = 1; i <= kysimusi; i++) {
-    vastused = vastused + i.toString() + '. ' + $('#k' + i.toString()).val() + '|';
+    vastused = vastused + i.toString() + '. ' + $('#k' + i.toString()).val() + ' | ';
   }
   // Koosta saadetav objekt
   var s = {
@@ -51,6 +51,8 @@ function esitaTagasiside() {
       $('#teateAla')
         .text('Salvestatud.')
         .addClass('infoteade');
+      $('#tanuteateAla')
+        .text('Aitäh!');
     } else { 
       $('#teateAla')
         .text('Salvestamine ebaõnnestus. Veakood: Google Apps ' + data.error.message)
