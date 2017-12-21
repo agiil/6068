@@ -28,7 +28,7 @@ function esitaEksamitoo() {
   // Koosta saadetav objekt
   var s = {
     IDToken: id_token, 
-    tyyp: 'E' 
+    tyyp: 'E', 
     vastused: vastused
   }; 
 

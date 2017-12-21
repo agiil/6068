@@ -28,7 +28,7 @@ function esitaTagasiside() {
   // Koosta saadetav objekt
   var s = {
     IDToken: id_token,
-    tyyp: 'T' 
+    tyyp: 'T',
     vastused: vastused
   }; 
 
