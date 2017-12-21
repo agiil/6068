@@ -23,11 +23,12 @@ function esitaTagasiside() {
   // Vastused sidurdatakse üheks sõneks
   var vastused = '';
   for (var i = 1; i <= kysimusi; i++) {
-    vastused = vastused + i.toString() + '. ' + $('#k1' + i.toString()).val() + '|';
+    vastused = vastused + i.toString() + '. ' + $('#k' + i.toString()).val() + '|';
   }
   // Koosta saadetav objekt
   var s = {
-    IDToken: id_token, 
+    IDToken: id_token,
+    tyyp: 'T' 
     vastused: vastused
   }; 
 
