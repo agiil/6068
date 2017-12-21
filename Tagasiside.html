@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>IFI 6068 Tagasiside</title>
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="604160337788-kod2cd66a76h7fv5927p5vafbtphoeqg.apps.googleusercontent.com">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
+  <!-- Tether on vaja tooltip-de jaoks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
+  <!-- Google Identity Platform -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+  <!-- Fondid -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+  
+  <!-- Material Design Ikoonid -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Skriptid -->
+  <script src="js/GoogleAutentimine.js"></script>  
+	<script src='js/Tagasiside.js'></script>
+  
+  <link rel="stylesheet" href="css/Times.css">
+  <link href="css/Eksam.css" rel="stylesheet">
+</head>
+
+<body onload="alusta();">
+  
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col'>
+        
+        <!-- Ülarida -->
+        <div class='d-flex mb-3 justify-content-between'>
+          <p class='kursusePais'>
+            <a href='https://agiil.github.io/6068'>IFI 6068 Sissejuhatus infosüsteemidesse</a> · 2017 sügissemester
+          </p>
+          <div class='align-self-start ml-auto'> 
+            <div class="g-signin2" data-onsuccess="onSignIn" data-toggle='tooltip' title='Eksami tegemiseks logi sisse' data-placement="bottom"></div>
+            <div id='Kasutaja'></div>
+            <div id='KasutajaEmail'></div>
+          </div>
+        </div>
+
+        <p id='teenuseSeisund' class='teade'></p>
+        
+        <h1>Tagasiside</h1>
+
+        <p>Olen tänulik, kuid leiate hetke kursusega tekkinud mõtete edastamiseks.</p>
+
+        <p>Oodake hetk, kuvale peaks ilmuma teade 'Teenus on avatud'. See tähendab, et backend (Google Docs tööleht) on valmis tagasisidet vastu võtma. 2) Logige sisse (TLÜ kontoga). 3) Valige vastused. 4) Vajutage 'Saada tagasiside'. Oodake hetk. Kuvale ilmub teade 'Salvestatud'. 5) ROBO saadab teile e-postiga kinnituse tagasiside laekumise kohta.</p>
+
+        <!-- Vastuste sisestamise ala -->
+        <form>
+          <div class="form-group">
+            <label for="k1">1. Milliseid teemasid oleks võinud veel käsitleda?</label>
+            <textarea class="form-control" id="k1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="k2">2. Milliseid teemasid oleks võinud sügavamalt käsitleda?</label>
+            <textarea class="form-control" id="k2" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="k3">3. Milliseid teemasid oleks võinud vähem käsitleda?</label>
+            <textarea class="form-control" id="k3" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="k4">4. Ideid-ettepanekuid praktikumi paremaks korraldamiseks?</label>
+            <textarea class="form-control" id="k4" rows="3"></textarea>
+          </div>
+          <button id='esitaNupp' class="btn btn-secondary">Esita tagasiside</button>
+        </form>
+
+        <div id='teateAla' class='teade my-3'></div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
